@@ -1,8 +1,19 @@
 ---
 title: "About"
+about: 
+  template: jolla
+  image: images/coraux.jpg
+  links:
+    - icon: github
+      text: github
+      href: https://github.com/
+    - icon: tropical-storm
+      text: Mayotte
+      href: https://www.mayotte-tourisme.com/
 ---
 
-About this site
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt nisi sapien, id ornare ligula fringilla at. In eget lacus eros. In quis laoreet magna. Duis suscipit mollis porta. In hac habitasse platea dictumst. Morbi in tempor orci. Fusce augue purus, gravida et felis quis, tincidunt finibus erat.
+
 
 ```{r}
 1 + 1

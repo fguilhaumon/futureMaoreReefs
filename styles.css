@@ -1,1 +1,35 @@
 /* css styles */
+.body
+{
+    object-fit: cover
+    background-attachment:fixed;
+    background-repeat:repeat-x;
+    /*background-size:100%;*/
+}
+.fond  {
+  
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position:  top;
+  background-size: 10% 70%;
+  
+}
+.banniere {
+	width: 100%;
+	height: 70%;
+	right: 50%;
+	left: 50%;
+	margin-bottom: 20px;
+	justify-content: center;
+	vertical-align: 1000%;
+}
+.title-wrapper{
+ position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+}
+.parent{
+  text-align: center;
+}

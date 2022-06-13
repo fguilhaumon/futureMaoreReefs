@@ -1,19 +1,53 @@
 project:
   type: website
-
+  preview: 
+    browser: true
 website:
-  title: "test"
+  title: "FutureMaoreReefs"
+  
+  search:
+    location: navbar
+    type: textbox
+    
   navbar:
+    pinned: true
+    search : true
+    background: rgb(219, 119, 53, 1)
+    logo: images/Logo.png
     left:
+      - icon: apple
+        href: https://en.ird.fr/node/10866
+      - icon: archive
+        href: https://quarto.org/docs/websites/
       - href: index.qmd
         text: Home
       - about.qmd
-
+      - href: gallery/listingpages.qmd
+        text: Listing pages
+        
+  page-footer: 
+    border: true
+    center: 
+      - text: "Join us on"
+        href: index.qmd
+      - icon: twitter
+        href: https://twitter.com/ird_fr
+      - icon: instagram
+        href: https://icons.getbootstrap.com/
+      - icon:  facebook
+        href: https://www.facebook.com/IRD.fr/
+      - icon:  linkedin
+        href: https://fr.linkedin.com/company/ird_2
 format:
   html:
-    theme: cosmo
+    code-fold: true
+    
+    theme:
+      light: flatly
+      dark: darkly
+      
     css: styles.css
     toc: true
-
-
+    
+editor: visual
 

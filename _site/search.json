@@ -1,0 +1,44 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "FutureMaoreReefs",
+    "section": "",
+    "text": "Partez à l’exploration…"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "gallery/listingpages.html",
+    "href": "gallery/listingpages.html",
+    "title": "Listing Example",
+    "section": "",
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\n\nLocalisation de l’espèce ex : Ile blanche\n\n\n\nForte croissance\n\n\nForte résistance\n\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt nisi sapien, id ornare ligula fringilla at. In eget lacus eros. In quis laoreet magna. Duis…\n\n\n\nMay 6, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLocalisation de l’espèce ex : Ile blanche\n\n\n\nRésistance\n\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt nisi sapien, id ornare ligula fringilla at. In eget lacus eros. In quis laoreet magna. Duis…\n\n\n\nFeb 5, 2021\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "idee.html",
+    "href": "idee.html",
+    "title": "test",
+    "section": "",
+    "text": "https://www.imageclef.org/2022/coral"
+  },
+  {
+    "objectID": "gallery/page1.html",
+    "href": "gallery/page1.html",
+    "title": "Type d’espèce",
+    "section": "",
+    "text": "library(leaflet)\nlibrary(magrittr)\n\n\nm <- leaflet() %>%\n    addTiles() %>%  # Add default OpenStreetMap map tiles\n    addMarkers(lng=45.17146, lat=-12.71570, popup=\"The birthplace of R\")\nm  # Print the map"
+  },
+  {
+    "objectID": "gallery/page2.html",
+    "href": "gallery/page2.html",
+    "title": "Type d’espèce 2",
+    "section": "",
+    "text": "library(leaflet)\n\nm <- leaflet() %>%\n    addTiles() %>%  # Add default OpenStreetMap map tiles\n    addMarkers(lng=45.27948, lat=-12.82449, popup=\"The birthplace of R\")\nm  # Print the map"
+  }
+]
