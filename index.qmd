@@ -1,11 +1,25 @@
 ---
-title: "test"
+title: "Future Maore reefs"
 ---
 
 This is a Quarto website.
 
 To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
 
+
 ```{r}
-1 + 1
+library(leaflet)
+library(magrittr)
+
+
+m <- leaflet() %>%
+    addTiles() %>%  # Add default OpenStreetMap map tiles
+    addMarkers(lng=45.17146, lat=-12.71570, popup="The birthplace of R")
+m  # Print the map
 ```
+
+<iframe allowfullscreen width="640" height="480" loading="lazy" frameborder="0" src="https://p3d.in/e/G0Eog">
+
+</iframe>
+
+
