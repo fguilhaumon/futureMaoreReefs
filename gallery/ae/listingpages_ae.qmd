@@ -1,0 +1,14 @@
+---
+title: "Colonies d'espèces coralliennes sur le site de l'Aéroport"
+subtitle: "Les colonies sont classés selon divers critères"
+  #image-placeholder: cover/test.png
+listing: 
+  type: grid
+  contents: 
+    - "*.qmd"
+  fields:  [image, date, title, subtitle, description, categories]
+  categories: true
+  grid-item-border: true
+  sort-ui: true
+  filter-ui: true
+---

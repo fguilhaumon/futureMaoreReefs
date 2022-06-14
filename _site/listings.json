@@ -5,5 +5,80 @@
       "/gallery/page1.html",
       "/gallery/page2.html"
     ]
+  },
+  {
+    "listing": "/gallery/ba/listingpages_ba.html",
+    "items": [
+      "/gallery/ba/page1_ba.html"
+    ]
+  },
+  {
+    "listing": "/listingpages.html",
+    "items": [
+      "/about.html",
+      "/index.html",
+      "/gallery/Jr/listingpages_Jr.html",
+      "/gallery/ae/listingpages_ae.html",
+      "/gallery/ba/listingpages_ba.html",
+      "/gallery/ib/listingpages_ib.html",
+      "/gallery/mp/listingpages_mp.html",
+      "/gallery/ng/listingpages_ng.html",
+      "/gallery/sa/listingpages_sa.html",
+      "/gallery/su/listingpages_su.html",
+      "/Lieux.html",
+      "/gallery/Jr/page1_Jr.html",
+      "/gallery/ae/page1_ae.html",
+      "/gallery/ba/page1_ba.html",
+      "/gallery/ib/page1_ib.html",
+      "/gallery/mp/page1_mp.html",
+      "/gallery/ng/page1_ng.html",
+      "/gallery/page1.html",
+      "/gallery/sa/page1_sa.html",
+      "/gallery/su/page1_su.html",
+      "/gallery/page2.html",
+      "/idee.html"
+    ]
+  },
+  {
+    "listing": "/gallery/ae/listingpages_ae.html",
+    "items": [
+      "/gallery/ae/page1_ae.html"
+    ]
+  },
+  {
+    "listing": "/gallery/ib/listingpages_ib.html",
+    "items": [
+      "/gallery/ib/page1_ib.html"
+    ]
+  },
+  {
+    "listing": "/gallery/su/listingpages_su.html",
+    "items": [
+      "/gallery/su/page1_su.html"
+    ]
+  },
+  {
+    "listing": "/gallery/ng/listingpages_ng.html",
+    "items": [
+      "/gallery/ng/page1_ng.html"
+    ]
+  },
+  {
+    "listing": "/gallery/Jr/listingpages_Jr.html",
+    "items": [
+      "/gallery/Jr/page1_Jr.html"
+    ]
+  },
+  {
+    "listing": "/gallery/sa/listingpages_sa.html",
+    "items": [
+      "/gallery/sa/page1_sa.html"
+    ]
+  },
+  {
+    "listing": "/gallery/mp/listingpages_mp.html",
+    "items": [
+      "/gallery/mp/page1_mp.html"
+    ]
   }
 ]

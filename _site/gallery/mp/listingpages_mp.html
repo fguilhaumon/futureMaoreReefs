@@ -6,11 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Marie">
-<meta name="dcterms.date" content="2021-02-05">
-<meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt nisi sapien, id ornare ligula fringilla at. In eget lacus eros. In quis laoreet magna. Duis suscipit mollis porta. In hac habitasse platea dictumst. Morbi in tempor orci. Fusce augue purus, gravida et felis quis, tincidunt finibus erat.">
 
-<title>FutureMaoreReefs - Type d’espèce 2</title>
+<title>FutureMaoreReefs - Listing Example</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,23 +18,25 @@ ul.task-list{list-style: none;}
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<script src="../site_libs/quarto-html/quarto.js"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme">
-<link href="../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-listing/list.min.js"></script>
+<script src="../../site_libs/quarto-listing/quarto-listing.js"></script>
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -57,18 +56,33 @@ ul.task-list{list-style: none;}
     "search-submit-button-title": "Submit"
   }
 }</script>
-<script src="../site_libs/htmlwidgets-1.5.4/htmlwidgets.js"></script>
-<script src="../site_libs/jquery-1.12.4/jquery.min.js"></script>
-<link href="../site_libs/leaflet-1.3.1/leaflet.css" rel="stylesheet">
-<script src="../site_libs/leaflet-1.3.1/leaflet.js"></script>
-<link href="../site_libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet">
-<script src="../site_libs/proj4-2.6.2/proj4.min.js"></script>
-<script src="../site_libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
-<link href="../site_libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet">
-<script src="../site_libs/leaflet-binding-2.1.1/leaflet.js"></script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
 
-<link rel="stylesheet" href="../styles.css">
+    const options = {
+      valueNames: ['listing-image','listing-date','listing-title','listing-subtitle','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description","listing-categories"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -77,8 +91,8 @@ ul.task-list{list-style: none;}
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
-      <a class="navbar-brand" href="../index.html">
-    <img src="../images/Logo.png" alt="">
+      <a class="navbar-brand" href="../../index.html">
+    <img src="../../images/Logo.png" alt="">
     <span class="navbar-title">FutureMaoreReefs</span>
   </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
@@ -97,13 +111,13 @@ ul.task-list{list-style: none;}
  </a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../index.html">Home</a>
+    <a class="nav-link" href="../../index.html">Home</a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../about.html">About</a>
+    <a class="nav-link" href="../../about.html">About</a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../gallery/listingpages.qmd">Listing pages</a>
+    <a class="nav-link" href="../../Lieux.html">Sites géographiques</a>
   </li>  
 </ul>
               <div class="quarto-toggle-container">
@@ -119,77 +133,94 @@ ul.task-list{list-style: none;}
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#colonie-2" id="toc-colonie-2" class="nav-link active" data-scroll-target="#colonie-2">Colonie 2</a>
-  <ul class="collapse">
-  <li><a href="#infos-supplémentaires" id="toc-infos-supplémentaires" class="nav-link" data-scroll-target="#infos-supplémentaires">Infos supplémentaires</a>
-  <ul class="collapse">
-  <li><a href="#photogrammétrie-échantillon" id="toc-photogrammétrie-échantillon" class="nav-link" data-scroll-target="#photogrammétrie-échantillon">Photogrammétrie, échantillon…</a></li>
-  </ul></li>
-  </ul></li>
-  </ul>
-</nav>
-    </div>
+        
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Forte croissance">Forte croissance <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Forte résistance">Forte résistance <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Type d’espèce 2</h1>
-<p class="subtitle lead">Localisation de l’espèce ex : Ile blanche</p>
-  <div class="quarto-categories">
-    <div class="quarto-category">Résistance</div>
-  </div>
-  </div>
-
-<div>
-  <div class="description">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt nisi sapien, id ornare ligula fringilla at. In eget lacus eros. In quis laoreet magna. Duis suscipit mollis porta. In hac habitasse platea dictumst. Morbi in tempor orci. Fusce augue purus, gravida et felis quis, tincidunt finibus erat.
-  </div>
+<h1 class="title">Listing Example</h1>
+<p class="subtitle lead">Liste</p>
 </div>
+
 
 
 <div class="quarto-title-meta">
 
     
-    <div>
-    <div class="quarto-title-meta-heading"></div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">February 5, 2021</p>
-    </div>
-  </div>
     
   </div>
   
 
 </header>
 
-<section id="colonie-2" class="level1">
-<h1>Colonie 2</h1>
-<iframe allowfullscreen="" width="640" height="480" loading="lazy" frameborder="0" src="https://p3d.in/e/G0Eog" alt="Image de corail 3D">
-</iframe>
-<section id="infos-supplémentaires" class="level2">
-<h2 class="anchored" data-anchor-id="infos-supplémentaires">Infos supplémentaires</h2>
-<section id="photogrammétrie-échantillon" class="level3">
-<h3 class="anchored" data-anchor-id="photogrammétrie-échantillon">Photogrammétrie, échantillon…</h3>
-<!--
-<img src="coraux.jpg" alt="Coraux"/> -->
-<div class="cell">
-<div class="cell-output-display">
-<div id="htmlwidget-832e602f0aa9746d1b00" style="width:100%;height:464px;" class="leaflet html-widget"></div>
-<script type="application/json" data-for="htmlwidget-832e602f0aa9746d1b00">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addMarkers","args":[-12.82449,45.27948,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"The birthplace of R",null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[-12.82449,-12.82449],"lng":[45.27948,45.27948]}},"evals":[],"jsHooks":[]}</script>
+
+
+
+
+<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
+<div class="listing-actions-group">
+   <div class="input-group input-group-sm quarto-listing-sort">
+     <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
+     <select id="listing-listing-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
+       <option value="" disabled="" selected="" hidden="">Order By</option>
+       <option value="index" data-direction="asc">Default</option>
+         <option value="listing-title" data-direction="asc">
+          Title
+        </option>
+         <option value="listing-date-sort" data-direction="asc">
+          Date - Oldest
+        </option>
+         <option value="listing-date-sort" data-direction="desc">
+          Date - Newest
+        </option>
+     </select>
+  </div>
+    <div class="input-group input-group-sm quarto-listing-filter">
+      <span class="input-group-text"><i class="bi bi-search"></i></span>
+      <input type="text" class="search form-control" placeholder="Filter">
+    </div>
+</div>
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-categories="Forte croissance,Forte résistance" data-listing-date-sort="1651780800000" data-listing-file-modified-sort="1655188089894" data-listing-reading-time-sort="0.22">
+<a href="../../gallery/mp/page1_mp.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="../../gallery/mp/cover/cover.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Type d’espèce
+</h5>
+<div class="card-subtitle listing-subtitle">
+Localisation de l’espèce ex : Ile blanche
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Forte croissance'); return false;">
+Forte croissance
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Forte résistance'); return false;">
+Forte résistance
 </div>
 </div>
-
-
-</section>
-</section>
-</section>
-
-</main> <!-- /main -->
+<div class="card-text listing-description">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt nisi sapien, id ornare ligula fringilla at. In eget lacus eros. In quis laoreet magna. Duis…
+</div>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+May 6, 2022
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const disableStylesheet = (stylesheets) => {
@@ -372,7 +403,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       <div class="nav-footer-center">
         <ul class="footer-items list-unstyled">
     <li class="nav-item">
-    <a class="nav-link" href="../index.html">Join us on</a>
+    <a class="nav-link" href="../../index.html">Join us on</a>
   </li>  
     <li class="nav-item compact">
     <a class="nav-link" href="https://twitter.com/ird_fr">

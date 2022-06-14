@@ -1,0 +1,41 @@
+---
+title: "Sites d'études"
+---
+
+# Carte des diffférents sites
+Lorem Ipsum......
+### Cliquez sur les marqueurs pour choisir votre site
+
+```{r}
+#| echo: false
+library(leaflet)
+library(htmltools)
+library(readr)
+ metadonnees <- read_csv("metadonnees.csv")
+ metadonnees$longitude<-as.numeric(metadonnees$longitude)
+leaflet(metadonnees) %>% addTiles() %>%
+  addMarkers(~longitude, ~latitude, popup = ~url)
+
+```
+
+### Site
+
++---------------+-------------+---------+---------------------------------------------------------------------------------------+
+| Site          | Description | Image   | Allez-y!                                                                              |
++===============+=============+=========+=======================================================================================+
+| Aeroport      | Lorem Ipsum |         | [Aeroport](http://10.243.12.183:8787/p/44a8af0e/gallery/ae/listingpages_ae.html)      |
++---------------+-------------+---------+---------------------------------------------------------------------------------------+
+| Ile Blanche   | Lorem Ipsum |         | [Ile Blanche](http://10.243.12.183:8787/p/44a8af0e/gallery/ib/listingpages_ib.html)   |
++---------------+-------------+---------+---------------------------------------------------------------------------------------+
+| Surprise      | Lorem Ipsum |         | [Surprise](http://10.243.12.183:8787/p/44a8af0e/gallery/su/listingpages_su.html)      |
++---------------+-------------+---------+---------------------------------------------------------------------------------------+
+| Ngouja        | Lorem Ipsum |         | [Ngouja](http://10.243.12.183:8787/p/44a8af0e/gallery/ng/listingpages_ng.html)        |
++---------------+-------------+---------+---------------------------------------------------------------------------------------+
+| Joly Roger    | Lorem Ipsum |         | [Joly Roger](http://10.243.12.183:8787/p/44a8af0e/gallery/Jr/listingpages_Jr.html)    |
++---------------+-------------+---------+---------------------------------------------------------------------------------------+
+| Sakouli       | Lorem Ipsum |         | [Sakouli](http://10.243.12.183:8787/p/44a8af0e/gallery/sa/listingpages_sa.html)       |
++---------------+-------------+---------+---------------------------------------------------------------------------------------+
+| Bandrele      | Lorem Ipsum |         | [Bandrele](http://10.243.12.183:8787/p/44a8af0e/gallery/ba/listingpages_ba.html)      |
++---------------+-------------+---------+---------------------------------------------------------------------------------------+
+| Musical Plage | Lorem Ipsum |         | [Musical Plage](http://10.243.12.183:8787/p/44a8af0e/gallery/mp/listingpages_mp.html) |
++---------------+-------------+---------+---------------------------------------------------------------------------------------+

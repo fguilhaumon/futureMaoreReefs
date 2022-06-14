@@ -54,15 +54,6 @@ ul.task-list{list-style: none;}
     "search-submit-button-title": "Submit"
   }
 }</script>
-<script src="site_libs/htmlwidgets-1.5.4/htmlwidgets.js"></script>
-<script src="site_libs/jquery-1.12.4/jquery.min.js"></script>
-<link href="site_libs/leaflet-1.3.1/leaflet.css" rel="stylesheet">
-<script src="site_libs/leaflet-1.3.1/leaflet.js"></script>
-<link href="site_libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet">
-<script src="site_libs/proj4-2.6.2/proj4.min.js"></script>
-<script src="site_libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
-<link href="site_libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet">
-<script src="site_libs/leaflet-binding-2.1.1/leaflet.js"></script>
 
 
 <link rel="stylesheet" href="styles.css">
@@ -100,7 +91,7 @@ ul.task-list{list-style: none;}
     <a class="nav-link" href="./about.html">About</a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./gallery/listingpages.html">Listing pages</a>
+    <a class="nav-link" href="./Lieux.html">Sites géographiques</a>
   </li>  
 </ul>
               <div class="quarto-toggle-container">
@@ -140,26 +131,25 @@ ul.task-list{list-style: none;}
 <!--<div class="fond">-->
 
 <figure class="fond figure">
-<img src="images/fond.jpg" class="fond figure-img">
+<p><img src="images/fond.jpg" class="fond figure-img"></p>
 <figcaption class="figure-caption">
 <p>
-Une photo de coraux
-</p>
+</p><p>Une photo de coraux</p>
+<p></p>
 </figcaption>
 <div>
 <p><img src="images/Banniere.png" class="banniere figure-img"></p>
 <h1 class="title-wrapper">
-Working Together
+<p>Working Together</p>
 </h1>
 </div>
 <p><strong>Prototype de galleries coralliennes</strong></p>
 </figure>
-<form action="gallery/listingpages.html">
+<form action="Lieux.html">
 <button type="submit" id="bouton">
-Partez à l’exploration…
+<p>Partez à l’exploration…</p>
 </button>
 </form>
-
 
 
 
@@ -344,11 +334,21 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
+    <div class="nav-footer-left">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+  </li>  
+</ul>
+    </div>   
       <div class="nav-footer-center">
         <ul class="footer-items list-unstyled">
     <li class="nav-item">
-    <a class="nav-link" href="./index.html">Join us on</a>
+ Contactez-nous
   </li>  
+</ul>
+      </div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
     <li class="nav-item compact">
     <a class="nav-link" href="https://twitter.com/ird_fr">
       <i class="bi bi-twitter" role="img">
@@ -374,24 +374,10 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </a>
   </li>  
 </ul>
-      </div>
+    </div>
   </div>
 </footer>
 
 
 
-</body><!--
-
-::: {.cell}
-::: {.cell-output-display}
-
-```{=html}
-<div id="htmlwidget-ef2c9cac9d5ccf9d84c4" style="width:100%;height:464px;" class="leaflet html-widget"></div>
-<script type="application/json" data-for="htmlwidget-ef2c9cac9d5ccf9d84c4">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addMarkers","args":[-12.7157,45.17146,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"The birthplace of R",null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[-12.7157,-12.7157],"lng":[45.17146,45.17146]}},"evals":[],"jsHooks":[]}</script>
-```
-
-:::
-:::
-
-
---></html>
+</body></html>

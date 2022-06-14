@@ -1,8 +1,8 @@
 ---
 title: "About"
-about: 
-  template: jolla
-  image: images/coraux.jpg
+about:
+  template: marquee
+  image: images/logo2.png
   links:
     - icon: github
       text: github
@@ -10,11 +10,32 @@ about:
     - icon: tropical-storm
       text: Mayotte
       href: https://www.mayotte-tourisme.com/
+    - icon: twitter heading
+      text: NOTRE TWITTER
+      href: https://twitter.com/ird_fr
+    - icon: instagram
+      text: Notre Instagram
+      href: https://icons.getbootstrap.com/
+    - icon:  facebook
+      text: Notre facebook
+      href: https://www.facebook.com/IRD.fr/
+    - icon:  linkedin
+      text: Notre linkedin
+      href: https://fr.linkedin.com/company/ird_2
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt nisi sapien, id ornare ligula fringilla at. In eget lacus eros. In quis laoreet magna. Duis suscipit mollis porta. In hac habitasse platea dictumst. Morbi in tempor orci. Fusce augue purus, gravida et felis quis, tincidunt finibus erat.
 
+# Informations
 
-```{r}
-1 + 1
-```
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+## Suite et avenir
+
+suite du projet etc
+
+### Notre équipe
+
+### Nos acteurs
+
+### Nos partenaires

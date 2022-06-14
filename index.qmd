@@ -3,48 +3,49 @@ title: "FutureMaoreReefs"
 
 #backgroundcolor: primary
 ---
-<!--<div class="fond">-->
-<body>
-<figure class="fond">
-<img src="images/fond.jpg" class="fond" />
-<figcaption>
-  <p> Une photo de coraux </p>
-  
-  </figcaption>
-  <div>
-<img src="images/Banniere.png" class="banniere" />
 
-  <h1 class="title-wrapper"> Working Together </h1>
+<!--<div class="fond">-->
+
+<body>
+
+<figure class="fond">
+
+<img src="images/fond.jpg" class="fond"/>
+
+<figcaption>
+
+<p>
+
+Une photo de coraux
+
+</p>
+
+</figcaption>
+
+<div>
+
+<img src="images/Banniere.png" class="banniere"/>
+
+<h1 class="title-wrapper">
+
+Working Together
+
+</h1>
+
 </div>
- **Prototype de galleries coralliennes**
+
+**Prototype de galleries coralliennes**
 
 </figure>
 
-<form action="gallery/listingpages.html">
-            <button type="submit" id="bouton" >
-            Partez à l'exploration...
-            </button>
-    </form>
+<form action="Lieux.html">
+
+<button type="submit" id="bouton">
+
+Partez à l'exploration...
+
+</button>
+
+</form>
 
 </body>
-
-```{r}
-#| echo: false
-library(leaflet)
-library(htmltools)
-
-df <- read.csv(textConnection(
-"Name,Lat,Long
-Aeroport,-12.82449,45.27948
-ile blanche,-12.71570,45.17146
-surprise,-12.63017,45.15103"
-))
- metadonnees <- read_csv("metadonnees.csv")
- metadonnees$longitude<-as.numeric(metadonnees$longitude)
-leaflet(metadonnees) %>% addTiles() %>%
-  addMarkers(~longitude, ~latitude, popup = ~htmlEscape(site))
-```
-
-
-
-

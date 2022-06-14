@@ -11,7 +11,7 @@
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "1 + 1\n\n[1] 2"
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt nisi sapien, id ornare ligula fringilla at. In eget lacus eros. In quis laoreet magna. Duis suscipit mollis porta. In hac habitasse platea dictumst. Morbi in tempor orci. Fusce augue purus, gravida et felis quis, tincidunt finibus erat."
   },
   {
     "objectID": "gallery/listingpages.html",
@@ -40,5 +40,82 @@
     "title": "Type d’espèce 2",
     "section": "",
     "text": "library(leaflet)\n\nm <- leaflet() %>%\n    addTiles() %>%  # Add default OpenStreetMap map tiles\n    addMarkers(lng=45.27948, lat=-12.82449, popup=\"The birthplace of R\")\nm  # Print the map"
+  },
+  {
+    "objectID": "gallery/ba/listingpages_ba.html",
+    "href": "gallery/ba/listingpages_ba.html",
+    "title": "Listing Example",
+    "section": "",
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\n\nLocalisation de l’espèce ex : Ile blanche\n\n\n\nForte croissance\n\n\nForte résistance\n\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt nisi sapien, id ornare ligula fringilla at. In eget lacus eros. In quis laoreet magna. Duis…\n\n\n\nMay 6, 2022\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "Lieux.html",
+    "href": "Lieux.html",
+    "title": "Sites d’études",
+    "section": "",
+    "text": "Lorem Ipsum…… ### Cliquez sur les marqueurs pour choisir votre site\n\n\nNew names:\nRows: 8 Columns: 6\n── Column specification\n──────────────────────────────────────────────────────── Delimiter: \",\" chr\n(3): site, profondeur, url dbl (3): ...1, latitude, longitude\nℹ Use `spec()` to retrieve the full column specification for this data. ℹ\nSpecify the column types or set `show_col_types = FALSE` to quiet this message.\n• `` -> `...1`\n\n\n\n\n\n\n\n\n\n\n\nSite\nDescription\nImage\nAllez-y!\n\n\n\n\nAeroport\nLorem Ipsum\n\nAeroport\n\n\nIle Blanche\nLorem Ipsum\n\nIle Blanche\n\n\nSurprise\nLorem Ipsum\n\nSurprise\n\n\nNgouja\nLorem Ipsum\n\nNgouja\n\n\nJoly Roger\nLorem Ipsum\n\nJoly Roger\n\n\nSakouli\nLorem Ipsum\n\nSakouli\n\n\nBandrele\nLorem Ipsum\n\nBandrele\n\n\nMusical Plage\nLorem Ipsum\n\nMusical Plage"
+  },
+  {
+    "objectID": "listingpages.html",
+    "href": "listingpages.html",
+    "title": "Listing Example",
+    "section": "",
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n \n\n\n\n\nListe\n\n\n\n\n\n\n\n\n\n\n\n\n \n\n\n\n\nListe\n\n\n\n\n\n\n\n\n\n\n\n\n \n\n\n\n\nListe\n\n\n\n\n\n\n\n\n\n\n\n\n \n\n\n\n\nListe\n\n\n\n\n\n\n\n\n\n\n\n\n \n\n\n\n\nListe\n\n\n\n\n\n\n\n\n\n\n\n\n \n\n\n\n\nListe\n\n\n\n\n\n\n\n\n\n\n\n\n \n\n\n\n\nListe\n\n\n\n\n\n\n\n\n\n\n\n\n \n\n\n\n\nListe\n\n\n\n\n\n\n\n\n\n\n\n\n \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLocalisation de l’espèce ex : Ile blanche\n\n\n\nForte croissance\n\n\nForte résistance\n\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt nisi sapien, id ornare ligula fringilla at. In eget lacus eros. In quis laoreet magna. Duis…\n\n\n\nMay 6, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAeroport\n\n\n\nForte croissance\n\n\nForte résistance\n\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt nisi sapien, id ornare ligula fringilla at. In eget lacus eros. In quis laoreet magna. Duis…\n\n\n\nMay 6, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLocalisation de l’espèce ex : Ile blanche\n\n\n\nForte croissance\n\n\nForte résistance\n\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt nisi sapien, id ornare ligula fringilla at. In eget lacus eros. In quis laoreet magna. Duis…\n\n\n\nMay 6, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLocalisation de l’espèce ex : Ile blanche\n\n\n\nForte croissance\n\n\nForte résistance\n\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt nisi sapien, id ornare ligula fringilla at. In eget lacus eros. In quis laoreet magna. Duis…\n\n\n\nMay 6, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLocalisation de l’espèce ex : Ile blanche\n\n\n\nForte croissance\n\n\nForte résistance\n\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt nisi sapien, id ornare ligula fringilla at. In eget lacus eros. In quis laoreet magna. Duis…\n\n\n\nMay 6, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLocalisation de l’espèce ex : Ile blanche\n\n\n\nForte croissance\n\n\nForte résistance\n\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt nisi sapien, id ornare ligula fringilla at. In eget lacus eros. In quis laoreet magna. Duis…\n\n\n\nMay 6, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLocalisation de l’espèce ex : Ile blanche\n\n\n\nForte croissance\n\n\nForte résistance\n\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt nisi sapien, id ornare ligula fringilla at. In eget lacus eros. In quis laoreet magna. Duis…\n\n\n\nMay 6, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLocalisation de l’espèce ex : Ile blanche\n\n\n\nForte croissance\n\n\nForte résistance\n\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt nisi sapien, id ornare ligula fringilla at. In eget lacus eros. In quis laoreet magna. Duis…\n\n\n\nMay 6, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLocalisation de l’espèce ex : Ile blanche\n\n\n\nForte croissance\n\n\nForte résistance\n\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt nisi sapien, id ornare ligula fringilla at. In eget lacus eros. In quis laoreet magna. Duis…\n\n\n\nMay 6, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLocalisation de l’espèce ex : Ile blanche\n\n\n\nRésistance\n\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt nisi sapien, id ornare ligula fringilla at. In eget lacus eros. In quis laoreet magna. Duis…\n\n\n\nFeb 5, 2021\n\n\n\n\n\n\n\n\n\n\n \n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "gallery/ae/listingpages_ae.html",
+    "href": "gallery/ae/listingpages_ae.html",
+    "title": "Colonies d’espèces coralliennes sur le site de l’Aéroport",
+    "section": "",
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\n\nAeroport\n\n\n\nForte croissance\n\n\nForte résistance\n\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt nisi sapien, id ornare ligula fringilla at. In eget lacus eros. In quis laoreet magna. Duis…\n\n\n\nMay 6, 2022\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "gallery/ib/listingpages_ib.html",
+    "href": "gallery/ib/listingpages_ib.html",
+    "title": "Listing Example",
+    "section": "",
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\n\nLocalisation de l’espèce ex : Ile blanche\n\n\n\nForte croissance\n\n\nForte résistance\n\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt nisi sapien, id ornare ligula fringilla at. In eget lacus eros. In quis laoreet magna. Duis…\n\n\n\nMay 6, 2022\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "gallery/su/listingpages_su.html",
+    "href": "gallery/su/listingpages_su.html",
+    "title": "Listing Example",
+    "section": "",
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\n\nLocalisation de l’espèce ex : Ile blanche\n\n\n\nForte croissance\n\n\nForte résistance\n\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt nisi sapien, id ornare ligula fringilla at. In eget lacus eros. In quis laoreet magna. Duis…\n\n\n\nMay 6, 2022\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "gallery/ng/listingpages_ng.html",
+    "href": "gallery/ng/listingpages_ng.html",
+    "title": "Listing Example",
+    "section": "",
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\n\nLocalisation de l’espèce ex : Ile blanche\n\n\n\nForte croissance\n\n\nForte résistance\n\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt nisi sapien, id ornare ligula fringilla at. In eget lacus eros. In quis laoreet magna. Duis…\n\n\n\nMay 6, 2022\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "gallery/Jr/listingpages_Jr.html",
+    "href": "gallery/Jr/listingpages_Jr.html",
+    "title": "Listing Example",
+    "section": "",
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\n\nLocalisation de l’espèce ex : Ile blanche\n\n\n\nForte croissance\n\n\nForte résistance\n\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt nisi sapien, id ornare ligula fringilla at. In eget lacus eros. In quis laoreet magna. Duis…\n\n\n\nMay 6, 2022\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "gallery/sa/listingpages_sa.html",
+    "href": "gallery/sa/listingpages_sa.html",
+    "title": "Listing Example",
+    "section": "",
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\n\nLocalisation de l’espèce ex : Ile blanche\n\n\n\nForte croissance\n\n\nForte résistance\n\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt nisi sapien, id ornare ligula fringilla at. In eget lacus eros. In quis laoreet magna. Duis…\n\n\n\nMay 6, 2022\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "gallery/mp/listingpages_mp.html",
+    "href": "gallery/mp/listingpages_mp.html",
+    "title": "Listing Example",
+    "section": "",
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\n\nLocalisation de l’espèce ex : Ile blanche\n\n\n\nForte croissance\n\n\nForte résistance\n\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt nisi sapien, id ornare ligula fringilla at. In eget lacus eros. In quis laoreet magna. Duis…\n\n\n\nMay 6, 2022\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "about.html#suite-et-avenir",
+    "href": "about.html#suite-et-avenir",
+    "title": "About",
+    "section": "Suite et avenir",
+    "text": "Suite et avenir\nsuite du projet etc\n\nNotre équipe\n\n\nNos acteurs\n\n\nNos partenaires"
   }
 ]

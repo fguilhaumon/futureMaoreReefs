@@ -1,0 +1,14 @@
+---
+title: "Listing Example"
+subtitle: "Liste"
+  #image-placeholder: cover/test.png
+listing: 
+  type: grid
+  contents: 
+    - "*.qmd"
+  fields:  [image, date, title, subtitle, description, categories]
+  categories: true
+  grid-item-border: true
+  sort-ui: true
+  filter-ui: true
+---
