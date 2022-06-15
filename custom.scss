@@ -1,7 +1,12 @@
 /*-- scss:defaults --*/
-$input-bg: #ee1616 ;
-$callout-icon-scale: 100%  ;
+//$input-bg: rgb(219, 119, 53, 0.7) ; // Le background des input
+$input-border:  #ee1616;
+$input-color: rgb(219, 119, 53, 0.7) ;
+$input-border-focus:             #ee1616;
+$callout-icon-scale: 100%  ; // Régler la taille des icon
 $link-color: rgb(219, 119, 53, 1) ;
-$link-hover-color:      darken($link-color, 15%);
-//$link-hover-decoration: underline ;
+$link-hover-color:  bg-warning ;      //darken($link-color, 15%);
+$link-hover-decoration: none;
+//$navbar-default-brand-hover-color:         darken(rgb(219, 119, 53, 1), 70%);
+//$navbar-default-toggle-hover-bg: #ee1616;
 /*-- scss:rules --*/

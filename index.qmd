@@ -38,9 +38,9 @@ Working Together
 
 </figure>
 
-<form action="Lieux.html">
+<form action="intro_gallery.html">
 
-<button type="submit" id="bouton">
+<button type="submit" id="bouton" class="btn btn-warning btn btn-outline-warning">
 
 Partez à l'exploration...
 

@@ -103,7 +103,7 @@ ul.task-list{list-style: none;}
     <a class="nav-link" href="../../about.html">About</a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../Lieux.html">Sites géographiques</a>
+    <a class="nav-link" href="../../intro_gallery.html">Sites géographiques</a>
   </li>  
 </ul>
               <div class="quarto-toggle-container">
@@ -139,10 +139,10 @@ ul.task-list{list-style: none;}
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Type d’espèce</h1>
-<p class="subtitle lead">Aeroport</p>
+<p class="subtitle lead">Localisation de l’espèce ex : Ile blanche</p>
   <div class="quarto-categories">
     <div class="quarto-category">Forte croissance</div>
-    <div class="quarto-category">Forte résistance</div>
+    <div class="quarto-category">Ngouja</div>
   </div>
   </div>
 
@@ -178,8 +178,8 @@ ul.task-list{list-style: none;}
 <h3 class="anchored" data-anchor-id="photogrammétrie-échantillon">Photogrammétrie, échantillon…</h3>
 <div class="cell">
 <div class="cell-output-display">
-<div id="htmlwidget-2736e0a2bd545a9521b6" style="width:100%;height:464px;" class="leaflet html-widget"></div>
-<script type="application/json" data-for="htmlwidget-2736e0a2bd545a9521b6">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addMarkers","args":[-12.82449,45.27948,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"Aeroport",null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[-12.82449,-12.82449],"lng":[45.27948,45.27948]}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-57b131b76e9210eeab38" style="width:100%;height:464px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-57b131b76e9210eeab38">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addMarkers","args":[-12.8901,45.085251,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"Joly Roger",null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[-12.8901,-12.8901],"lng":[45.085251,45.085251]}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 
@@ -363,6 +363,22 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return popup.innerHTML;
     });
   }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+    var links = window.document.querySelectorAll('a:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          // default icon
+          link.classList.add("external");
+      }
+    }
 });
 </script>
 </div> <!-- /content -->

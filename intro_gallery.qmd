@@ -1,0 +1,44 @@
+---
+title: "Sites d'études"
+---
+
+# Carte des diffférents sites
+
+Lorem Ipsum......
+
+### Cliquez sur les marqueurs pour choisir votre site
+
+```{r}
+#| echo: false
+library(leaflet)
+library(htmltools)
+library(readr)
+ metadonnees <- read_csv("metadonnees.csv", show_col_types = FALSE)
+ show_col_types = FALSE
+ #metadonnees$longitude<-as.numeric(metadonnees$longitude)
+m <-leaflet(metadonnees)%>% 
+  addTiles() %>%
+  addMarkers(~longitude, ~latitude, popup = ~url)
+m
+```
+
+### Site
+
+| Site          | Description | Image | Allez-y!                                         |
+|------------|------------|------------|-----------------------------------|
+| Aeroport      | Lorem Ipsum |       | [Aeroport](listing_site.html#aeroport)      |
+| Ile Blanche   | Lorem Ipsum |       | [Ile Blanche](listing_site.html#ile-blanche)   |
+| Surprise      | Lorem Ipsum |       | [Surprise](listing_site.html#surprise)      |
+| Ngouja        | Lorem Ipsum |       | [Ngouja](listing_site.html#ngouja)        |
+| Joly Roger    | Lorem Ipsum |       | [Joly Roger](listing_site.html#joly-roger)    |
+| Sakouli       | Lorem Ipsum |       | [Sakouli](listing_site.html#sakouli)       |
+| Bandrele      | Lorem Ipsum |       | [Bandrele](listing_site.html#bandrele)      |
+| Musical Plage | Lorem Ipsum |       | [Musical Plage](listing_site.html#musical-plage) |
+
+### Par choix de fonctionnalités
+<ul>
+<li> <a href="listing_type.html#competitif">Competitif</a> </li>
+<li> <a href="listing_type.html#generalist">Generaliste</a> </li>
+<li> <a href="listing_type.html#weedy">Weedy</a> </li>
+<li> <a href="listing_type.html#stress-tolerant">Stress Tolerant</a> </li>
+</ul>

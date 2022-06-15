@@ -117,7 +117,7 @@ ul.task-list{list-style: none;}
     <a class="nav-link" href="../../about.html">About</a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../Lieux.html">Sites géographiques</a>
+    <a class="nav-link" href="../../intro_gallery.html">Sites géographiques</a>
   </li>  
 </ul>
               <div class="quarto-toggle-container">
@@ -134,7 +134,7 @@ ul.task-list{list-style: none;}
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Forte croissance">Forte croissance <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Forte résistance">Forte résistance <span class="quarto-category-count">(1)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(3)</span></div><div class="category" data-category="Forte croissance">Forte croissance <span class="quarto-category-count">(3)</span></div><div class="category" data-category="Forte résistance">Forte résistance <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Ngouja">Ngouja <span class="quarto-category-count">(2)</span></div></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -183,7 +183,73 @@ ul.task-list{list-style: none;}
     </div>
 </div>
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="Forte croissance,Forte résistance" data-listing-date-sort="1651780800000" data-listing-file-modified-sort="1655188135538" data-listing-reading-time-sort="0.215">
+<div class="g-col-1" data-index="0" data-categories="Forte croissance,Ngouja" data-listing-date-sort="1651780800000" data-listing-file-modified-sort="1655296353634" data-listing-reading-time-sort="0.22">
+<a href="../../gallery/ng/ng_session1_acroporaMuricata_comp.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="../../gallery/ng/cover/cover.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Type d’espèce
+</h5>
+<div class="card-subtitle listing-subtitle">
+Localisation de l’espèce ex : Ile blanche
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Forte croissance'); return false;">
+Forte croissance
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Ngouja'); return false;">
+Ngouja
+</div>
+</div>
+<div class="card-text listing-description">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt nisi sapien, id ornare ligula fringilla at. In eget lacus eros. In quis laoreet magna. Duis…
+</div>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+May 6, 2022
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="1" data-categories="Forte croissance,Ngouja" data-listing-date-sort="1651780800000" data-listing-file-modified-sort="1655296336274" data-listing-reading-time-sort="0.22">
+<a href="../../gallery/ng/ng_session1_acroporaMuricata_generalist.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="../../gallery/ng/cover/cover.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Type d’espèce
+</h5>
+<div class="card-subtitle listing-subtitle">
+Localisation de l’espèce ex : Ile blanche
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Forte croissance'); return false;">
+Forte croissance
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Ngouja'); return false;">
+Ngouja
+</div>
+</div>
+<div class="card-text listing-description">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt nisi sapien, id ornare ligula fringilla at. In eget lacus eros. In quis laoreet magna. Duis…
+</div>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+May 6, 2022
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="2" data-categories="Forte croissance,Forte résistance" data-listing-date-sort="1651780800000" data-listing-file-modified-sort="1655188135538" data-listing-reading-time-sort="0.215">
 <a href="../../gallery/ng/page1_ng.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -395,16 +461,42 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return popup.innerHTML;
     });
   }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+    var links = window.document.querySelectorAll('a:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          // default icon
+          link.classList.add("external");
+      }
+    }
 });
 </script>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
+    <div class="nav-footer-left">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+  </li>  
+</ul>
+    </div>   
       <div class="nav-footer-center">
         <ul class="footer-items list-unstyled">
     <li class="nav-item">
-    <a class="nav-link" href="../../index.html">Join us on</a>
+ Contactez-nous
   </li>  
+</ul>
+      </div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
     <li class="nav-item compact">
     <a class="nav-link" href="https://twitter.com/ird_fr">
       <i class="bi bi-twitter" role="img">
@@ -430,7 +522,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </a>
   </li>  
 </ul>
-      </div>
+    </div>
   </div>
 </footer>
 

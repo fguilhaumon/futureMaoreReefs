@@ -1,0 +1,76 @@
+---
+title: "Types fonctionnels"
+title-block-banner: true
+title-block-banner-color: rgb(255, 255, 255, 1)
+listing:
+  - id: Competitif
+  
+    contents: 
+      - "gallery/jr/*comp.qmd"
+      - "gallery/ba/*comp.qmd"
+      - "gallery/mp/*comp.qmd"
+      - "gallery/ng/*comp.qmd"
+    type: grid
+    fields:  [image, date, title, subtitle, description, categories]
+    categories: true
+    grid-item-border: true
+    sort-ui: true
+    filter-ui: true
+    
+  - id: Generalist
+    contents: 
+      - "gallery/jr/*generalist.qmd"
+      - "gallery/ba/*generalist.qmd"
+      - "gallery/mp/*generalist.qmd"
+      - "gallery/ng/*generalist.qmd"
+    type: grid
+    fields:  [image, date, title, subtitle, description, categories]
+    #categories: true
+    grid-item-border: true
+    sort-ui: true
+    filter-ui: true
+  
+  - id: Weedy
+    contents: 
+      - "gallery/jr/*weedy.qmd"
+      - "gallery/ba/*weedy.qmd"
+      - "gallery/mp/*weedy.qmd"
+      - "gallery/ng/*weedy.qmd"
+    type: grid
+    fields:  [image, date, title, subtitle, description, categories]
+    #categories: true
+    grid-item-border: true
+    sort-ui: true
+    filter-ui: true
+    
+  - id: stresstolerant
+    contents: 
+      - "gallery/jr/*stresst.qmd"
+      - "gallery/ba/*stresst.qmd"
+      - "gallery/mp/*stresst.qmd"
+      - "gallery/ng/*stresst.qmd"
+    type: grid
+    fields:  [image, date, title, subtitle, description, categories]
+    #categories: true
+    grid-item-border: true
+    sort-ui: true
+    filter-ui: true
+---
+## Competitif
+:::{#Competitif}
+:::
+
+## Generalist
+
+:::{#Generalist}
+:::
+
+## Weedy
+:::{#Weedy}
+:::
+
+## Stress Tolerant
+:::{#stresstolerant}
+:::
+
+

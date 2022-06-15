@@ -24,7 +24,7 @@ website:
       - href: index.qmd
         text: Home
       - about.qmd
-      - href: Lieux.qmd
+      - href: intro_gallery.qmd
         text: Sites géographiques
         
   page-footer: 
@@ -46,7 +46,8 @@ website:
         href: https://fr.linkedin.com/company/ird_2
 format:
   html:
-  
+    link-external-icon: true
+    link-external-newwindow: true
     
     theme:
       light: [flatly, custom.scss]

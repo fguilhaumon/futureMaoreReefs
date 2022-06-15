@@ -1,0 +1,130 @@
+---
+title: "Types fonctionnels"
+title-block-banner: true
+title-block-banner-color: rgb(255, 255, 255, 1)
+listing:
+  - id: Aeroport
+  
+    contents: 
+      - "gallery/ae/ae*"
+    type: grid
+    fields:  [image, date, title, subtitle, description, categories]
+    #categories: true
+    grid-item-border: true
+    sort-ui: true
+    filter-ui: true
+    
+  - id: Ngouja
+    contents: 
+      - "gallery/ng/ng*"
+      
+    type: grid
+    fields:  [image, date, title, subtitle, description, categories]
+    #categories: true
+    grid-item-border: true
+    sort-ui: true
+    filter-ui: true
+  
+  - id: Ile-Blanche
+    contents: 
+      - "gallery/ib/ib*"
+      
+    type: grid
+    fields:  [image, date, title, subtitle, description, categories]
+    #categories: true
+    grid-item-border: true
+    sort-ui: true
+    filter-ui: true
+    
+  - id: Surprise
+    contents: 
+      - "gallery/su/su*"
+      
+    type: grid
+    fields:  [image, date, title, subtitle, description, categories]
+    #categories: true
+    grid-item-border: true
+    sort-ui: true
+    filter-ui: true
+  - id: Joly-Roger
+  
+    contents: 
+      - "gallery/jr/jr*"
+     
+    type: grid
+    fields:  [image, date, title, subtitle, description, categories]
+    categories: true
+    grid-item-border: true
+    sort-ui: true
+    filter-ui: true
+    
+  - id: Musical-Plage
+    contents: 
+      - "gallery/mp/mp*"
+      
+    type: grid
+    fields:  [image, date, title, subtitle, description, categories]
+    #categories: true
+    grid-item-border: true
+    sort-ui: true
+    filter-ui: true
+  
+  - id: Sakouli
+    contents: 
+      - "gallery/sa/sa*"
+      
+    type: grid
+    fields:  [image, date, title, subtitle, description, categories]
+    #categories: true
+    grid-item-border: true
+    sort-ui: true
+    filter-ui: true
+    
+  - id: Bandrele
+    contents: 
+      - "gallery/ba/ba*"
+      
+    type: grid
+    fields:  [image, date, title, subtitle, description, categories]
+    #categories: true
+    grid-item-border: true
+    sort-ui: true
+    filter-ui: true
+---
+
+
+
+## Aeroport
+:::{#Aeroport}
+:::
+
+## Ngouja
+
+:::{#Ngouja}
+:::
+
+## Ile-Blanche
+:::{#Ile-Blanche}
+:::
+
+## Surprise
+:::{#Surprise}
+:::
+
+## Joly-Roger
+:::{#Joly-Roger}
+:::
+
+## Musical-Plage
+:::{#Musical-Plage}
+:::
+
+## Sakouli
+:::{#Sakouli}
+:::
+
+## Bandrele
+:::{#Bandrele}
+:::
+
+
