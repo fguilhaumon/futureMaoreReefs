@@ -1,5 +1,5 @@
 ---
-title: "Types fonctionnels"
+title: "Sites géographiques"
 title-block-banner: true
 title-block-banner-color: rgb(255, 255, 255, 1)
 listing:
@@ -8,10 +8,10 @@ listing:
     contents: 
       - "gallery/ae/ae*"
     type: grid
-    fields:  [image, date, title, subtitle, description, categories]
+    fields:  [image, title, subtitle, description, categories]
     #categories: true
     grid-item-border: true
-    sort-ui: true
+    sort-ui: [title, subtitle]
     filter-ui: true
     
   - id: Ngouja
@@ -19,10 +19,10 @@ listing:
       - "gallery/ng/ng*"
       
     type: grid
-    fields:  [image, date, title, subtitle, description, categories]
+    fields:  [image, title, subtitle, description, categories]
     #categories: true
     grid-item-border: true
-    sort-ui: true
+    sort-ui: [title, subtitle]
     filter-ui: true
   
   - id: Ile-Blanche
@@ -30,10 +30,10 @@ listing:
       - "gallery/ib/ib*"
       
     type: grid
-    fields:  [image, date, title, subtitle, description, categories]
+    fields:  [image, title, subtitle, description, categories]
     #categories: true
     grid-item-border: true
-    sort-ui: true
+    sort-ui: [title, subtitle]
     filter-ui: true
     
   - id: Surprise
@@ -41,10 +41,10 @@ listing:
       - "gallery/su/su*"
       
     type: grid
-    fields:  [image, date, title, subtitle, description, categories]
+    fields:  [image, title, subtitle, description, categories]
     #categories: true
     grid-item-border: true
-    sort-ui: true
+    sort-ui: [title, subtitle]
     filter-ui: true
   - id: Joly-Roger
   
@@ -52,10 +52,10 @@ listing:
       - "gallery/jr/jr*"
      
     type: grid
-    fields:  [image, date, title, subtitle, description, categories]
+    fields:  [image, title, subtitle, description, categories]
     categories: true
     grid-item-border: true
-    sort-ui: true
+    sort-ui: [title, subtitle]
     filter-ui: true
     
   - id: Musical-Plage
@@ -63,10 +63,10 @@ listing:
       - "gallery/mp/mp*"
       
     type: grid
-    fields:  [image, date, title, subtitle, description, categories]
+    fields:  [image, title, subtitle, description, categories]
     #categories: true
     grid-item-border: true
-    sort-ui: true
+    sort-ui: [title, subtitle]
     filter-ui: true
   
   - id: Sakouli
@@ -74,10 +74,10 @@ listing:
       - "gallery/sa/sa*"
       
     type: grid
-    fields:  [image, date, title, subtitle, description, categories]
+    fields:  [image, title, subtitle, description, categories]
     #categories: true
     grid-item-border: true
-    sort-ui: true
+    sort-ui: [title, subtitle]
     filter-ui: true
     
   - id: Bandrele
@@ -85,46 +85,51 @@ listing:
       - "gallery/ba/ba*"
       
     type: grid
-    fields:  [image, date, title, subtitle, description, categories]
+    fields:  [image, title, subtitle, description, categories]
     #categories: true
     grid-item-border: true
-    sort-ui: true
+    sort-ui: [title, subtitle]
     filter-ui: true
 ---
 
-
-
 ## Aeroport
-:::{#Aeroport}
+
+::: {#Aeroport}
 :::
 
 ## Ngouja
 
-:::{#Ngouja}
+::: {#Ngouja}
 :::
 
 ## Ile-Blanche
-:::{#Ile-Blanche}
+
+::: {#Ile-Blanche}
 :::
 
 ## Surprise
-:::{#Surprise}
+
+::: {#Surprise}
 :::
 
 ## Joly-Roger
-:::{#Joly-Roger}
+
+::: {#Joly-Roger}
 :::
 
 ## Musical-Plage
-:::{#Musical-Plage}
+
+::: {#Musical-Plage}
 :::
 
 ## Sakouli
-:::{#Sakouli}
+
+::: {#Sakouli}
 :::
 
 ## Bandrele
-:::{#Bandrele}
+
+::: {#Bandrele}
 :::
 
-
+<a href="listing_type.html"> Naviguer par type </a>

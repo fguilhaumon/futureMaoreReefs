@@ -6,22 +6,20 @@ title: "FutureMaoreReefs"
 
 <!--<div class="fond">-->
 
-<body>
-
 <figure class="fond">
 
-<img src="images/fond.jpg" class="fond"/>
+<img src="images/logo2_affichage.png" class="fond"/>
 
 <figcaption>
-
+<!--
 <p>
 
 Une photo de coraux
 
 </p>
-
+-->
 </figcaption>
-
+<!--
 <div>
 
 <img src="images/Banniere.png" class="banniere"/>
@@ -33,14 +31,14 @@ Working Together
 </h1>
 
 </div>
-
+-->
 **Prototype de galleries coralliennes**
 
 </figure>
 
 <form action="intro_gallery.html">
 
-<button type="submit" id="bouton" class="btn btn-warning btn btn-outline-warning">
+<button type="submit" id="bouton" class="btn   btn-outline-info">
 
 Partez à l'exploration...
 

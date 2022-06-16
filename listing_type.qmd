@@ -11,10 +11,10 @@ listing:
       - "gallery/mp/*comp.qmd"
       - "gallery/ng/*comp.qmd"
     type: grid
-    fields:  [image, date, title, subtitle, description, categories]
+    fields:  [image, title, subtitle, description, categories]
     categories: true
     grid-item-border: true
-    sort-ui: true
+    sort-ui: [title, subtitle]
     filter-ui: true
     
   - id: Generalist
@@ -24,10 +24,10 @@ listing:
       - "gallery/mp/*generalist.qmd"
       - "gallery/ng/*generalist.qmd"
     type: grid
-    fields:  [image, date, title, subtitle, description, categories]
+    fields:  [image, title, subtitle, description, categories]
     #categories: true
     grid-item-border: true
-    sort-ui: true
+    sort-ui: [title, subtitle]
     filter-ui: true
   
   - id: Weedy
@@ -37,10 +37,10 @@ listing:
       - "gallery/mp/*weedy.qmd"
       - "gallery/ng/*weedy.qmd"
     type: grid
-    fields:  [image, date, title, subtitle, description, categories]
+    fields:  [image, title, subtitle, description, categories]
     #categories: true
     grid-item-border: true
-    sort-ui: true
+    sort-ui: [title, subtitle]
     filter-ui: true
     
   - id: stresstolerant
@@ -50,27 +50,32 @@ listing:
       - "gallery/mp/*stresst.qmd"
       - "gallery/ng/*stresst.qmd"
     type: grid
-    fields:  [image, date, title, subtitle, description, categories]
+    fields:  [image, title, subtitle, description, categories]
     #categories: true
     grid-item-border: true
-    sort-ui: true
+    sort-ui: [title, subtitle]
     filter-ui: true
 ---
+
 ## Competitif
-:::{#Competitif}
+
+::: {#Competitif}
 :::
 
 ## Generalist
 
-:::{#Generalist}
+::: {#Generalist}
 :::
 
 ## Weedy
-:::{#Weedy}
+
+::: {#Weedy}
 :::
 
 ## Stress Tolerant
-:::{#stresstolerant}
+
+::: {#stresstolerant}
 :::
 
 
+<a href="listing_site.html"> Naviguer par site géographique </a>

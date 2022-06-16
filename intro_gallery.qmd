@@ -1,12 +1,20 @@
 ---
-title: "Sites d'études"
+title: "Gallerie Coralliennes"
+title-block-banner: true
+title-block-banner-color: rgb(255, 255, 255, 1)
 ---
 
-# Carte des diffférents sites
 
-Lorem Ipsum......
+### Introduction
+Cette page permet de se diriger vers des modèles 3D de colonies coralliennes. 
+Ces modèles sont réalisés à partir de la photogrammétrie. C'est une pratique...
 
-### Cliquez sur les marqueurs pour choisir votre site
+
+## Carte des différents sites
+
+Cliquez sur les marqueurs pour choisir votre site
+
+
 
 ```{r}
 #| echo: false
@@ -21,24 +29,54 @@ m <-leaflet(metadonnees)%>%
   addMarkers(~longitude, ~latitude, popup = ~url)
 m
 ```
-
+<!--
 ### Site
 
 | Site          | Description | Image | Allez-y!                                         |
-|------------|------------|------------|-----------------------------------|
-| Aeroport      | Lorem Ipsum |       | [Aeroport](listing_site.html#aeroport)      |
-| Ile Blanche   | Lorem Ipsum |       | [Ile Blanche](listing_site.html#ile-blanche)   |
-| Surprise      | Lorem Ipsum |       | [Surprise](listing_site.html#surprise)      |
-| Ngouja        | Lorem Ipsum |       | [Ngouja](listing_site.html#ngouja)        |
-| Joly Roger    | Lorem Ipsum |       | [Joly Roger](listing_site.html#joly-roger)    |
-| Sakouli       | Lorem Ipsum |       | [Sakouli](listing_site.html#sakouli)       |
-| Bandrele      | Lorem Ipsum |       | [Bandrele](listing_site.html#bandrele)      |
+|--------------|--------------|--------------|------------------------------|
+| Aeroport      | Lorem Ipsum |       | [Aeroport](listing_site.html#aeroport)           |
+| Ile Blanche   | Lorem Ipsum |       | [Ile Blanche](listing_site.html#ile-blanche)     |
+| Surprise      | Lorem Ipsum |       | [Surprise](listing_site.html#surprise)           |
+| Ngouja        | Lorem Ipsum |       | [Ngouja](listing_site.html#ngouja)               |
+| Joly Roger    | Lorem Ipsum |       | [Joly Roger](listing_site.html#joly-roger)       |
+| Sakouli       | Lorem Ipsum |       | [Sakouli](listing_site.html#sakouli)             |
+| Bandrele      | Lorem Ipsum |       | [Bandrele](listing_site.html#bandrele)           |
 | Musical Plage | Lorem Ipsum |       | [Musical Plage](listing_site.html#musical-plage) |
+-->
 
-### Par choix de fonctionnalités
+
+
+
+## Par choix de fonctionnalités
+
+Les coraux ont différentes fonctions, en effet ils sont plus ou moins résistants
+aux intempéries, proposent une certaine complexité structurale...
+
+
 <ul>
-<li> <a href="listing_type.html#competitif">Competitif</a> </li>
-<li> <a href="listing_type.html#generalist">Generaliste</a> </li>
-<li> <a href="listing_type.html#weedy">Weedy</a> </li>
-<li> <a href="listing_type.html#stress-tolerant">Stress Tolerant</a> </li>
+
+<li>
+
+<a href="listing_type.html#competitif">Competitif</a>
+
+</li>
+
+<li>
+
+<a href="listing_type.html#generalist">Generaliste</a>
+
+</li>
+
+<li>
+
+<a href="listing_type.html#weedy">Weedy</a>
+
+</li>
+
+<li>
+
+<a href="listing_type.html#stress-tolerant">Stress Tolerant</a>
+
+</li>
+
 </ul>

@@ -11,7 +11,8 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position:  top;
-  background-size: 10% 70%;
+  width: 100%;
+	height: 70%;
   
 }
 .banniere {

@@ -103,8 +103,8 @@
       "/gallery/ba/ba_session1_acroporaMuricata_comp.html",
       "/gallery/mp/mp_session1_acroporaMuricata_comp.html",
       "/gallery/ng/ng_session1_acroporaMuricata_comp.html",
-      "/gallery/ba/ba_session1_acroporaMuricata_generalist.html",
       "/gallery/ng/ng_session1_acroporaMuricata_generalist.html",
+      "/gallery/ba/ba_session1_acroporaMuricata_generalist.html",
       "/gallery/jr/jr_session1_acroporaMuricata_weedy.html",
       "/gallery/ba/ba_session1_acroporaMuricata_weedy.html",
       "/gallery/mp/mp_session1_acroporaMuricata_weedy.html",
@@ -114,8 +114,8 @@
   {
     "listing": "/listing_site.html",
     "items": [
-      "/gallery/ng/ng_session1_acroporaMuricata_comp.html",
       "/gallery/ng/ng_session1_acroporaMuricata_generalist.html",
+      "/gallery/ng/ng_session1_acroporaMuricata_comp.html",
       "/gallery/jr/jr_session1_acroporaMuricata_comp.html",
       "/gallery/jr/jr_session1_acroporaMuricata_weedy.html",
       "/gallery/mp/mp_session1_acroporaMuricata_comp.html",

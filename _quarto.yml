@@ -3,8 +3,9 @@ project:
   preview: 
     browser: true
 website:
+  favicon: images/favicon2.png
   title: "FutureMaoreReefs"
-  
+  reader-mode: true
   search:
     location: navbar
     type: textbox
@@ -15,7 +16,9 @@ website:
     foreground: rgb(5,7,9)
     search : true
     background: rgb(219, 119, 53, 1)
-    logo: images/Logo.png
+    logo: images/Logo_resize_2.png
+    title: false
+    collapse-below: lg
     left:
       - icon: apple
         href: https://en.ird.fr/node/10866
@@ -25,7 +28,7 @@ website:
         text: Home
       - about.qmd
       - href: intro_gallery.qmd
-        text: Sites géographiques
+        text: Galleries Coralliennes
         
   page-footer: 
     border: true
@@ -46,12 +49,12 @@ website:
         href: https://fr.linkedin.com/company/ird_2
 format:
   html:
+    code-link: true
     link-external-icon: true
     link-external-newwindow: true
-    
     theme:
-      light: [flatly, custom.scss]
-      dark: darkly
+      light: [united, custom.scss]
+      dark: [united, darkly]
     css: styles.css
     toc: true
 editor: visual
