@@ -1,0 +1,16 @@
+---
+title: "acropora humilis"
+subtitle: "sous titre"
+image: Image
+description: Lorem Ipsum
+categories: ["competitive", "Aeroport", "session1"]
+---
+
+```{r}
+#| echo: false
+library(leaflet)
+m <- leaflet() %>%
+addTiles() %>% 
+addMarkers(lng=45.27948, lat=-12.82449, popup="Aeroport")
+m  # Print the map
+```

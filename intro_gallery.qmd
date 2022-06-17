@@ -4,17 +4,13 @@ title-block-banner: true
 title-block-banner-color: rgb(255, 255, 255, 1)
 ---
 
-
 ### Introduction
-Cette page permet de se diriger vers des modèles 3D de colonies coralliennes. 
-Ces modèles sont réalisés à partir de la photogrammétrie. C'est une pratique...
 
+Cette page permet de se diriger vers des modèles 3D de colonies coralliennes. Ces modèles sont réalisés à partir de la photogrammétrie. C'est une pratique...
 
 ## Carte des différents sites
 
 Cliquez sur les marqueurs pour choisir votre site
-
-
 
 ```{r}
 #| echo: false
@@ -29,6 +25,8 @@ m <-leaflet(metadonnees)%>%
   addMarkers(~longitude, ~latitude, popup = ~url)
 m
 ```
+
+```{=html}
 <!--
 ### Site
 
@@ -43,15 +41,10 @@ m
 | Bandrele      | Lorem Ipsum |       | [Bandrele](listing_site.html#bandrele)           |
 | Musical Plage | Lorem Ipsum |       | [Musical Plage](listing_site.html#musical-plage) |
 -->
-
-
-
-
+```
 ## Par choix de fonctionnalités
 
-Les coraux ont différentes fonctions, en effet ils sont plus ou moins résistants
-aux intempéries, proposent une certaine complexité structurale...
-
+Les coraux ont différentes fonctions, en effet ils sont plus ou moins résistants aux intempéries, proposent une certaine complexité structurale...
 
 <ul>
 

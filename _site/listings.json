@@ -45,7 +45,8 @@
   {
     "listing": "/gallery/ae/listingpages_ae.html",
     "items": [
-      "/gallery/ae/page1_ae.html"
+      "/gallery/ae/page1_ae.html",
+      "/gallery/ae/ae_session1_acropora humilis_competitive.html"
     ]
   },
   {
@@ -114,6 +115,7 @@
   {
     "listing": "/listing_site.html",
     "items": [
+      "/gallery/ae/ae_session1_acropora humilis_competitive.html",
       "/gallery/ng/ng_session1_acroporaMuricata_generalist.html",
       "/gallery/ng/ng_session1_acroporaMuricata_comp.html",
       "/gallery/jr/jr_session1_acroporaMuricata_comp.html",

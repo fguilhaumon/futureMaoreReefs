@@ -1,9 +1,9 @@
-site,profondeur,latitude,longitude,url
-Aeroport,"-4,4",-12.82449,45.27948,"<a href=""listing_site.html#aeroport""> Aeroport </a>"
-ile blanche,"-2,4",-12.7157,45.17146,"<a href=""listing_site.html#ile-blanche""> Ile blanche </a>"
-surprise,"-2,1",-12.63017,45.15103,"<a href=""listing_site.html#surprise""> Surprise </a>"
-Ngouja,"-3,112",-12.965066,45.085251,"<a href=""listing_site.html#ngouja""> Ngouja </a>"
-Joly Roger,-2,-12.890095,45.215116,"<a href=""listing_site.html#joly-roger""> Joly roger </a>"
-Sakouli,"-1,813",-12.889719,45.21545,"<a href=""listing_site.html#sakouli""> Sakouli</a>"
-Bandrele,"-2,633",-12.905336,45.203535,"<a href=""listing_site.html#bandrele""> Bandrele </a>"
-Musical Plage,ND,-12.92022,45.18553,"<a href=""listing_site.html#musical-plage""> Musical Plage </a>"
+site,code,profondeur,latitude,longitude,url
+Aeroport,ae,"-4,4",-12.82449,45.27948,"<a href=""listing_site.html#aeroport""> Aeroport </a>"
+Ile Blanche,ib,"-2,4",-12.7157,45.17146,"<a href=""listing_site.html#ile-blanche""> Ile blanche </a>"
+Surprise,su,"-2,1",-12.63017,45.15103,"<a href=""listing_site.html#surprise""> Surprise </a>"
+Ngouja,ng,"-3,112",-12.965066,45.085251,"<a href=""listing_site.html#ngouja""> Ngouja </a>"
+Joly Roger,jr,-2,-12.890095,45.215116,"<a href=""listing_site.html#joly-roger""> Joly roger </a>"
+Sakouli,sa,"-1,813",-12.889719,45.21545,"<a href=""listing_site.html#sakouli""> Sakouli</a>"
+Bandrele,ba,"-2,633",-12.905336,45.203535,"<a href=""listing_site.html#bandrele""> Bandrele </a>"
+Musical Plage,mp,NA,-12.92022,45.18553,"<a href=""listing_site.html#musical-plage""> Musical Plage </a>"
