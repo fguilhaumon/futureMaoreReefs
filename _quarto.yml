@@ -1,61 +1,22 @@
 project:
   type: website
-  preview: 
-    browser: true
+
 website:
-  favicon: images/favicon2.png
-  title: "FutureMaoreReefs"
-  reader-mode: true
-  search:
-    location: navbar
-    type: textbox
-    
+  title: "Future Maore reefs"
+  image: "assets/images/logo_text.png"
+  favicon: "favicon.png"
   navbar:
-    
-    pinned: true
-    foreground: rgb(5,7,9)
-    search : true
-    background: rgb(219, 119, 53, 1)
-    logo: images/Logo_resize_2.png
+    background: info
+    logo: "assets/images/logo_text.png"
     title: false
-    collapse-below: lg
     left:
-      - icon: apple
-        href: https://en.ird.fr/node/10866
-      - icon: archive
-        href: https://quarto.org/docs/websites/
       - href: index.qmd
-        text: Home
-      - about.qmd
+        text: Acceuil
       - href: intro_gallery.qmd
-        text: Galleries Coralliennes
-        
-  page-footer: 
-    border: true
-    background: rgb(5,7,9)
-    foreground: rgb(255,255,255)
-    left:
-      - text: ""
-    center: 
-      - text: "Contactez-nous"
-    right:
-      - icon: twitter
-        href: https://twitter.com/ird_fr
-      - icon: instagram
-        href: https://icons.getbootstrap.com/
-      - icon:  facebook
-        href: https://www.facebook.com/IRD.fr/
-      - icon:  linkedin
-        href: https://fr.linkedin.com/company/ird_2
+        text: Coraux
+
 format:
   html:
-    code-link: true
-    link-external-icon: true
-    link-external-newwindow: true
-    theme:
-      light: [united, custom.scss]
-      dark: [united, darkly]
+    theme: journal
     css: styles.css
     toc: true
-editor: visual
-

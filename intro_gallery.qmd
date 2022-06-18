@@ -1,24 +1,21 @@
 ---
-title: "Gallerie Coralliennes"
-title-block-banner: true
-title-block-banner-color: rgb(255, 255, 255, 1)
+title: "Modèles 3D de coraux"
 ---
 
-### Introduction
+Retrouvez ici deux entrées vers notre gallerie de modèles 3D de colonnies coralliennes. Vous pouvez filtrer les colonnies :
 
-Cette page permet de se diriger vers des modèles 3D de colonies coralliennes. Ces modèles sont réalisés à partir de la photogrammétrie. C'est une pratique...
+- par site d'échantillonage ([Aéroport](listing_site.html#aeroport), [Île Blanche](listing_site.html#ile-blanche)) en vous servant de la carte ci-dessous
 
-## Carte des différents sites
+- par type de coraux en sélectionnant une icône plus bas.
 
-Cliquez sur les marqueurs pour choisir votre site
+## Sites d'échantillonages à Mayotte
 
 ```{r}
 #| echo: false
 library(leaflet)
 library(htmltools)
-library(readr)
- metadonnees <- read_csv("metadonnees.csv", show_col_types = FALSE)
- show_col_types = FALSE
+#library(readr)
+ metadonnees <- read.csv("metadonnees.csv")
  #metadonnees$longitude<-as.numeric(metadonnees$longitude)
 m <-leaflet(metadonnees)%>% 
   addTiles() %>%
@@ -42,34 +39,20 @@ m
 | Musical Plage | Lorem Ipsum |       | [Musical Plage](listing_site.html#musical-plage) |
 -->
 ```
-## Par choix de fonctionnalités
 
-Les coraux ont différentes fonctions, en effet ils sont plus ou moins résistants aux intempéries, proposent une certaine complexité structurale...
+## Types de coraux
 
 <ul>
-
-<li>
-
-<a href="listing_type.html#competitif">Competitif</a>
-
-</li>
-
-<li>
-
-<a href="listing_type.html#generalist">Generaliste</a>
-
-</li>
-
-<li>
-
-<a href="listing_type.html#weedy">Weedy</a>
-
-</li>
-
-<li>
-
-<a href="listing_type.html#stress-tolerant">Stress Tolerant</a>
-
-</li>
-
+  <li>
+    <a href="listing_type.html#competitif">Compétitifs</a>
+  </li>
+  <li>
+    <a href="listing_type.html#generalist">Généralistes</a>
+  </li>
+  <li>
+    <a href="listing_type.html#weedy">Pionniers</a>
+  </li>
+  <li>
+    <a href="listing_type.html#stress-tolerant">Tolérants au stress</a>
+  </li>
 </ul>

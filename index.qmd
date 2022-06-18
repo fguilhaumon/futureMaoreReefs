@@ -1,49 +1,7 @@
 ---
-title: "FutureMaoreReefs"
-
-#backgroundcolor: primary
+title: ""
 ---
 
-<!--<div class="fond">-->
+Le projet de recherche **Future Maore Reefs** propose une approche pluri-disciplinaire et réuni de nombreux acteurs pour mieux comprendre comment pallier les effets du changement climatique et des activités anthropiques sur les récifs coralliens mahorais.
 
-<figure class="fond">
-
-<img src="images/logo2_affichage.png" class="fond"/>
-
-<figcaption>
-<!--
-<p>
-
-Une photo de coraux
-
-</p>
--->
-</figcaption>
-<!--
-<div>
-
-<img src="images/Banniere.png" class="banniere"/>
-
-<h1 class="title-wrapper">
-
-Working Together
-
-</h1>
-
-</div>
--->
-**Prototype de galleries coralliennes**
-
-</figure>
-
-<form action="intro_gallery.html">
-
-<button type="submit" id="bouton" class="btn   btn-outline-info">
-
-Partez à l'exploration...
-
-</button>
-
-</form>
-
-</body>
+![](assets/images/logo_round_complete_w600.png)
