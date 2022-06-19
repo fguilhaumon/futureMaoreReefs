@@ -1,7 +1,5 @@
 ---
-title: "Sites géographiques"
-title-block-banner: true
-title-block-banner-color: rgb(255, 255, 255, 1)
+title: "Sites d'échantillonnage à Mayotte"
 listing:
   - id: Aeroport
   
@@ -92,17 +90,17 @@ listing:
     filter-ui: true
 ---
 
-## Aeroport
+## Aéroport
 
 ::: {#Aeroport}
 :::
 
-## Ngouja
+## N'gouja
 
 ::: {#Ngouja}
 :::
 
-## Ile-Blanche
+## Île-Blanche
 
 ::: {#Ile-Blanche}
 :::
@@ -117,7 +115,7 @@ listing:
 ::: {#Joly-Roger}
 :::
 
-## Musical-Plage
+## Musicale-Plage
 
 ::: {#Musical-Plage}
 :::
@@ -132,4 +130,4 @@ listing:
 ::: {#Bandrele}
 :::
 
-<a href="listing_type.html"> Naviguer par type </a>
+<a href="listing_type.html"> Sélectionniez plutôt les coraux par type focntionnel </a>

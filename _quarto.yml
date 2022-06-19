@@ -13,14 +13,14 @@ website:
     left:
       - href: index.qmd
         text: "Acceuil"
-      - href: intro_gallery.qmd
+      - href: "gallery/intro_gallery.qmd"
         text: "Coraux en 3D"
-
+        
 format:
   html:
     theme: journal
     css: styles.css
-    toc: true
+    toc: false
     max-width: 2000px
 
 freeze: auto

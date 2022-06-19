@@ -1,9 +1,7 @@
 ---
 title: "Types fonctionnels"
-title-block-banner: true
-title-block-banner-color: rgb(255, 255, 255, 1)
 listing:
-  - id: Competitif
+  - id: Competitifs
   
     contents: 
       - "gallery/jr/*comp.qmd"
@@ -17,7 +15,7 @@ listing:
     sort-ui: [title, subtitle]
     filter-ui: true
     
-  - id: Generalist
+  - id: Generalistes
     contents: 
       - "gallery/jr/*generalist.qmd"
       - "gallery/ba/*generalist.qmd"
@@ -30,7 +28,7 @@ listing:
     sort-ui: [title, subtitle]
     filter-ui: true
   
-  - id: Weedy
+  - id: Pionniers
     contents: 
       - "gallery/jr/*weedy.qmd"
       - "gallery/ba/*weedy.qmd"
@@ -43,7 +41,7 @@ listing:
     sort-ui: [title, subtitle]
     filter-ui: true
     
-  - id: stresstolerant
+  - id: Robustes
     contents: 
       - "gallery/jr/*stresst.qmd"
       - "gallery/ba/*stresst.qmd"
@@ -57,24 +55,24 @@ listing:
     filter-ui: true
 ---
 
-## Competitif
+## Coraux compétitifs
 
-::: {#Competitif}
+::: {#Competitifs}
 :::
 
-## Generalist
+## Coraux généralistes
 
-::: {#Generalist}
+::: {#Generalistes}
 :::
 
-## Weedy
+## Coraux Pionniers
 
-::: {#Weedy}
+::: {#Pionniers}
 :::
 
-## Stress Tolerant
+## Coraux Robustes
 
-::: {#stresstolerant}
+::: {#robustes}
 :::
 
-<a href="listing_site.html"> Naviguer par site géographique </a>
+<a href="listing_site.html"> Sélectionniez plutôt les coraux par site d'échantillonnage</a>
