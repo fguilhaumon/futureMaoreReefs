@@ -2,6 +2,7 @@
 title: "Vidéos"
 editor: source
 sidebar: false
+lang: fr
 ---
 
 Regardez le replay de l'émission *Positive Outre-mer*, "Préserver le lagon à tout prix" diffusée le 5 mars 2022 sur la chaîne [Public Sénat](https://www.publicsenat.fr/emission/positive-outre-mer/preserver-le-lagon-a-tout-prix-192241).

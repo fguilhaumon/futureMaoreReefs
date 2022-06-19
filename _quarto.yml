@@ -50,5 +50,6 @@ format:
     theme: pulse
     css: styles.css
     toc: false
+    lang: fr
 
 freeze: auto
