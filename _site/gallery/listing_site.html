@@ -63,7 +63,7 @@
       const options = {
         valueNames: ['listing-image','listing-title','listing-subtitle','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] }],
         
-        searchColumns: ["listing-categories"],
+        searchColumns: ["listing-title","listing-author","listing-image","listing-description","listing-categories"],
       };
 
       window['quarto-listings'] = window['quarto-listings'] || {};
@@ -85,7 +85,7 @@
       const options = {
         valueNames: ['listing-image','listing-title','listing-subtitle','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] }],
         
-        searchColumns: ["listing-categories"],
+        searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description","listing-categories"],
       };
 
       window['quarto-listings'] = window['quarto-listings'] || {};
@@ -151,7 +151,7 @@
       const options = {
         valueNames: ['listing-image','listing-title','listing-subtitle','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] }],
         
-        searchColumns: ["listing-categories"],
+        searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description","listing-categories"],
       };
 
       window['quarto-listings'] = window['quarto-listings'] || {};
@@ -173,7 +173,7 @@
       const options = {
         valueNames: ['listing-image','listing-title','listing-subtitle','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] }],
         
-        searchColumns: ["listing-categories"],
+        searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description","listing-categories"],
       };
 
       window['quarto-listings'] = window['quarto-listings'] || {};
@@ -217,7 +217,7 @@
       const options = {
         valueNames: ['listing-image','listing-title','listing-subtitle','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] }],
         
-        searchColumns: ["listing-categories"],
+        searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description","listing-categories"],
       };
 
       window['quarto-listings'] = window['quarto-listings'] || {};
@@ -247,7 +247,7 @@
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html">Acceuil</a>
+    <a class="nav-link" href="../index.html">Accueil</a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../gallery/intro_gallery.html">Coraux en 3D</a>
@@ -263,7 +263,7 @@
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(0)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-cloud"><div class="category" data-category="Aeroport"><span class="quarto-category-count category-cloud-1">Aeroport</span></div><div class="category" data-category="Bandrele"><span class="quarto-category-count category-cloud-2">Bandrele</span></div><div class="category" data-category="Competitif"><span class="quarto-category-count category-cloud-3">Competitif</span></div><div class="category" data-category="Generaliste"><span class="quarto-category-count category-cloud-2">Generaliste</span></div><div class="category" data-category="Joly Roger"><span class="quarto-category-count category-cloud-2">Joly Roger</span></div><div class="category" data-category="Musical plage"><span class="quarto-category-count category-cloud-2">Musical plage</span></div><div class="category" data-category="Ngouja"><span class="quarto-category-count category-cloud-2">Ngouja</span></div><div class="category" data-category="Session1"><span class="quarto-category-count category-cloud-6">Session1</span></div><div class="category" data-category="Stress Tolerant"><span class="quarto-category-count category-cloud-1">Stress Tolerant</span></div><div class="category" data-category="Weedy"><span class="quarto-category-count category-cloud-2">Weedy</span></div><div class="category" data-category="competitive"><span class="quarto-category-count category-cloud-1">competitive</span></div><div class="category" data-category="session1"><span class="quarto-category-count category-cloud-1">session1</span></div></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 <header id="title-block-header" class="quarto-title-block default">
@@ -292,7 +292,46 @@
     </div>
 </div>
 <div class="list grid quarto-listing-cols-3">
-
+<div class="g-col-1" data-index="0" data-categories="competitive,Aeroport,session1" data-listing-file-modified-sort="1655487527115" data-listing-reading-time-sort="0.065">
+<a href="../gallery/ae/ae_session1_acropora humilis_competitive.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="../gallery/ae/Image" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+acropora humilis
+</h5>
+<div class="card-subtitle listing-subtitle">
+sous titre
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('competitive'); return false;">
+competitive
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Aeroport'); return false;">
+Aeroport
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('session1'); return false;">
+session1
+</div>
+</div>
+<div class="card-text listing-description">
+Lorem Ipsum
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="1" data-listing-file-modified-sort="1655624030187">
+<a href="../gallery/ae/ae_session1_acropora humilis_competitive.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="card-img-bg" style="height: 150px;">
+&nbsp;
+</div>
+</div>
+</a>
+</div>
 </div>
 <div class="listing-no-matching d-none">
 No matching items
@@ -322,7 +361,68 @@ No matching items
     </div>
 </div>
 <div class="list grid quarto-listing-cols-3">
-
+<div class="g-col-1" data-index="0" data-categories="Generaliste,Ngouja,Session1" data-listing-date-sort="1651780800000" data-listing-file-modified-sort="1655487527115" data-listing-reading-time-sort="0.22">
+<a href="../gallery/ng/ng_session1_acroporaMuricata_generalist.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="../gallery/ng/cover/cover.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+AcroporaMuricata
+</h5>
+<div class="card-subtitle listing-subtitle">
+Localisation de l’espèce ex : Ile blanche
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Generaliste'); return false;">
+Generaliste
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Ngouja'); return false;">
+Ngouja
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Session1'); return false;">
+Session1
+</div>
+</div>
+<div class="card-text listing-description">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt nisi sapien, id ornare ligula fringilla at. In eget lacus eros. In quis laoreet magna. Duis…
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="1" data-categories="Competitif,Ngouja,Session1" data-listing-date-sort="1651780800000" data-listing-file-modified-sort="1655487527115" data-listing-reading-time-sort="0.22">
+<a href="../gallery/ng/ng_session1_acroporaMuricata_comp.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="../gallery/ng/cover/cover.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Type d’espèce
+</h5>
+<div class="card-subtitle listing-subtitle">
+Localisation de l’espèce ex : Ile blanche
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Competitif'); return false;">
+Competitif
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Ngouja'); return false;">
+Ngouja
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Session1'); return false;">
+Session1
+</div>
+</div>
+<div class="card-text listing-description">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt nisi sapien, id ornare ligula fringilla at. In eget lacus eros. In quis laoreet magna. Duis…
+</div>
+</div>
+</div>
+</a>
+</div>
 </div>
 <div class="listing-no-matching d-none">
 No matching items
@@ -412,7 +512,86 @@ No matching items
     </div>
 </div>
 <div class="list grid quarto-listing-cols-3">
-
+<div class="g-col-1" data-index="0" data-categories="Competitif,Joly Roger,Session1" data-listing-date-sort="1651780800000" data-listing-file-modified-sort="1655487527115" data-listing-reading-time-sort="0.22">
+<a href="../gallery/jr/jr_session1_acroporaMuricata_comp.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="../gallery/jr/cover/cover.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Type d’espèce
+</h5>
+<div class="card-subtitle listing-subtitle">
+Localisation de l’espèce ex : Ile blanche
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Competitif'); return false;">
+Competitif
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Joly Roger'); return false;">
+Joly Roger
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Session1'); return false;">
+Session1
+</div>
+</div>
+<div class="card-text listing-description">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt nisi sapien, id ornare ligula fringilla at. In eget lacus eros. In quis laoreet magna. Duis…
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="1" data-categories="Weedy,Joly Roger,Session1" data-listing-date-sort="1651780800000" data-listing-file-modified-sort="1655487527115" data-listing-reading-time-sort="0.22">
+<a href="../gallery/jr/jr_session1_acroporaMuricata_weedy.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="../gallery/jr/cover/cover.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Type d’espèce
+</h5>
+<div class="card-subtitle listing-subtitle">
+Localisation de l’espèce ex : Ile blanche
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Weedy'); return false;">
+Weedy
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Joly Roger'); return false;">
+Joly Roger
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Session1'); return false;">
+Session1
+</div>
+</div>
+<div class="card-text listing-description">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt nisi sapien, id ornare ligula fringilla at. In eget lacus eros. In quis laoreet magna. Duis…
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="2" data-listing-file-modified-sort="1655624032475">
+<a href="../gallery/jr/jr_session1_acroporaMuricata_comp.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="card-img-bg" style="height: 150px;">
+&nbsp;
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="3" data-listing-file-modified-sort="1655624032667">
+<a href="../gallery/jr/jr_session1_acroporaMuricata_weedy.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="card-img-bg" style="height: 150px;">
+&nbsp;
+</div>
+</div>
+</a>
+</div>
 </div>
 <div class="listing-no-matching d-none">
 No matching items
@@ -442,7 +621,99 @@ No matching items
     </div>
 </div>
 <div class="list grid quarto-listing-cols-3">
-
+<div class="g-col-1" data-index="0" data-categories="Competitif,Musical plage,Session1" data-listing-date-sort="1651780800000" data-listing-file-modified-sort="1655487527115" data-listing-reading-time-sort="0.22">
+<a href="../gallery/mp/mp_session1_acroporaMuricata_comp.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="../gallery/mp/cover/cover.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Type d’espèce
+</h5>
+<div class="card-subtitle listing-subtitle">
+Localisation de l’espèce ex : Ile blanche
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Competitif'); return false;">
+Competitif
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Musical plage'); return false;">
+Musical plage
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Session1'); return false;">
+Session1
+</div>
+</div>
+<div class="card-text listing-description">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt nisi sapien, id ornare ligula fringilla at. In eget lacus eros. In quis laoreet magna. Duis…
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="1" data-categories="Stress Tolerant,Musical plage,Session1" data-listing-date-sort="1651780800000" data-listing-file-modified-sort="1655487527115" data-listing-reading-time-sort="0.22">
+<a href="../gallery/mp/mp_session1_acroporaMuricata_stresst.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="../gallery/mp/cover/cover.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Type d’espèce
+</h5>
+<div class="card-subtitle listing-subtitle">
+Localisation de l’espèce ex : Ile blanche
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Stress Tolerant'); return false;">
+Stress Tolerant
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Musical plage'); return false;">
+Musical plage
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Session1'); return false;">
+Session1
+</div>
+</div>
+<div class="card-text listing-description">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt nisi sapien, id ornare ligula fringilla at. In eget lacus eros. In quis laoreet magna. Duis…
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="2" data-categories="Weedy,Musical plage,Session1" data-listing-date-sort="1651780800000" data-listing-file-modified-sort="1655487527115" data-listing-reading-time-sort="0.22">
+<a href="../gallery/mp/mp_session1_acroporaMuricata_weedy.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="../gallery/mp/cover/cover.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Type d’espèce
+</h5>
+<div class="card-subtitle listing-subtitle">
+Localisation de l’espèce ex : Ile blanche
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Weedy'); return false;">
+Weedy
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Musical plage'); return false;">
+Musical plage
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Session1'); return false;">
+Session1
+</div>
+</div>
+<div class="card-text listing-description">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt nisi sapien, id ornare ligula fringilla at. In eget lacus eros. In quis laoreet magna. Duis…
+</div>
+</div>
+</div>
+</a>
+</div>
 </div>
 <div class="listing-no-matching d-none">
 No matching items
@@ -502,13 +773,144 @@ No matching items
     </div>
 </div>
 <div class="list grid quarto-listing-cols-3">
-
+<div class="g-col-1" data-index="0" data-categories="Competitif,Bandrele,Session1" data-listing-date-sort="1651780800000" data-listing-file-modified-sort="1655487527115" data-listing-reading-time-sort="0.22">
+<a href="../gallery/ba/ba_session1_acroporaMuricata_comp.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="../gallery/ba/cover/cover.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Type d’espèce
+</h5>
+<div class="card-subtitle listing-subtitle">
+Localisation de l’espèce ex : Ile blanche
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Competitif'); return false;">
+Competitif
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Bandrele'); return false;">
+Bandrele
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Session1'); return false;">
+Session1
+</div>
+</div>
+<div class="card-text listing-description">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt nisi sapien, id ornare ligula fringilla at. In eget lacus eros. In quis laoreet magna. Duis…
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="1" data-categories="Generaliste,Bandrele,Session1" data-listing-date-sort="1651780800000" data-listing-file-modified-sort="1655487527115" data-listing-reading-time-sort="0.22">
+<a href="../gallery/ba/ba_session1_acroporaMuricata_generalist.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="../gallery/ba/cover/cover.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Type d’espèce
+</h5>
+<div class="card-subtitle listing-subtitle">
+Localisation de l’espèce ex : Ile blanche
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Generaliste'); return false;">
+Generaliste
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Bandrele'); return false;">
+Bandrele
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Session1'); return false;">
+Session1
+</div>
+</div>
+<div class="card-text listing-description">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt nisi sapien, id ornare ligula fringilla at. In eget lacus eros. In quis laoreet magna. Duis…
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="2" data-categories="Weedy,Bandrele,Session1" data-listing-date-sort="1651780800000" data-listing-file-modified-sort="1655487527115" data-listing-reading-time-sort="0.22">
+<a href="../gallery/ba/ba_session1_acroporaMuricata_weedy.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="../gallery/ba/cover/cover.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Type d’espèce
+</h5>
+<div class="card-subtitle listing-subtitle">
+Localisation de l’espèce ex : Ile blanche
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Weedy'); return false;">
+Weedy
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Bandrele'); return false;">
+Bandrele
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Session1'); return false;">
+Session1
+</div>
+</div>
+<div class="card-text listing-description">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt nisi sapien, id ornare ligula fringilla at. In eget lacus eros. In quis laoreet magna. Duis…
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="3" data-listing-file-modified-sort="1655624030911">
+<a href="../gallery/ba/ba_session1_acroporaMuricata_comp.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="card-img-bg" style="height: 150px;">
+&nbsp;
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="4" data-listing-file-modified-sort="1655624031099">
+<a href="../gallery/ba/ba_session1_acroporaMuricata_generalist.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="card-img-bg" style="height: 150px;">
+&nbsp;
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="5" data-listing-file-modified-sort="1655624031299">
+<a href="../gallery/ba/ba_session1_acroporaMuricata_weedy.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="card-img-bg" style="height: 150px;">
+&nbsp;
+</div>
+</div>
+</a>
+</div>
 </div>
 <div class="listing-no-matching d-none">
 No matching items
 </div>
 </div>
+<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <p><a href="listing_type.html"> Sélectionniez plutôt les coraux par type focntionnel </a></p>
+</div>
+</div>
 
 
 

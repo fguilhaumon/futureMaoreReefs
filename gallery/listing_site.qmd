@@ -2,20 +2,18 @@
 title: "Sites d'échantillonnage à Mayotte"
 listing:
   - id: Aeroport
-  
     contents: 
-      - "gallery/ae/ae*"
+      - "ae/ae*"
     type: grid
     fields:  [image, title, subtitle, description, categories]
-    #categories: true
+    categories: cloud
     grid-item-border: true
     sort-ui: [title, subtitle]
     filter-ui: true
     
   - id: Ngouja
     contents: 
-      - "gallery/ng/ng*"
-      
+      - "ng/ng*"
     type: grid
     fields:  [image, title, subtitle, description, categories]
     #categories: true
@@ -25,8 +23,7 @@ listing:
   
   - id: Ile-Blanche
     contents: 
-      - "gallery/ib/ib*"
-      
+      - "ib/ib*"
     type: grid
     fields:  [image, title, subtitle, description, categories]
     #categories: true
@@ -36,8 +33,7 @@ listing:
     
   - id: Surprise
     contents: 
-      - "gallery/su/su*"
-      
+      - "su/su*"
     type: grid
     fields:  [image, title, subtitle, description, categories]
     #categories: true
@@ -45,10 +41,8 @@ listing:
     sort-ui: [title, subtitle]
     filter-ui: true
   - id: Joly-Roger
-  
     contents: 
-      - "gallery/jr/jr*"
-     
+      - "jr/jr*"
     type: grid
     fields:  [image, title, subtitle, description, categories]
     categories: true
@@ -58,8 +52,7 @@ listing:
     
   - id: Musical-Plage
     contents: 
-      - "gallery/mp/mp*"
-      
+      - "mp/mp*"
     type: grid
     fields:  [image, title, subtitle, description, categories]
     #categories: true
@@ -69,8 +62,7 @@ listing:
   
   - id: Sakouli
     contents: 
-      - "gallery/sa/sa*"
-      
+      - "sa/sa*"
     type: grid
     fields:  [image, title, subtitle, description, categories]
     #categories: true
@@ -80,8 +72,7 @@ listing:
     
   - id: Bandrele
     contents: 
-      - "gallery/ba/ba*"
-      
+      - "ba/ba*"
     type: grid
     fields:  [image, title, subtitle, description, categories]
     #categories: true
@@ -130,4 +121,6 @@ listing:
 ::: {#Bandrele}
 :::
 
+::: callout-tip
 <a href="listing_type.html"> Sélectionniez plutôt les coraux par type focntionnel </a>
+:::

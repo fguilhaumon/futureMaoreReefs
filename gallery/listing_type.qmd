@@ -72,7 +72,10 @@ listing:
 
 ## Coraux Robustes
 
-::: {#robustes}
+::: {#Robustes}
 :::
 
-<a href="listing_site.html"> Sélectionniez plutôt les coraux par site d'échantillonnage</a>
+::: callout-tip
+[Sélectionniez plutôt les coraux par site d'échantillonnage](listing_site.html)
+:::
+

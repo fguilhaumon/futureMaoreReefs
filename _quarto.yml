@@ -15,7 +15,7 @@ website:
     title: false
     left:
       - href: index.qmd
-        text: "Acceuil"
+        text: "Accueil"
       - href: "gallery/intro_gallery.qmd"
         text: "Coraux en 3D"
   page-footer:
@@ -29,9 +29,8 @@ website:
 
 format:
   html:
-    theme: united
+    theme: pulse
     css: styles.css
     toc: false
-    max-width: 2000px
 
 freeze: auto
