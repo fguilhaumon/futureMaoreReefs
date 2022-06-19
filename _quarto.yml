@@ -5,18 +5,22 @@ website:
   title: "Future Maore reefs"
   image: "assets/images/logo_text.png"
   favicon: "favicon.png"
+  page-navigation: true
   navbar:
     background: info
     logo: "assets/images/logo_text.png"
     title: false
     left:
       - href: index.qmd
-        text: Acceuil
+        text: "Acceuil"
       - href: intro_gallery.qmd
-        text: Coraux
+        text: "Coraux en 3D"
 
 format:
   html:
     theme: journal
     css: styles.css
     toc: true
+    max-width: 2000px
+
+freeze: auto

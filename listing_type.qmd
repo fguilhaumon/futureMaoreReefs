@@ -77,5 +77,4 @@ listing:
 ::: {#stresstolerant}
 :::
 
-
 <a href="listing_site.html"> Naviguer par site géographique </a>

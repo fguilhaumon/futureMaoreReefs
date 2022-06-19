@@ -1,0 +1,18 @@
+{
+  "hash": "6f4e173dbc52588f9ef29a6edc15352a",
+  "result": {
+    "markdown": "---\ntitle : \"Type d'espèce\"\nsubtitle: \"Localisation de l'espèce ex : Ile blanche\"\nimage: cover/cover.jpg\nauthor: \"Joseph\"\ndescription: \"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt nisi sapien, id ornare ligula fringilla at. In eget lacus eros. In quis laoreet magna. Duis suscipit mollis porta. In hac habitasse platea dictumst. Morbi in tempor orci. Fusce augue purus, gravida et felis quis, tincidunt finibus erat.\"\ndate : 05/06/2022\ncategories : [\"Competitif\",\"Bandrele\",\"Session1\"]\nreading-time: true\n---\n\n# Colonie 1\n\n<iframe allowfullscreen width=\"640\" height=\"480\" loading=\"lazy\" frameborder=\"0\" src=\"https://p3d.in/e/G0Eog\" alt=\"Image 3D de corail\">\n\n</iframe>\n\n## Infos supplémentaires\n\n### Photogrammétrie, échantillon...\n\n::: {.cell}\n::: {.cell-output-display}\n```{=html}\n<div id=\"htmlwidget-0517d470fbe5b890e760\" style=\"width:100%;height:464px;\" class=\"leaflet html-widget\"></div>\n<script type=\"application/json\" data-for=\"htmlwidget-0517d470fbe5b890e760\">{\"x\":{\"options\":{\"crs\":{\"crsClass\":\"L.CRS.EPSG3857\",\"code\":null,\"proj4def\":null,\"projectedBounds\":null,\"options\":{}}},\"calls\":[{\"method\":\"addTiles\",\"args\":[\"https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png\",null,null,{\"minZoom\":0,\"maxZoom\":18,\"tileSize\":256,\"subdomains\":\"abc\",\"errorTileUrl\":\"\",\"tms\":false,\"noWrap\":false,\"zoomOffset\":0,\"zoomReverse\":false,\"opacity\":1,\"zIndex\":1,\"detectRetina\":false,\"attribution\":\"&copy; <a href=\\\"https://openstreetmap.org\\\">OpenStreetMap<\\/a> contributors, <a href=\\\"https://creativecommons.org/licenses/by-sa/2.0/\\\">CC-BY-SA<\\/a>\"}]},{\"method\":\"addMarkers\",\"args\":[-12.8901,45.085251,null,null,null,{\"interactive\":true,\"draggable\":false,\"keyboard\":true,\"title\":\"\",\"alt\":\"\",\"zIndexOffset\":0,\"opacity\":1,\"riseOnHover\":false,\"riseOffset\":250},\"Joly Roger\",null,null,null,null,{\"interactive\":false,\"permanent\":false,\"direction\":\"auto\",\"opacity\":1,\"offset\":[0,0],\"textsize\":\"10px\",\"textOnly\":false,\"className\":\"\",\"sticky\":true},null]}],\"limits\":{\"lat\":[-12.8901,-12.8901],\"lng\":[45.085251,45.085251]}},\"evals\":[],\"jsHooks\":[]}</script>\n```\n:::\n:::",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {
+      "include-in-header": [
+        "<script src=\"../../site_libs/htmlwidgets-1.5.4/htmlwidgets.js\"></script>\n<script src=\"../../site_libs/jquery-1.12.4/jquery.min.js\"></script>\n<link href=\"../../site_libs/leaflet-1.3.1/leaflet.css\" rel=\"stylesheet\" />\n<script src=\"../../site_libs/leaflet-1.3.1/leaflet.js\"></script>\n<link href=\"../../site_libs/leafletfix-1.0.0/leafletfix.css\" rel=\"stylesheet\" />\n<script src=\"../../site_libs/proj4-2.6.2/proj4.min.js\"></script>\n<script src=\"../../site_libs/Proj4Leaflet-1.0.1/proj4leaflet.js\"></script>\n<link href=\"../../site_libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css\" rel=\"stylesheet\" />\n<script src=\"../../site_libs/leaflet-binding-2.1.1/leaflet.js\"></script>\n"
+      ]
+    },
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": null
+  }
+}
