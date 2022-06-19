@@ -4,10 +4,10 @@ listing:
   - id: Competitifs
   
     contents: 
-      - "gallery/jr/*comp.qmd"
-      - "gallery/ba/*comp.qmd"
-      - "gallery/mp/*comp.qmd"
-      - "gallery/ng/*comp.qmd"
+      - "jr/*comp.qmd"
+      - "ba/*comp.qmd"
+      - "mp/*comp.qmd"
+      - "ng/*comp.qmd"
     type: grid
     fields:  [image, title, subtitle, description, categories]
     categories: true
@@ -17,10 +17,10 @@ listing:
     
   - id: Generalistes
     contents: 
-      - "gallery/jr/*generalist.qmd"
-      - "gallery/ba/*generalist.qmd"
-      - "gallery/mp/*generalist.qmd"
-      - "gallery/ng/*generalist.qmd"
+      - "jr/*generalist.qmd"
+      - "ba/*generalist.qmd"
+      - "mp/*generalist.qmd"
+      - "ng/*generalist.qmd"
     type: grid
     fields:  [image, title, subtitle, description, categories]
     #categories: true
@@ -30,10 +30,10 @@ listing:
   
   - id: Pionniers
     contents: 
-      - "gallery/jr/*weedy.qmd"
-      - "gallery/ba/*weedy.qmd"
-      - "gallery/mp/*weedy.qmd"
-      - "gallery/ng/*weedy.qmd"
+      - "jr/*weedy.qmd"
+      - "ba/*weedy.qmd"
+      - "mp/*weedy.qmd"
+      - "ng/*weedy.qmd"
     type: grid
     fields:  [image, title, subtitle, description, categories]
     #categories: true
@@ -43,10 +43,10 @@ listing:
     
   - id: Robustes
     contents: 
-      - "gallery/jr/*stresst.qmd"
-      - "gallery/ba/*stresst.qmd"
-      - "gallery/mp/*stresst.qmd"
-      - "gallery/ng/*stresst.qmd"
+      - "jr/*stresst.qmd"
+      - "ba/*stresst.qmd"
+      - "mp/*stresst.qmd"
+      - "ng/*stresst.qmd"
     type: grid
     fields:  [image, title, subtitle, description, categories]
     #categories: true

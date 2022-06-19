@@ -3,6 +3,5 @@
 .RData
 .Ruserdata
 
-.quarto/
-assets/videos/
+/assets/videos/
 /.quarto/

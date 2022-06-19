@@ -45,25 +45,25 @@ m
 
 <li>
 
-<a href="listing_type.html#competitif">Compétitifs</a>
+<a href="listing_type.html#competitifs">Compétitifs</a>
 
 </li>
 
 <li>
 
-<a href="listing_type.html#generalist">Généralistes</a>
+<a href="listing_type.html#generalistes">Généralistes</a>
 
 </li>
 
 <li>
 
-<a href="listing_type.html#weedy">Pionniers</a>
+<a href="listing_type.html#pionniers">Pionniers</a>
 
 </li>
 
 <li>
 
-<a href="listing_type.html#stress-tolerant">Robustes</a>
+<a href="listing_type.html#robustes">Robustes</a>
 
 </li>
 
