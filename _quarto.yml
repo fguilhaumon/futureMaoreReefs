@@ -17,8 +17,13 @@ website:
       - href: index.qmd
         text: "Accueil"
       - href: gallery/intro_gallery.qmd
-        text: "Coraux en 3D"
-
+        text: "Coraux 3D"
+      - text: Medias
+        menu: 
+          - href: podcasts.qmd
+            text: "Podcasts"
+          - href: videos.qmd
+            text: "Vidéos"
   sidebar:
     - id: coraux3D
       title: "Coraux en 3D"

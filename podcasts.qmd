@@ -1,0 +1,75 @@
+---
+title: "Podcasts"
+editor: source
+sidebar: false
+---
+
+Tout au long de l'année scolaire 2021-2022, les élèves de CM1/CM2A de l'école André Boulloche, à Bondy, ont participé au projet Future Maore Reefs. Ils ont été amenés à travailler avec deux classes à Mayotte, qui partagent ce projet.
+
+::: {.card .text-white .bg-info .mb-3}
+::: card-body
+::: {.h4 .card-tittle}
+Bonne Écoute !
+:::
+
+::: card-text
+Dans ces podcasts, les élèves vont vous transmettre ce qu'ils ont appris sur le corail, le réchauffement climatique et d'autres sujets !
+:::
+:::
+:::
+
+Comprenant six épisodes, cette série de créations sonores présente, avec leurs propres mots, les différentes thématiques traitées au long de l'année : le corail, le changement climatique, les techniques du bouturage et de la photogrammétrie ou encore « le monde demain » sont autant des sujets abordés.
+
+<h3>
+
+Découvrez tous les épisodes !
+
+</h3>
+
+```{=html}
+<script src="https://podcloud.fr/player-embed/helper.js"></script>
+```
+<iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen" frameborder="0" height="320" src="https://podcloud.fr/podcast/lecorailandreboulloche/episode/episode-1-le-corail/player" width="100%">
+
+</iframe>
+
+```{=html}
+<script src="https://podcloud.fr/player-embed/helper.js"></script>
+```
+<iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen" frameborder="0" height="320" src="https://podcloud.fr/podcast/lecorailandreboulloche/episode/episode-2-le-bouturage/player" width="100%">
+
+</iframe>
+
+```{=html}
+<script src="https://podcloud.fr/player-embed/helper.js"></script>
+```
+<iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen" frameborder="0" height="320" src="https://podcloud.fr/podcast/lecorailandreboulloche/episode/episode-3-la-photogrammetrie/player" width="100%">
+
+</iframe>
+
+```{=html}
+<script src="https://podcloud.fr/player-embed/helper.js"></script>
+```
+<iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen" frameborder="0" height="320" src="https://podcloud.fr/podcast/lecorailandreboulloche/episode/episode-4-le-rechauffement-climatique/player" width="100%">
+
+</iframe>
+
+```{=html}
+<script src="https://podcloud.fr/player-embed/helper.js"></script>
+```
+<iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen" frameborder="0" height="320" src="https://podcloud.fr/podcast/lecorailandreboulloche/episode/episode-5-visite-de-laquarium/player" width="100%">
+
+</iframe>
+
+```{=html}
+<script src="https://podcloud.fr/player-embed/helper.js"></script>
+```
+<iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen" frameborder="0" height="320" src="https://podcloud.fr/podcast/lecorailandreboulloche/episode/episode-6-le-monde-de-demain/player" width="100%">
+
+</iframe>
+
+</h3>
+
+::: callout-tip
+Consulter la news sur le site de l'IRD --> [https://www.ird.fr/les-recifs-de-demain-une-serie-de-podcasts-realisee-par-les-eleves-du-projet-future-maore-reefs](https://www.ird.fr/les-recifs-de-demain-une-serie-de-podcasts-realisee-par-les-eleves-du-projet-future-maore-reefs)
+:::
