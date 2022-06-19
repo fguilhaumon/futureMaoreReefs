@@ -18,10 +18,18 @@ website:
         text: "Acceuil"
       - href: "gallery/intro_gallery.qmd"
         text: "Coraux en 3D"
-        
+  page-footer:
+    left: |
+    
+     [![](https://lemag.ird.fr/themes/custom/lemag/logo_footer.png){fig-alt="IRD" width=65px}](https://www.ird.fr) 
+    center: Tous droits réservés Future Maore Reefs (2022)
+    right: |
+    
+     [![](https://professionnels.ofb.fr/sites/default/files/bloc-marque-RF-OFB_horizontal.jpg){fig-alt="OFB" width=130px}](https://www.ofb.gouv.fr) 
+
 format:
   html:
-    theme: journal
+    theme: united
     css: styles.css
     toc: false
     max-width: 2000px
