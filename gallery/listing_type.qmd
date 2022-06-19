@@ -76,6 +76,6 @@ listing:
 :::
 
 ::: callout-tip
-[Sélectionniez plutôt les coraux par site d'échantillonnage](listing_site.html)
+[Sélectionnez plutôt les coraux par site d'échantillonnage](listing_site.html)
 :::
 

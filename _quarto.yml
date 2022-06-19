@@ -16,8 +16,21 @@ website:
     left:
       - href: index.qmd
         text: "Accueil"
-      - href: "gallery/intro_gallery.qmd"
+      - href: gallery/intro_gallery.qmd
         text: "Coraux en 3D"
+
+  sidebar:
+    - id: coraux3D
+      title: "Coraux en 3D"
+      style: "docked"
+      align: left
+      contents:
+        - gallery/intro_gallery.qmd
+        - href: gallery/listing_site.qmd
+          text: "Sites à Mayotte"
+        - href: gallery/listing_type.qmd
+          text: "Types de coraux"          
+
   page-footer:
     left: |
     

@@ -1,5 +1,6 @@
 ---
 title: "Sites d'échantillonnage à Mayotte"
+page-layout: full
 listing:
   - id: Aeroport
     contents: 
@@ -122,5 +123,5 @@ listing:
 :::
 
 ::: callout-tip
-<a href="listing_type.html"> Sélectionniez plutôt les coraux par type focntionnel </a>
+<a href="listing_type.html"> Sélectionnez plutôt les coraux par type fonctionnel </a>
 :::

@@ -1,85 +1,91 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
-  <meta charset="utf-8">
-  <meta name="generator" content="quarto-0.9.80">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-  <title>Future Maore reefs - Listing Example</title>
-  <style>
-    code{white-space: pre-wrap;}
-    span.smallcaps{font-variant: small-caps;}
-    span.underline{text-decoration: underline;}
-    div.column{display: inline-block; vertical-align: top; width: 50%;}
-    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-    ul.task-list{list-style: none;}
-  </style>
 
-  <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
-  <script src="../../site_libs/quarto-nav/headroom.min.js"></script>
-  <script src="../../site_libs/clipboard/clipboard.min.js"></script>
-  <meta name="quarto:offset" content="../../">
-  <script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
-  <script src="../../site_libs/quarto-search/fuse.min.js"></script>
-  <script src="../../site_libs/quarto-search/quarto-search.js"></script>
-  <link href="../../favicon.png" rel="icon" type="image/png">
-  <script src="../../site_libs/quarto-listing/list.min.js"></script>
-  <script src="../../site_libs/quarto-listing/quarto-listing.js"></script>
-  <script src="../../site_libs/quarto-html/quarto.js"></script>
-  <script src="../../site_libs/quarto-html/popper.min.js"></script>
-  <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
-  <script src="../../site_libs/quarto-html/anchor.min.js"></script>
-  <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-  <link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet">
-  <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
-  <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-  <link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet">
-  <script id="quarto-search-options" type="application/json">{
-    "location": "navbar",
-    "copy-button": false,
-    "collapse-after": 2,
-    "panel-placement": "end",
-    "type": "overlay",
-    "limit": 20,
-    "language": {
-      "search-no-results-text": "No results",
-      "search-matching-documents-text": "matching documents",
-      "search-copy-link-title": "Copy link to search",
-      "search-hide-matches-text": "Hide additional matches",
-      "search-more-match-text": "more match in this document",
-      "search-more-matches-text": "more matches in this document",
-      "search-clear-button-title": "Clear",
-      "search-detached-cancel-button-title": "Cancel",
-      "search-submit-button-title": "Submit"
+<meta charset="utf-8">
+<meta name="generator" content="quarto-0.9.344">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Future Maore reefs - Listing Example</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+span.underline{text-decoration: underline;}
+div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+</style>
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<link href="../../favicon.png" rel="icon" type="image/png">
+<script src="../../site_libs/quarto-listing/list.min.js"></script>
+<script src="../../site_libs/quarto-listing/quarto-listing.js"></script>
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link id="quarto-text-highlighting-styles" href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+<script>
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
     }
-  }</script>
-  <script>
 
-    window.document.addEventListener("DOMContentLoaded", function (_event) {
-      const listingTargetEl = window.document.querySelector('#listing-listing .list');
-      if (!listingTargetEl) {
-        // No listing discovered, do not attach.
-        return; 
-      }
+    const options = {
+      valueNames: ['listing-image','listing-date','listing-title','listing-subtitle','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description","listing-categories"],
+    };
 
-      const options = {
-        valueNames: ['listing-image','listing-date','listing-title','listing-subtitle','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-        
-        searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description","listing-categories"],
-      };
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
 
-      window['quarto-listings'] = window['quarto-listings'] || {};
-      window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+  </script>
 
-      if (window['quarto-listing-loaded']) {
-        window['quarto-listing-loaded']();
-      }
-    });
-    </script>
-  <!--[if lt IE 9]>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
-  <![endif]-->
-  <link rel="stylesheet" href="../../styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<link rel="stylesheet" href="../../styles.css">
 </head>
-<body>
+
+<body class="nav-sidebar docked nav-fixed">
+
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg navbar-dark ">
@@ -95,31 +101,91 @@
   <li class="nav-item">
     <a class="nav-link" href="../../index.html">Accueil</a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../../gallery/intro_gallery.html">Coraux en 3D</a>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-coraux-en-3d" role="button" data-bs-toggle="dropdown" aria-expanded="false">Coraux en 3D</a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-coraux-en-3d">    
+        <li>
+    <a class="dropdown-item" href="../../gallery/intro_gallery.html">
+ <span class="dropdown-text">Accueil</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="../../gallery/listing_site.html">
+ <span class="dropdown-text">Sites</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../gallery/listing_type.html">
+ <span class="dropdown-text">Types</span></a>
+  </li>  
+    </ul>
+  </li>
 </ul>
               <div id="quarto-search" class="" title="Search"></div>
           </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
+  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+    <div class="container-fluid d-flex justify-content-between">
+      <h1 class="quarto-secondary-nav-title">Listing Example</h1>
+      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+    </div>
+  </nav>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation docked overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../gallery/intro_gallery.html" class="sidebar-item-text sidebar-link">Accueil</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../gallery/listing_site.html" class="sidebar-item-text sidebar-link">Sites</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../gallery/listing_type.html" class="sidebar-item-text sidebar-link">Types</a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Forte croissance">Forte croissance <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Forte résistance">Forte résistance <span class="quarto-category-count">(1)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Forte croissance">Forte croissance <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Forte résistance">Forte résistance <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
+
 <header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title d-none d-lg-block">Listing Example</h1>
+<p class="subtitle lead">Liste</p>
+</div>
 
 
-<div class="quarto-title"><h1 class="title display-7">Listing Example</h1><p class="subtitle lead">Liste</p></div></header>
 
 
 
-<div class="quarto-listing" id="listing-listing">
+<div class="quarto-title-meta">
+
+    
+    
+  </div>
+  
+
+</header>
+
+
+
+
+
+<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
 <div class="listing-actions-group">
    <div class="input-group input-group-sm quarto-listing-sort">
      <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
@@ -143,27 +209,7 @@
     </div>
 </div>
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1655487527115" data-listing-reading-time-sort="0.005">
-<a href="../../gallery/sa/listingpages_sa.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-img-bg" style="height: 150px;">
-&nbsp;
-</div>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Listing Example
-</h5>
-<div class="card-subtitle listing-subtitle">
-Liste
-</div>
-<div class="card-text listing-description">
-
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="1" data-categories="Forte croissance,Forte résistance" data-listing-date-sort="1651780800000" data-listing-file-modified-sort="1655487527115" data-listing-reading-time-sort="0.215">
+<div class="g-col-1" data-index="0" data-categories="Forte croissance,Forte résistance" data-listing-date-sort="1651780800000" data-listing-file-modified-sort="1655487527115" data-listing-reading-time-sort="0.215">
 <a href="../../gallery/sa/page1_sa.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -201,7 +247,7 @@ May 6, 2022
 No matching items
 </div>
 </div></main> <!-- /main -->
-<script type="application/javascript">
+<script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const icon = "";
   const anchorJS = new window.AnchorJS();
@@ -222,7 +268,10 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     button.blur();
     // flash "checked"
     button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
     setTimeout(function() {
+      button.setAttribute("title", currentTitle);
       button.classList.remove('code-copy-button-checked');
     }, 1000);
     // clear code selection
@@ -285,6 +334,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     <div class="nav-footer-right"><a href="https://www.ofb.gouv.fr"><img src="https://professionnels.ofb.fr/sites/default/files/bloc-marque-RF-OFB_horizontal.jpg" class="img-fluid" alt="OFB" width="130"></a></div>
   </div>
 </footer>
+
 
 
 </body></html>

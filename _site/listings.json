@@ -1,0 +1,82 @@
+[
+  {
+    "listing": "/gallery/ae/listingpages_ae.html",
+    "items": [
+      "/gallery/ae/ae_session1_acropora humilis_competitive.html"
+    ]
+  },
+  {
+    "listing": "/gallery/ba/listingpages_ba.html",
+    "items": [
+      "/gallery/ba/ba_session1_acroporaMuricata_comp.html",
+      "/gallery/ba/ba_session1_acroporaMuricata_generalist.html",
+      "/gallery/ba/ba_session1_acroporaMuricata_weedy.html",
+      "/gallery/ba/page1_ba.html"
+    ]
+  },
+  {
+    "listing": "/gallery/ib/listingpages_ib.html",
+    "items": [
+      "/gallery/ib/page1_ib.html"
+    ]
+  },
+  {
+    "listing": "/gallery/jr/listingpages_Jr.html",
+    "items": [
+      "/gallery/jr/jr_session1_acroporaMuricata_comp.html",
+      "/gallery/jr/jr_session1_acroporaMuricata_weedy.html"
+    ]
+  },
+  {
+    "listing": "/gallery/listing_site.html",
+    "items": [
+      "/gallery/ae/ae_session1_acropora humilis_competitive.html",
+      "/gallery/ng/ng_session1_acroporaMuricata_generalist.html",
+      "/gallery/ng/ng_session1_acroporaMuricata_comp.html",
+      "/gallery/jr/jr_session1_acroporaMuricata_comp.html",
+      "/gallery/jr/jr_session1_acroporaMuricata_weedy.html",
+      "/gallery/mp/mp_session1_acroporaMuricata_comp.html",
+      "/gallery/mp/mp_session1_acroporaMuricata_stresst.html",
+      "/gallery/mp/mp_session1_acroporaMuricata_weedy.html",
+      "/gallery/ba/ba_session1_acroporaMuricata_comp.html",
+      "/gallery/ba/ba_session1_acroporaMuricata_generalist.html",
+      "/gallery/ba/ba_session1_acroporaMuricata_weedy.html"
+    ]
+  },
+  {
+    "listing": "/gallery/listing_type.html",
+    "items": [
+      "/gallery/jr/jr_session1_acroporaMuricata_comp.html",
+      "/gallery/ba/ba_session1_acroporaMuricata_comp.html",
+      "/gallery/mp/mp_session1_acroporaMuricata_comp.html",
+      "/gallery/ng/ng_session1_acroporaMuricata_comp.html",
+      "/gallery/ng/ng_session1_acroporaMuricata_generalist.html",
+      "/gallery/ba/ba_session1_acroporaMuricata_generalist.html",
+      "/gallery/jr/jr_session1_acroporaMuricata_weedy.html",
+      "/gallery/ba/ba_session1_acroporaMuricata_weedy.html",
+      "/gallery/mp/mp_session1_acroporaMuricata_weedy.html",
+      "/gallery/mp/mp_session1_acroporaMuricata_stresst.html"
+    ]
+  },
+  {
+    "listing": "/gallery/mp/listingpages_mp.html",
+    "items": [
+      "/gallery/mp/mp_session1_acroporaMuricata_comp.html",
+      "/gallery/mp/mp_session1_acroporaMuricata_stresst.html",
+      "/gallery/mp/mp_session1_acroporaMuricata_weedy.html",
+      "/gallery/mp/page1_mp.html"
+    ]
+  },
+  {
+    "listing": "/gallery/sa/listingpages_sa.html",
+    "items": [
+      "/gallery/sa/page1_sa.html"
+    ]
+  },
+  {
+    "listing": "/gallery/su/listingpages_su.html",
+    "items": [
+      "/gallery/su/page1_su.html"
+    ]
+  }
+]

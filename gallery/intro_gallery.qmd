@@ -1,5 +1,6 @@
 ---
 title: "Modèles 3D de coraux"
+page-layout: full
 ---
 
 Retrouvez ici deux entrées vers notre gallerie de modèles 3D de colonnies coralliennes. Vous pouvez filtrer les colonnies :
