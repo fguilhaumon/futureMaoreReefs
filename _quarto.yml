@@ -1,6 +1,9 @@
 project:
   type: website
-
+  render:
+    - "*.qmd"
+    - "!idee.qmd"
+    - "!about.qmd"
 website:
   title: "Future Maore reefs"
   image: "assets/images/logo_text.png"
