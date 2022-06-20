@@ -11,6 +11,7 @@ website:
   favicon: "favicon.png"
   google-analytics: "G-ZQBVFXWT0Q"
   page-navigation: true
+  execute-dir: project
   navbar:
     background: info
     logo: "assets/images/logo_text.png"
