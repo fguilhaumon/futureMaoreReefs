@@ -19,8 +19,10 @@ website:
     left:
       - href: index.qmd
         text: "Accueil"
+      - href: index.qmd
+        text: "Notre vision"
       - href: gallery/intro_gallery.qmd
-        text: "Coraux 3D"
+        text: "Coraux en 3D"
       - text: Medias
         menu: 
           - href: podcasts.qmd
