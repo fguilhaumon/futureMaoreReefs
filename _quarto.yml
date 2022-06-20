@@ -4,10 +4,12 @@ project:
     - "*.qmd"
     - "!idee.qmd"
     - "!about.qmd"
+
 website:
   title: "Future Maore reefs"
   image: "assets/images/logo_text.png"
   favicon: "favicon.png"
+  google-analytics: "G-ZQBVFXWT0Q"
   page-navigation: true
   navbar:
     background: info
