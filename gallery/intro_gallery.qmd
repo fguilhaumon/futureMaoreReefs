@@ -3,15 +3,43 @@ title: "Modèles 3D de coraux"
 page-layout: full
 ---
 
-Retrouvez ici deux entrées vers notre gallerie de modèles 3D de colonies coralliennes. Vous pouvez filtrer les colonies :
+L'équipe scientifique de __Future Maore Reefs__ utilise la photogrammétrie pour étudier la dynamique des récifs à plusieurs échelles (boutures, colonies et paysages). Elle vous propose de visualiser ici les modèles 3D des colonnies coralliennes dont elle suit la croissance.
 
--   par site d'échantillonnage ([Aéroport](listing_site.html#aeroport), [Île Blanche](listing_site.html#ile-blanche), [Surprise](listing_site.html#surprise), [Ngouja](listing_site.html#ngouja), [Joly Roger](listing_site.html#joly-roger), [Sakouli](listing_site.html#sakouli), [Bandrele](listing_site.html#bandrele) et [Musical Plage](listing_site.html#musical-plage))
+Vous pouvez accéder aux modèles de colonnies en choisissant un type fonctionnel de corail :
 
-    en vous servant de la carte ci-dessous
+::: {.grid}
 
--   par type fonctionnel de coraux en sélectionnant une icône plus bas
+::: {.g-col-3}
+::: {.text-center} 
+Généralistes
+:::
+[![](/assets/images/generalist_w100.png)](/gallery/listing_type.html#coraux-généralistes)
+:::
 
-## Sites d'échantillonnage à Mayotte
+::: {.g-col-3}
+::: {.text-center} 
+Compétitifs
+:::
+[![](/assets/images/compet_w100.png)](/gallery/listing_type.html#coraux-compétitifs)
+:::
+
+::: {.g-col-3}
+::: {.text-center} 
+Robustes
+:::
+[![](/assets/images/stresstol_w100.png)](/gallery/listing_type.html#coraux-robustes)
+:::
+
+::: {.g-col-3}
+::: {.text-center} 
+Opportunistes
+:::
+[![](/assets/images/weedy_w100.png)](/gallery/listing_type.html#coraux-opportunistes)
+:::
+
+:::
+
+ou en choisissant un des sites d'échantillonnage du projet ([Aéroport](listing_site.html#aeroport), [Île Blanche](listing_site.html#ile-blanche), [Surprise](listing_site.html#surprise), [Ngouja](listing_site.html#ngouja), [Joly Roger](listing_site.html#joly-roger), [Sakouli](listing_site.html#sakouli), [Bandrele](listing_site.html#bandrele) et [Musical Plage](listing_site.html#musical-plage)), par exemple en vous servant de la carte ci-dessous :
 
 ```{r}
 #| echo: false
@@ -42,32 +70,3 @@ m
 | Musical Plage | Lorem Ipsum |       | [Musical Plage](listing_site.html#musical-plage) |
 -->
 ```
-## Types fonctionnels de coraux
-
-<ul>
-
-<li>
-
-<a href="listing_type.html#competitifs">Compétitifs</a>
-
-</li>
-
-<li>
-
-<a href="listing_type.html#generalistes">Généralistes</a>
-
-</li>
-
-<li>
-
-<a href="listing_type.html#pionniers">Pionniers</a>
-
-</li>
-
-<li>
-
-<a href="listing_type.html#robustes">Robustes</a>
-
-</li>
-
-</ul>

@@ -1,10 +1,8 @@
 {
-  "hash": "f7f2ec7fade3db79c2882f48472518ae",
+  "hash": "7a2fe35d2805f4ab8cb8b57057c88ce8",
   "result": {
-    "markdown": "---\ntitle: \"\"\nresources:\n  - \"assets/images/corals_joly_roger.jpg\"\n  - \"assets/images/colonie_3d.png\"\n  - \"assets/images/tablettes_especes_lio_small.png\"\n  - \"assets/images/logo_round_complete_w600.png\"\nsidebar: false\npage-layout: full\n---\n\n\n![](assets/images/logo_squared_complete_w600.png)\n\nGrâce au plan de relance du gouvernement, l'Institut de recherche pour le développement et le Parc naturel marin de Mayotte, avec l'appui du Centre universitaire de formation et de recherche de Mayotte et l'Université de la Réunion lancent le programme **Future Maore Reefs**.\n\n\n::: {.cell}\n\n:::\n\n\n## Trois objectifs pour l'avenir de nos récifs !\n\nLes récifs coralliens sont essentiels au maintien de la biodiversité marine et à la protection du littoral. C'est pourquoi **Future Maore Reefs** vise à :\n\n-   mieux comprendre la résilience des récifs coralliens face aux changements globaux dont le réchauffement et l'acidification des océans,\n\n-   identifier des solutions durables fondées sur la nature pour aider à la restauration de récifs dégradés et à la réduction des impacts ou la compensation écologique lors de l'aménagement du territoire,\n\n-   mieux comprendre la relation entre les populations mahoraise et métropolitaine et l'environnement marin, pour développer de nouvelles approches de sensibilisation sur les enjeux liés aux récifs coralliens auprès des scolaires et du grand public.\n\nPour réaliser ces objectifs **Future Maore Reefs**, en accord avec la vision de l'IRD, propose une science interdisciplinaire et citoyenne, engagée pour la réalisation des objectifs de développement durable.\n\n<br/>\n\n![](assets/images/logos_partenaires.jpeg)\n",
-    "supporting": [
-      "index_files"
-    ],
+    "markdown": "---\ntitle: \"\"\nresources:\n  - \"assets/images/corals_joly_roger.jpg\"\n  - \"assets/images/colonie_3d.png\"\n  - \"assets/images/tablettes_especes_lio_small.png\"\n  - \"assets/images/logo_round_complete_w600.png\"\nsidebar: false\npage-layout: full\n---\n\n\n![](assets/images/logo_squared_complete_w600.png){.img-center} <br/> Grâce au plan de relance du gouvernement, l'Institut de recherche pour le développement et le Parc naturel marin de Mayotte, avec l'appui du Centre universitaire de formation et de recherche de Mayotte et l'Université de la Réunion conduisent le programme **Future Maore Reefs**.\n\n\n::: {.cell}\n\n:::\n\n\n![](assets/images/logos_partenaires.jpeg){.img-center}\n\n",
+    "supporting": [],
     "filters": [
       "rmarkdown/pagebreak.lua"
     ],

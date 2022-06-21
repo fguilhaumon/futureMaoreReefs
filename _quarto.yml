@@ -4,11 +4,14 @@ project:
     - "*.qmd"
     - "!idee.qmd"
     - "!about.qmd"
+
 website:
   title: "Future Maore reefs"
   image: "assets/images/logo_text.png"
   favicon: "favicon.png"
+  google-analytics: "G-ZQBVFXWT0Q"
   page-navigation: true
+  execute-dir: project
   navbar:
     background: info
     logo: "assets/images/logo_text.png"
@@ -16,8 +19,10 @@ website:
     left:
       - href: index.qmd
         text: "Accueil"
+      - href: vision.qmd
+        text: "Notre vision"
       - href: gallery/intro_gallery.qmd
-        text: "Coraux 3D"
+        text: "Coraux en 3D"
       - text: Medias
         menu: 
           - href: podcasts.qmd
@@ -25,10 +30,11 @@ website:
           - href: videos.qmd
             text: "Vidéos"
   sidebar:
-    - id: coraux3D
+    - id: gallery
       title: "Coraux en 3D"
       style: "docked"
       align: left
+      background: light
       contents:
         - gallery/intro_gallery.qmd
         - href: gallery/listing_site.qmd

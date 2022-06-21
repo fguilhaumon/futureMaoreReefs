@@ -28,8 +28,8 @@ for (i in col_dirs) {
   d<- rbind(d,data.frame(file = fil, size = res ,stringsAsFactors = FALSE)) 
 }
 
-for (i in d) {
-  ifelse(d["size"] <=50.0,print(d["fil"]),print(""))
+for (i in d["size"]) {
+  ifelse(i <=50.0,print(i),print(""))
 }
    
 

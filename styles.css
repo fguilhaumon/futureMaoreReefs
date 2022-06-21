@@ -1,13 +1,13 @@
 /* css styles */
 
-img {
+.img-center {
     display: block;
     float: none;
     margin-left: auto;
     margin-right: auto;
 }
 
-.threedview {
+.center {
     display: block;
     float: none;
     margin-left: auto;

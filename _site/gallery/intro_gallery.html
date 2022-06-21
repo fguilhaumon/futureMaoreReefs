@@ -57,6 +57,15 @@ ul.task-list{list-style: none;}
     "search-submit-button-title": "Envoyer"
   }
 }</script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-ZQBVFXWT0Q"></script>
+
+<script type="text/javascript">
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-ZQBVFXWT0Q', { 'anonymize_ip': true});
+</script>
 <script src="../site_libs/htmlwidgets-1.5.4/htmlwidgets.js"></script>
 <script src="../site_libs/jquery-1.12.4/jquery.min.js"></script>
 <link href="../site_libs/leaflet-1.3.1/leaflet.css" rel="stylesheet">
@@ -89,7 +98,10 @@ ul.task-list{list-style: none;}
     <a class="nav-link" href="../index.html">Accueil</a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="../gallery/intro_gallery.html" aria-current="page">Coraux 3D</a>
+    <a class="nav-link" href="../vision.html">Notre vision</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="../gallery/intro_gallery.html" aria-current="page">Coraux en 3D</a>
   </li>  
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-medias" role="button" data-bs-toggle="dropdown" aria-expanded="false">Medias</a>
@@ -166,18 +178,55 @@ ul.task-list{list-style: none;}
 
 </header>
 
-<p>Retrouvez ici deux entrées vers notre gallerie de modèles 3D de colonies coralliennes. Vous pouvez filtrer les colonies :</p>
-<ul>
-<li><p>par site d’échantillonnage (<a href="listing_site.html#aeroport">Aéroport</a>, <a href="listing_site.html#ile-blanche">Île Blanche</a>, <a href="listing_site.html#surprise">Surprise</a>, <a href="listing_site.html#ngouja">Ngouja</a>, <a href="listing_site.html#joly-roger">Joly Roger</a>, <a href="listing_site.html#sakouli">Sakouli</a>, <a href="listing_site.html#bandrele">Bandrele</a> et <a href="listing_site.html#musical-plage">Musical Plage</a>)</p>
-<p>en vous servant de la carte ci-dessous</p></li>
-<li><p>par type fonctionnel de coraux en sélectionnant une icône plus bas</p></li>
-</ul>
-<section id="sites-déchantillonnage-à-mayotte" class="level2">
-<h2 class="anchored" data-anchor-id="sites-déchantillonnage-à-mayotte">Sites d’échantillonnage à Mayotte</h2>
+<p>L’équipe scientifique de <strong>Future Maore Reefs</strong> utilise la photogrammétrie pour étudier la dynamique des récifs à plusieurs échelles (boutures, colonies et paysages). Elle vous propose de visualiser ici les modèles 3D des colonnies coralliennes dont elle suit la croissance.</p>
+<p>Vous pouvez accéder aux modèles de colonnies en choisissant un type fonctionnel de corail :</p>
+<div class="grid">
+<div class="g-col-3">
+<div class="text-center">
+<p>Généralistes</p>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../gallery/listing_type.html#coraux-généralistes"><img src="../assets/images/generalist_w100.png" class="img-fluid figure-img"></a></p>
+</figure>
+</div>
+</div>
+<div class="g-col-3">
+<div class="text-center">
+<p>Compétitifs</p>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../gallery/listing_type.html#coraux-compétitifs"><img src="../assets/images/compet_w100.png" class="img-fluid figure-img"></a></p>
+</figure>
+</div>
+</div>
+<div class="g-col-3">
+<div class="text-center">
+<p>Robustes</p>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../gallery/listing_type.html#coraux-robustes"><img src="../assets/images/stresstol_w100.png" class="img-fluid figure-img"></a></p>
+</figure>
+</div>
+</div>
+<div class="g-col-3">
+<div class="text-center">
+<p>Opportunistes</p>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../gallery/listing_type.html#coraux-opportunistes"><img src="../assets/images/weedy_w100.png" class="img-fluid figure-img"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<p>ou en choisissant un des sites d’échantillonnage du projet (<a href="listing_site.html#aeroport">Aéroport</a>, <a href="listing_site.html#ile-blanche">Île Blanche</a>, <a href="listing_site.html#surprise">Surprise</a>, <a href="listing_site.html#ngouja">Ngouja</a>, <a href="listing_site.html#joly-roger">Joly Roger</a>, <a href="listing_site.html#sakouli">Sakouli</a>, <a href="listing_site.html#bandrele">Bandrele</a> et <a href="listing_site.html#musical-plage">Musical Plage</a>), par exemple en vous servant de la carte ci-dessous :</p>
 <div class="cell">
 <div class="cell-output-display">
-<div id="htmlwidget-aa302598273823f50413" style="width:100%;height:464px;" class="leaflet html-widget"></div>
-<script type="application/json" data-for="htmlwidget-aa302598273823f50413">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addMarkers","args":[[-12.82449,-12.7157,-12.63017,-12.965066,-12.890095,-12.889719,-12.905336,-12.92022],[45.27948,45.17146,45.15103,45.085251,45.215116,45.21545,45.203535,45.18553],null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},["<a href=\"listing_site.html#aeroport\"> Aeroport <\/a>","<a href=\"listing_site.html#ile-blanche\"> Ile blanche <\/a>","<a href=\"listing_site.html#surprise\"> Surprise <\/a>","<a href=\"listing_site.html#ngouja\"> Ngouja <\/a>","<a href=\"listing_site.html#joly-roger\"> Joly roger <\/a>","<a href=\"listing_site.html#sakouli\"> Sakouli<\/a>","<a href=\"listing_site.html#bandrele\"> Bandrele <\/a>","<a href=\"listing_site.html#musical-plage\"> Musical Plage <\/a>"],null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[-12.965066,-12.63017],"lng":[45.085251,45.27948]}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-892018f603fd0f26d51b" style="width:100%;height:464px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-892018f603fd0f26d51b">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addMarkers","args":[[-12.82449,-12.7157,-12.63017,-12.965066,-12.890095,-12.889719,-12.905336,-12.92022],[45.27948,45.17146,45.15103,45.085251,45.215116,45.21545,45.203535,45.18553],null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},["<a href=\"listing_site.html#aeroport\"> Aeroport <\/a>","<a href=\"listing_site.html#ile-blanche\"> Ile blanche <\/a>","<a href=\"listing_site.html#surprise\"> Surprise <\/a>","<a href=\"listing_site.html#ngouja\"> Ngouja <\/a>","<a href=\"listing_site.html#joly-roger\"> Joly roger <\/a>","<a href=\"listing_site.html#sakouli\"> Sakouli<\/a>","<a href=\"listing_site.html#bandrele\"> Bandrele <\/a>","<a href=\"listing_site.html#musical-plage\"> Musical Plage <\/a>"],null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[-12.965066,-12.63017],"lng":[45.085251,45.27948]}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <!--
@@ -194,26 +243,8 @@ ul.task-list{list-style: none;}
 | Bandrele      | Lorem Ipsum |       | [Bandrele](listing_site.html#bandrele)           |
 | Musical Plage | Lorem Ipsum |       | [Musical Plage](listing_site.html#musical-plage) |
 -->
-</section>
-<section id="types-fonctionnels-de-coraux" class="level2">
-<h2 class="anchored" data-anchor-id="types-fonctionnels-de-coraux">Types fonctionnels de coraux</h2>
-<ul>
-<li>
-<p><a href="listing_type.html#competitifs">Compétitifs</a></p>
-</li>
-<li>
-<p><a href="listing_type.html#generalistes">Généralistes</a></p>
-</li>
-<li>
-<p><a href="listing_type.html#pionniers">Pionniers</a></p>
-</li>
-<li>
-<p><a href="listing_type.html#robustes">Robustes</a></p>
-</li>
-</ul>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

@@ -1,17 +1,10 @@
 [
   {
-    "objectID": "gallery/ae/ae_session1_acropora humilis_competitive.html",
-    "href": "gallery/ae/ae_session1_acropora humilis_competitive.html",
-    "title": "Acropora Humilis",
-    "section": "",
-    "text": "< allowfullscreen width= 640 height= 480 loading= ” lazy ” frameborder= 0 src= https://p3d.in/e/G0Eog alt= Image 3D corail file = gallery/ae/ae_session1_acropora humilis_competitive.qmd append = TRUE >"
-  },
-  {
     "objectID": "gallery/ae/listingpages_ae.html",
     "href": "gallery/ae/listingpages_ae.html",
     "title": "Colonies d’espèces coralliennes sur le site de l’Aéroport",
     "section": "",
-    "text": "Trier par\n       Ordre par défaut\n         \n          Titre\n        \n         \n          Date - Le plus ancien\n        \n         \n          Date - Le plus récent\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\n\nsous titre\n\n\n\ncompetitive\n\n\nAeroport\n\n\nsession1\n\n\n\nLorem Ipsum\n\n\n\n\n\n\n\n\n\n \n\n\n\n\n\n\n\n\n\n\n\nAucun article correspondant"
+    "text": "Trier par\n       Ordre par défaut\n         \n          Titre\n        \n         \n          Date - Le plus ancien\n        \n         \n          Date - Le plus récent\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\n\nsous titre\n\n\n\ncompetitive\n\n\nAeroport\n\n\nsession1\n\n\n\nLorem Ipsum\n\n\n\n\n\n\n\nAucun article correspondant"
   },
   {
     "objectID": "gallery/ba/listingpages_ba.html",
@@ -32,21 +25,7 @@
     "href": "gallery/intro_gallery.html",
     "title": "Modèles 3D de coraux",
     "section": "",
-    "text": "Retrouvez ici deux entrées vers notre gallerie de modèles 3D de colonies coralliennes. Vous pouvez filtrer les colonies :"
-  },
-  {
-    "objectID": "gallery/intro_gallery.html#sites-déchantillonnage-à-mayotte",
-    "href": "gallery/intro_gallery.html#sites-déchantillonnage-à-mayotte",
-    "title": "Modèles 3D de coraux",
-    "section": "Sites d’échantillonnage à Mayotte",
-    "text": "Sites d’échantillonnage à Mayotte"
-  },
-  {
-    "objectID": "gallery/intro_gallery.html#types-fonctionnels-de-coraux",
-    "href": "gallery/intro_gallery.html#types-fonctionnels-de-coraux",
-    "title": "Modèles 3D de coraux",
-    "section": "Types fonctionnels de coraux",
-    "text": "Types fonctionnels de coraux\n\n\nCompétitifs\n\n\nGénéralistes\n\n\nPionniers\n\n\nRobustes"
+    "text": "Vous pouvez accéder aux modèles de colonnies en choisissant un type fonctionnel de corail :\n\n\n\nGénéralistes\n\n\n\n\n\n\n\n\n\nCompétitifs\n\n\n\n\n\n\n\n\n\nRobustes\n\n\n\n\n\n\n\n\n\nOpportunistes\n\n\n\n\n\n\n\n\nou en choisissant un des sites d’échantillonnage du projet (Aéroport, Île Blanche, Surprise, Ngouja, Joly Roger, Sakouli, Bandrele et Musical Plage), par exemple en vous servant de la carte ci-dessous :"
   },
   {
     "objectID": "gallery/jr/listingpages_Jr.html",
@@ -116,7 +95,14 @@
     "href": "gallery/listing_type.html",
     "title": "Types fonctionnels",
     "section": "",
-    "text": "Trier par\n       Ordre par défaut\n         \n          Titre\n        \n         \n          Sous-titre\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\n\nLocalisation de l’espèce ex : Ile blanche\n\n\n\nCompetitif\n\n\nJoly Roger\n\n\nSession1\n\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt nisi sapien, id ornare ligula fringilla at. In eget lacus eros. In quis laoreet magna. Duis…\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLocalisation de l’espèce ex : Ile blanche\n\n\n\nCompetitif\n\n\nBandrele\n\n\nSession1\n\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt nisi sapien, id ornare ligula fringilla at. In eget lacus eros. In quis laoreet magna. Duis…\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLocalisation de l’espèce ex : Ile blanche\n\n\n\nCompetitif\n\n\nMusical plage\n\n\nSession1\n\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt nisi sapien, id ornare ligula fringilla at. In eget lacus eros. In quis laoreet magna. Duis…\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLocalisation de l’espèce ex : Ile blanche\n\n\n\nCompetitif\n\n\nNgouja\n\n\nSession1\n\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt nisi sapien, id ornare ligula fringilla at. In eget lacus eros. In quis laoreet magna. Duis…\n\n\n\n\n\n\n\nAucun article correspondant"
+    "text": "Ici les modèles 3D de colonnies coralliennes sont classés par type fonctionnel de corail."
+  },
+  {
+    "objectID": "gallery/listing_type.html#coraux-compétitifs",
+    "href": "gallery/listing_type.html#coraux-compétitifs",
+    "title": "Types fonctionnels",
+    "section": "Coraux compétitifs",
+    "text": "Coraux compétitifs\n\n\n   \n     \n     \n       Trier par\n       Ordre par défaut\n         \n          Titre\n        \n         \n          Sous-titre\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nType d’espèce\n\n\nLocalisation de l’espèce ex : Ile blanche\n\n\n\nCompetitif\n\n\nJoly Roger\n\n\nSession1\n\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt nisi sapien, id ornare ligula fringilla at. In eget lacus eros. In quis laoreet magna. Duis…\n\n\n\n\n\n\n\n\n\n\n\n\n\nType d’espèce\n\n\nLocalisation de l’espèce ex : Ile blanche\n\n\n\nCompetitif\n\n\nBandrele\n\n\nSession1\n\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt nisi sapien, id ornare ligula fringilla at. In eget lacus eros. In quis laoreet magna. Duis…\n\n\n\n\n\n\n\n\n\n\n\n\n\nType d’espèce\n\n\nLocalisation de l’espèce ex : Ile blanche\n\n\n\nCompetitif\n\n\nMusical plage\n\n\nSession1\n\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt nisi sapien, id ornare ligula fringilla at. In eget lacus eros. In quis laoreet magna. Duis…\n\n\n\n\n\n\n\n\n\n\n\n\n\nType d’espèce\n\n\nLocalisation de l’espèce ex : Ile blanche\n\n\n\nCompetitif\n\n\nNgouja\n\n\nSession1\n\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt nisi sapien, id ornare ligula fringilla at. In eget lacus eros. In quis laoreet magna. Duis…\n\n\n\n\n\n\n\nAucun article correspondant"
   },
   {
     "objectID": "gallery/listing_type.html#coraux-généralistes",
@@ -126,11 +112,11 @@
     "text": "Coraux généralistes\n\n\n   \n     \n     \n       Trier par\n       Ordre par défaut\n         \n          Titre\n        \n         \n          Sous-titre\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nAcroporaMuricata\n\n\nLocalisation de l’espèce ex : Ile blanche\n\n\n\nGeneraliste\n\n\nNgouja\n\n\nSession1\n\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt nisi sapien, id ornare ligula fringilla at. In eget lacus eros. In quis laoreet magna. Duis…\n\n\n\n\n\n\n\n\n\n\n\n\n\nType d’espèce\n\n\nLocalisation de l’espèce ex : Ile blanche\n\n\n\nGeneraliste\n\n\nBandrele\n\n\nSession1\n\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt nisi sapien, id ornare ligula fringilla at. In eget lacus eros. In quis laoreet magna. Duis…\n\n\n\n\n\n\n\nAucun article correspondant"
   },
   {
-    "objectID": "gallery/listing_type.html#coraux-pionniers",
-    "href": "gallery/listing_type.html#coraux-pionniers",
+    "objectID": "gallery/listing_type.html#coraux-opportunistes",
+    "href": "gallery/listing_type.html#coraux-opportunistes",
     "title": "Types fonctionnels",
-    "section": "Coraux Pionniers",
-    "text": "Coraux Pionniers\n\n\n   \n     \n     \n       Trier par\n       Ordre par défaut\n         \n          Titre\n        \n         \n          Sous-titre\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nType d’espèce\n\n\nLocalisation de l’espèce ex : Ile blanche\n\n\n\nWeedy\n\n\nJoly Roger\n\n\nSession1\n\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt nisi sapien, id ornare ligula fringilla at. In eget lacus eros. In quis laoreet magna. Duis…\n\n\n\n\n\n\n\n\n\n\n\n\n\nType d’espèce\n\n\nLocalisation de l’espèce ex : Ile blanche\n\n\n\nWeedy\n\n\nBandrele\n\n\nSession1\n\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt nisi sapien, id ornare ligula fringilla at. In eget lacus eros. In quis laoreet magna. Duis…\n\n\n\n\n\n\n\n\n\n\n\n\n\nType d’espèce\n\n\nLocalisation de l’espèce ex : Ile blanche\n\n\n\nWeedy\n\n\nMusical plage\n\n\nSession1\n\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt nisi sapien, id ornare ligula fringilla at. In eget lacus eros. In quis laoreet magna. Duis…\n\n\n\n\n\n\n\nAucun article correspondant"
+    "section": "Coraux Opportunistes",
+    "text": "Coraux Opportunistes\n\n\n   \n     \n     \n       Trier par\n       Ordre par défaut\n         \n          Titre\n        \n         \n          Sous-titre\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nType d’espèce\n\n\nLocalisation de l’espèce ex : Ile blanche\n\n\n\nWeedy\n\n\nJoly Roger\n\n\nSession1\n\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt nisi sapien, id ornare ligula fringilla at. In eget lacus eros. In quis laoreet magna. Duis…\n\n\n\n\n\n\n\n\n\n\n\n\n\nType d’espèce\n\n\nLocalisation de l’espèce ex : Ile blanche\n\n\n\nWeedy\n\n\nBandrele\n\n\nSession1\n\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt nisi sapien, id ornare ligula fringilla at. In eget lacus eros. In quis laoreet magna. Duis…\n\n\n\n\n\n\n\n\n\n\n\n\n\nType d’espèce\n\n\nLocalisation de l’espèce ex : Ile blanche\n\n\n\nWeedy\n\n\nMusical plage\n\n\nSession1\n\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt nisi sapien, id ornare ligula fringilla at. In eget lacus eros. In quis laoreet magna. Duis…\n\n\n\n\n\n\n\nAucun article correspondant"
   },
   {
     "objectID": "gallery/listing_type.html#coraux-robustes",
@@ -165,14 +151,7 @@
     "href": "index.html",
     "title": "Future Maore reefs",
     "section": "",
-    "text": "Grâce au plan de relance du gouvernement, l’Institut de recherche pour le développement et le Parc naturel marin de Mayotte, avec l’appui du Centre universitaire de formation et de recherche de Mayotte et l’Université de la Réunion lancent le programme Future Maore Reefs."
-  },
-  {
-    "objectID": "index.html#trois-objectifs-pour-lavenir-de-nos-récifs",
-    "href": "index.html#trois-objectifs-pour-lavenir-de-nos-récifs",
-    "title": "Future Maore reefs",
-    "section": "Trois objectifs pour l’avenir de nos récifs !",
-    "text": "Trois objectifs pour l’avenir de nos récifs !\nLes récifs coralliens sont essentiels au maintien de la biodiversité marine et à la protection du littoral. C’est pourquoi Future Maore Reefs vise à :\n\nmieux comprendre la résilience des récifs coralliens face aux changements globaux dont le réchauffement et l’acidification des océans,\nidentifier des solutions durables fondées sur la nature pour aider à la restauration de récifs dégradés et à la réduction des impacts ou la compensation écologique lors de l’aménagement du territoire,\nmieux comprendre la relation entre les populations mahoraise et métropolitaine et l’environnement marin, pour développer de nouvelles approches de sensibilisation sur les enjeux liés aux récifs coralliens auprès des scolaires et du grand public.\n\nPour réaliser ces objectifs Future Maore Reefs, en accord avec la vision de l’IRD, propose une science interdisciplinaire et citoyenne, engagée pour la réalisation des objectifs de développement durable."
+    "text": "Grâce au plan de relance du gouvernement, l’Institut de recherche pour le développement et le Parc naturel marin de Mayotte, avec l’appui du Centre universitaire de formation et de recherche de Mayotte et l’Université de la Réunion conduisent le programme Future Maore Reefs."
   },
   {
     "objectID": "podcasts.html",
@@ -187,5 +166,12 @@
     "title": "Vidéos",
     "section": "",
     "text": "Info\n\n\n\nDans cette émission vous découvrirez l’équipe du projet lors de sa première campagne de terrain en Octobre 2021."
+  },
+  {
+    "objectID": "vision.html",
+    "href": "vision.html",
+    "title": "Future Maore reefs",
+    "section": "",
+    "text": "Les récifs coralliens sont essentiels au maintien de la biodiversité marine et à la protection du littoral. C’est pourquoi Future Maore Reefs vise à :\n\nmieux comprendre la résilience des récifs coralliens face aux changements globaux dont le réchauffement et l’acidification des océans,\nidentifier des solutions durables fondées sur la nature pour aider à la restauration de récifs dégradés et à la réduction des impacts ou la compensation écologique lors de l’aménagement du territoire,\nmieux comprendre la relation entre les populations mahoraise et métropolitaine et l’environnement marin, pour développer de nouvelles approches de sensibilisation sur les enjeux liés aux récifs coralliens auprès des scolaires et du grand public.\n\nPour réaliser ces objectifs Future Maore Reefs, en accord avec la vision de l’IRD, propose une science interdisciplinaire et citoyenne, engagée pour la réalisation des objectifs de développement durable."
   }
 ]
