@@ -1,7 +1,7 @@
 ---
 title : "Type d'espèce"
 subtitle: "Localisation de l'espèce ex : Ile blanche"
-image: cover/cover.jpg
+image: gallery/cover/cover.jpg
 author: "Joseph"
 description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt nisi sapien, id ornare ligula fringilla at. In eget lacus eros. In quis laoreet magna. Duis suscipit mollis porta. In hac habitasse platea dictumst. Morbi in tempor orci. Fusce augue purus, gravida et felis quis, tincidunt finibus erat."
 date : 05/06/2022

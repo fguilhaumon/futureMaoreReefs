@@ -3,11 +3,13 @@ title: "Modèles 3D de coraux"
 page-layout: full
 ---
 
-Retrouvez ici deux entrées vers notre gallerie de modèles 3D de colonnies coralliennes. Vous pouvez filtrer les colonnies :
+Retrouvez ici deux entrées vers notre gallerie de modèles 3D de colonies coralliennes. Vous pouvez filtrer les colonies :
 
--   par site d'échantillonnage ([Aéroport](listing_site.html#aeroport), [Île Blanche](listing_site.html#ile-blanche), [Surprise](listing_site.html#surprise), [Ngouja](listing_site.html#ngouja), [Joly Roger](listing_site.html#joly-roger), [Sakouli](listing_site.html#sakouli), [Bandrele](listing_site.html#bandrele) et [Musical Plage](listing_site.html#musical-plage)) en vous servant de la carte ci-dessous,
+-   par site d'échantillonnage ([Aéroport](listing_site.html#aeroport), [Île Blanche](listing_site.html#ile-blanche), [Surprise](listing_site.html#surprise), [Ngouja](listing_site.html#ngouja), [Joly Roger](listing_site.html#joly-roger), [Sakouli](listing_site.html#sakouli), [Bandrele](listing_site.html#bandrele) et [Musical Plage](listing_site.html#musical-plage))
 
--   par type fonctionnel de coraux en sélectionnant une icône plus bas.
+    en vous servant de la carte ci-dessous
+
+-   par type fonctionnel de coraux en sélectionnant une icône plus bas
 
 ## Sites d'échantillonnage à Mayotte
 

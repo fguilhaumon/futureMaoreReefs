@@ -47,7 +47,9 @@ website:
 
 format:
   html:
-    theme: pulse
+    theme: 
+      light: [pulse,custom.scss]
+      dark: darkly
     css: styles.css
     toc: false
     lang: fr
