@@ -3,12 +3,12 @@ project:
   render:
     - "*.qmd"
     - "!idee.qmd"
-    - "!about.qmd"
+    - "!main/about.qmd"
 
 website:
   title: "Future Maore reefs"
   image: "assets/images/logo_text.png"
-  favicon: "favicon.png"
+  favicon: "assets/images/favicon.png"
   google-analytics: "G-ZQBVFXWT0Q"
   page-navigation: true
   execute-dir: project
@@ -19,15 +19,15 @@ website:
     left:
       - href: index.qmd
         text: "Accueil"
-      - href: vision.qmd
+      - href: main/vision.qmd
         text: "Notre vision"
-      - href: gallery/intro_gallery.qmd
+      - href: gallery/features_pages/intro_gallery.qmd
         text: "Coraux en 3D"
       - text: Medias
         menu: 
-          - href: podcasts.qmd
+          - href: main/podcasts.qmd
             text: "Podcasts"
-          - href: videos.qmd
+          - href: main/videos.qmd
             text: "Vidéos"
   sidebar:
     - id: gallery
@@ -36,10 +36,10 @@ website:
       align: left
       background: light
       contents:
-        - gallery/intro_gallery.qmd
-        - href: gallery/listing_site.qmd
+        - gallery/features_pages/intro_gallery.qmd
+        - href: gallery/features_pages/listing_site.qmd
           text: "Sites à Mayotte"
-        - href: gallery/listing_type.qmd
+        - href: gallery/features_pages/listing_type.qmd
           text: "Types de coraux"          
 
   page-footer:
@@ -54,7 +54,7 @@ website:
 format:
   html:
     theme: 
-      light: [pulse,custom.scss]
+      light: [pulse,style/custom.scss]
       dark: darkly
     css: styles.css
     toc: false

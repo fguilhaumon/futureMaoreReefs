@@ -30,4 +30,3 @@ paths <- c("https://www.ofb.gouv.fr/sites/default/files/Images/Sch%C3%A9mas%20-%
 ```
 
 ![](assets/images/logos_partenaires.jpeg){.img-center}
-

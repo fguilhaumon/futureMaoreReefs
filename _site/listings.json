@@ -78,5 +78,13 @@
     "items": [
       "/gallery/su/page1_su.html"
     ]
+  },
+  {
+    "listing": "/gallery/features_pages/listing_site.html",
+    "items": []
+  },
+  {
+    "listing": "/gallery/features_pages/listing_type.html",
+    "items": []
   }
 ]

@@ -46,7 +46,7 @@ ou en choisissant un des sites d'échantillonnage du projet ([Aéroport](listing
 library(leaflet)
 library(htmltools)
 #library(readr)
- metadonnees <- read.csv("../metadonnees.csv")
+ metadonnees <- read.csv("/home/mateo/futureMaoreReefs/data/metadonnees.csv")
  #metadonnees$longitude<-as.numeric(metadonnees$longitude)
 m <-leaflet(metadonnees)%>% 
   addTiles() %>%

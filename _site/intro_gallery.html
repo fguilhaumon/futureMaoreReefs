@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Future Maore reefs -</title>
+<title>Future Maore reefs - Modèles 3D de coraux</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -65,12 +65,21 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', 'G-ZQBVFXWT0Q', { 'anonymize_ip': true});
 </script>
+<script src="site_libs/htmlwidgets-1.5.4/htmlwidgets.js"></script>
+<script src="site_libs/jquery-1.12.4/jquery.min.js"></script>
+<link href="site_libs/leaflet-1.3.1/leaflet.css" rel="stylesheet">
+<script src="site_libs/leaflet-1.3.1/leaflet.js"></script>
+<link href="site_libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet">
+<script src="site_libs/proj4-2.6.2/proj4.min.js"></script>
+<script src="site_libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
+<link href="site_libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet">
+<script src="site_libs/leaflet-binding-2.1.1/leaflet.js"></script>
 
 
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-sidebar nav-fixed">
+<body class="nav-sidebar docked nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -85,13 +94,13 @@ gtag('config', 'G-ZQBVFXWT0Q', { 'anonymize_ip': true});
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page">Accueil</a>
+    <a class="nav-link" href="./index.html">Accueil</a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./main/vision.html">Notre vision</a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./gallery/features_pages/intro_gallery.html">Coraux en 3D</a>
+    <a class="nav-link" href="./gallery/features_pages/intro_gallery.qmd">Coraux en 3D</a>
   </li>  
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-medias" role="button" data-bs-toggle="dropdown" aria-expanded="false">Medias</a>
@@ -114,22 +123,120 @@ gtag('config', 'G-ZQBVFXWT0Q', { 'anonymize_ip': true});
           </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
+  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+    <div class="container-fluid d-flex justify-content-between">
+      <h1 class="quarto-secondary-nav-title">Modèles 3D de coraux</h1>
+      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+    </div>
+  </nav>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation docked overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./gallery/features_pages/listing_site.html" class="sidebar-item-text sidebar-link">Sites à Mayotte</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./gallery/features_pages/listing_type.html" class="sidebar-item-text sidebar-link">Types de coraux</a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content column-page" id="quarto-document-content">
+<main class="content column-page-right" id="quarto-document-content">
 
-
-
-<p><img src="assets/images/logo_squared_complete_w600.png" class="img-center img-fluid"> <br> Grâce au plan de relance du gouvernement, l’Institut de recherche pour le développement et le Parc naturel marin de Mayotte, avec l’appui du Centre universitaire de formation et de recherche de Mayotte et l’Université de la Réunion conduisent le programme <strong>Future Maore Reefs</strong>.</p>
-<div class="cell">
-
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title d-none d-lg-block">Modèles 3D de coraux</h1>
 </div>
-<p><img src="assets/images/logos_partenaires.jpeg" class="img-center img-fluid"></p>
+
+
+
+<div class="quarto-title-meta">
+
+    
+    
+  </div>
+  
+
+</header>
+
+<p>L’équipe scientifique de <strong>Future Maore Reefs</strong> utilise la photogrammétrie pour étudier la dynamique des récifs à plusieurs échelles (boutures, colonies et paysages). Elle vous propose de visualiser ici les modèles 3D des colonnies coralliennes dont elle suit la croissance.</p>
+<p>Vous pouvez accéder aux modèles de colonnies en choisissant un type fonctionnel de corail :</p>
+<div class="grid">
+<div class="g-col-3">
+<div class="text-center">
+<p>Généralistes</p>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="./gallery/listing_type.html#coraux-généralistes"><img src="./assets/images/generalist_w100.png" class="img-fluid figure-img"></a></p>
+</figure>
+</div>
+</div>
+<div class="g-col-3">
+<div class="text-center">
+<p>Compétitifs</p>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="./gallery/listing_type.html#coraux-compétitifs"><img src="./assets/images/compet_w100.png" class="img-fluid figure-img"></a></p>
+</figure>
+</div>
+</div>
+<div class="g-col-3">
+<div class="text-center">
+<p>Robustes</p>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="./gallery/listing_type.html#coraux-robustes"><img src="./assets/images/stresstol_w100.png" class="img-fluid figure-img"></a></p>
+</figure>
+</div>
+</div>
+<div class="g-col-3">
+<div class="text-center">
+<p>Opportunistes</p>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="./gallery/listing_type.html#coraux-opportunistes"><img src="./assets/images/weedy_w100.png" class="img-fluid figure-img"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<p>ou en choisissant un des sites d’échantillonnage du projet (<a href="listing_site.html#aeroport">Aéroport</a>, <a href="listing_site.html#ile-blanche">Île Blanche</a>, <a href="listing_site.html#surprise">Surprise</a>, <a href="listing_site.html#ngouja">Ngouja</a>, <a href="listing_site.html#joly-roger">Joly Roger</a>, <a href="listing_site.html#sakouli">Sakouli</a>, <a href="listing_site.html#bandrele">Bandrele</a> et <a href="listing_site.html#musical-plage">Musical Plage</a>), par exemple en vous servant de la carte ci-dessous :</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="htmlwidget-6e3540a9074c74b8dce6" style="width:100%;height:464px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-6e3540a9074c74b8dce6">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addMarkers","args":[[-12.82449,-12.7157,-12.63017,-12.965066,-12.890095,-12.889719,-12.905336,-12.92022],[45.27948,45.17146,45.15103,45.085251,45.215116,45.21545,45.203535,45.18553],null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},["<a href=\"listing_site.html#aeroport\"> Aeroport <\/a>","<a href=\"listing_site.html#ile-blanche\"> Ile blanche <\/a>","<a href=\"listing_site.html#surprise\"> Surprise <\/a>","<a href=\"listing_site.html#ngouja\"> Ngouja <\/a>","<a href=\"listing_site.html#joly-roger\"> Joly roger <\/a>","<a href=\"listing_site.html#sakouli\"> Sakouli<\/a>","<a href=\"listing_site.html#bandrele\"> Bandrele <\/a>","<a href=\"listing_site.html#musical-plage\"> Musical Plage <\/a>"],null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[-12.965066,-12.63017],"lng":[45.085251,45.27948]}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<!--
+### Site
+
+| Site          | Description | Image | Allez-y!                                         |
+|--------------|--------------|--------------|------------------------------|
+| Aeroport      | Lorem Ipsum |       | [Aeroport](listing_site.html#aeroport)           |
+| Ile Blanche   | Lorem Ipsum |       | [Ile Blanche](listing_site.html#ile-blanche)     |
+| Surprise      | Lorem Ipsum |       | [Surprise](listing_site.html#surprise)           |
+| Ngouja        | Lorem Ipsum |       | [Ngouja](listing_site.html#ngouja)               |
+| Joly Roger    | Lorem Ipsum |       | [Joly Roger](listing_site.html#joly-roger)       |
+| Sakouli       | Lorem Ipsum |       | [Sakouli](listing_site.html#sakouli)             |
+| Bandrele      | Lorem Ipsum |       | [Bandrele](listing_site.html#bandrele)           |
+| Musical Plage | Lorem Ipsum |       | [Musical Plage](listing_site.html#musical-plage) |
+-->
 
 
 

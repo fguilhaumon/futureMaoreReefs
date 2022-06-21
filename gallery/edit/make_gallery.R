@@ -1,7 +1,7 @@
 # Increase capacity
 options(max.print=2000)
 #load site infos
-site_info <- read.csv("metadonnees.csv", header= TRUE)
+site_info <- read.csv("data/metadonnees.csv", header= TRUE)
 #library
 #library(stringr)
 #root dir
