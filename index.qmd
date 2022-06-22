@@ -12,7 +12,7 @@ page-layout: full
 ![](assets/images/logo_squared_complete_w600.png){.img-center} <br/> Grâce au plan de relance du gouvernement, l'Institut de recherche pour le développement et le Parc naturel marin de Mayotte, avec l'appui du Centre universitaire de formation et de recherche de Mayotte et l'Université de la Réunion conduisent le programme **Future Maore Reefs**.
 
 ```{r echo = FALSE}
-#library(pixture)
+library(pixture)
 paths <- c("https://www.ofb.gouv.fr/sites/default/files/Images/Sch%C3%A9mas%20-%20Dessins%20-%20Tableaux/reconstitution-recif-corallien-francois-guilhaumon-isabel-urbina-barreto.jpg",
            "assets/images/corals_joly_roger.jpg",
            "https://lejournaldemayotte.yt/wp-content/uploads/2022/05/20220519_100927-1320x743.jpg",
@@ -25,8 +25,10 @@ paths <- c("https://www.ofb.gouv.fr/sites/default/files/Images/Sch%C3%A9mas%20-%
            "https://www.ird.fr/sites/ird_fr/files/styles/image_paragraph_fullwidth/public/2022-06/20220610_101920.jpg"
         )
 
-#pixgallery(paths)
+pixgallery(paths)
 
 ```
+
+<br /> <br />
 
 ![](assets/images/logos_partenaires.jpeg){.img-center}

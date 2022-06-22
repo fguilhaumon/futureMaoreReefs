@@ -1,14 +1,16 @@
 {
-  "hash": "9945155870197e84275ebc616a0cefd6",
+  "hash": "5c96058f79fea61eb42009cf47911d73",
   "result": {
-    "markdown": "---\ntitle: \"\"\nresources:\n  - \"assets/images/corals_joly_roger.jpg\"\n  - \"assets/images/colonie_3d.png\"\n  - \"assets/images/tablettes_especes_lio_small.png\"\n  - \"assets/images/logo_round_complete_w600.png\"\nsidebar: false\npage-layout: full\n---\n\n\n![](assets/images/logo_squared_complete_w600.png){.img-center} <br/> Grâce au plan de relance du gouvernement, l'Institut de recherche pour le développement et le Parc naturel marin de Mayotte, avec l'appui du Centre universitaire de formation et de recherche de Mayotte et l'Université de la Réunion conduisent le programme **Future Maore Reefs**.\n\n\n::: {.cell}\n\n:::\n\n\n![](assets/images/logos_partenaires.jpeg){.img-center}\n",
-    "supporting": [
-      "index_files"
-    ],
+    "markdown": "---\ntitle: \"\"\nresources:\n  - \"assets/images/corals_joly_roger.jpg\"\n  - \"assets/images/colonie_3d.png\"\n  - \"assets/images/tablettes_especes_lio_small.png\"\n  - \"assets/images/logo_round_complete_w600.png\"\nsidebar: false\npage-layout: full\n---\n\n\n![](assets/images/logo_squared_complete_w600.png){.img-center} <br/> Grâce au plan de relance du gouvernement, l'Institut de recherche pour le développement et le Parc naturel marin de Mayotte, avec l'appui du Centre universitaire de formation et de recherche de Mayotte et l'Université de la Réunion conduisent le programme **Future Maore Reefs**.\n\n\n::: {.cell}\n::: {.cell-output-display}\n```{=html}\n<div id=\"htmlwidget-5becbe1a5bdf080d4297\" style=\"width:100%;height:100%;\" class=\"pixgallery html-widget\"></div>\n<script type=\"application/json\" data-for=\"htmlwidget-5becbe1a5bdf080d4297\">{\"x\":{\"path\":[\"https://www.ofb.gouv.fr/sites/default/files/Images/Sch%C3%A9mas%20-%20Dessins%20-%20Tableaux/reconstitution-recif-corallien-francois-guilhaumon-isabel-urbina-barreto.jpg\",\"assets/images/corals_joly_roger.jpg\",\"https://lejournaldemayotte.yt/wp-content/uploads/2022/05/20220519_100927-1320x743.jpg\",\"https://lejournaldemayotte.yt/wp-content/uploads/2022/05/20220519_102326-1320x743.jpg\",\"https://lejournaldemayotte.yt/wp-content/uploads/2022/05/20220519_111445-1320x743.jpg\",\"https://lejournaldemayotte.yt/wp-content/uploads/2022/05/20220519_111212-1320x743.jpg\",\"assets/images/tablettes_especes_lio_small.png\",\"assets/images/colonie_3d.png\",\"assets/images/logo_round_complete_w600.png\",\"https://www.ird.fr/sites/ird_fr/files/styles/image_paragraph_fullwidth/public/2022-06/20220610_101920.jpg\"],\"caption\":[],\"dim\":\"200px\",\"gap\":\"6px\",\"type\":\"grid\"},\"evals\":[],\"jsHooks\":[]}</script>\n```\n:::\n:::\n\n\n<br /> <br />\n\n![](assets/images/logos_partenaires.jpeg){.img-center}\n",
+    "supporting": [],
     "filters": [
       "rmarkdown/pagebreak.lua"
     ],
-    "includes": {},
+    "includes": {
+      "include-in-header": [
+        "<script src=\"site_libs/htmlwidgets-1.5.4/htmlwidgets.js\"></script>\n<link href=\"site_libs/simplelightbox-0/css/simplelightbox.css\" rel=\"stylesheet\" />\n<script src=\"site_libs/simplelightbox-0/js/simplelightbox.js\"></script>\n<link href=\"site_libs/pixgallery-0/css/pixgallery.css\" rel=\"stylesheet\" />\n<script src=\"site_libs/pixgallery-binding-0.0.2.2000/pixgallery.js\"></script>\n"
+      ]
+    },
     "engineDependencies": {},
     "preserve": {},
     "postProcess": true

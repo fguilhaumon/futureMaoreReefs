@@ -3,9 +3,9 @@ title: "Modèles 3D de coraux"
 page-layout: full
 ---
 
-L'équipe scientifique de __Future Maore Reefs__ utilise la photogrammétrie pour étudier la dynamique des récifs à plusieurs échelles (boutures, colonies et paysages). Elle vous propose de visualiser ici les modèles 3D des colonnies coralliennes dont elle suit la croissance.
+L'équipe scientifique de __Future Maore Reefs__ utilise la photogrammétrie pour étudier la dynamique des récifs à plusieurs échelles (boutures, colonies et communautés coralliennes). Elle vous propose de visualiser ici les modèles 3D des colonies coralliennes dont elle suit la croissance à Mayotte.
 
-Vous pouvez accéder aux modèles de colonnies en choisissant un type fonctionnel de corail :
+Vous pouvez accéder aux modèles de colonies en choisissant un type fonctionnel de corail :
 
 ::: {.grid}
 

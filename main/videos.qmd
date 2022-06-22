@@ -11,6 +11,12 @@ Regardez le replay de l'émission *Positive Outre-mer*, "Préserver le lagon à 
 Dans cette émission vous découvrirez l'équipe du projet lors de sa première campagne de terrain en Octobre 2021.
 :::
 
-<iframe frameborder="0" width="800" height="600"
-src="https://www.dailymotion.com/embed/video/k1bSlUz5Bsl7bYxTG4V"
-allowfullscreen></iframe>
+::: {.resp-container}
+<iframe class="resp-content" allowfullscreen allow="autoplay"
+src="https://www.dailymotion.com/embed/video/k1bSlUz5Bsl7bYxTG4V">
+</iframe>
+:::
+
+<br/> <br/> <br/>
+
+![](assets/images/artificial_reef_w600.png){.center width="25%"}
