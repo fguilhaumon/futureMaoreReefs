@@ -31,4 +31,4 @@ pixgallery(paths)
 
 <br /> <br />
 
-![](assets/images/logos_partenaires.jpeg){.img-center}
+![](assets/images/logos_partenaires.jpeg){.center}

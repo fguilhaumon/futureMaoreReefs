@@ -92,7 +92,7 @@ res <- lapply(dirs, function(d) {
 
   reticulate::source_python("gallery/sketchfab_data_api.py")
 
-  sketch_tok <- read.table("gallery/sketchfab_api_token.txt")[1,1]
+  sketch_tok <- readLines("gallery/sketchfab_api_token.txt", n = 1)
 
   mod_url <- upload(mod_path = reticulate::r_to_py(zip_char),
                   mod_name = reticulate::r_to_py(sp_name_maj),
@@ -106,4 +106,5 @@ res <- lapply(dirs, function(d) {
  #write.table(mod_url, file= "data.csv", append = TRUE, sep = "\t", col.names = FALSE)
  return(mod_url)
 })
+
 save(res, file = "gallery/mod_urls.RData")
