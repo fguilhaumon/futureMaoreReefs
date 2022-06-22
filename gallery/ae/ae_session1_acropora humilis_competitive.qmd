@@ -14,31 +14,11 @@ Voici le modèle issu de la deuxième campagne de terrain __Future Maore Reefs__
 
 ### Carte
 
-```{r}
-#| echo: false
-library(leaflet)
-m <- leaflet() %>%
-addTiles() %>% #urlTemplate = "https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png"
-addMarkers(lng=45.27948, lat=-12.82449, popup="Aeroport")
-m  # Print the map
-```
 
 
----
-title: "Acropora Humilis"
-subtitle: "sous titre"
-image: /data/colonies_stageMateo/cap_ecran_colonies/competitives/ae1_022022_1.jpg
-image: /data/colonies_stageMateo/cap_ecran_colonies/stress_tolerant/ae1_022022_11.jpg
-image: /data/colonies_stageMateo/cap_ecran_colonies/stress_tolerant/ae1_022022_12.jpg
-image: /data/colonies_stageMateo/cap_ecran_colonies/stress_tolerant/ae1_022022_13.jpg
-image: /data/colonies_stageMateo/cap_ecran_colonies/stress_tolerant/ae1_022022_14.jpg
-image: /data/colonies_stageMateo/cap_ecran_colonies/stress_tolerant/ae1_022022_15.jpg
-description: Lorem Ipsum
-categories: ["competitive", "Aeroport", "session1"]
----
-<
-allowfullscreen  width= 640 height= 480 loading= " lazy " frameborder= 0 src= https://p3d.in/e/G0Eog alt= Image 3D corail file =  gallery/ae/ae_session1_acropora humilis_competitive.qmd append = TRUE
->
+
+
+
 ```{r}
 #| echo: false
 library(leaflet)

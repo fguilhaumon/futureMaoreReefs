@@ -22,7 +22,7 @@ website:
         text: "Accueil"
       - href: main/vision.qmd
         text: "Notre vision"
-      - href: gallery/features_pages/intro_gallery.qmd
+      - href: gallery/intro_gallery.qmd
         text: "Coraux en 3D"
       - text: Medias
         menu: 
@@ -37,10 +37,10 @@ website:
       align: left
       background: light
       contents:
-        - gallery/features_pages/intro_gallery.qmd
-        - href: gallery/features_pages/listing_site.qmd
+        - gallery/intro_gallery.qmd
+        - href: gallery/listing_site.qmd
           text: "Sites à Mayotte"
-        - href: gallery/features_pages/listing_type.qmd
+        - href: gallery/listing_type.qmd
           text: "Types de coraux"          
 
   page-footer:
@@ -57,7 +57,7 @@ format:
     theme: 
       light: [pulse,style/custom.scss]
       dark: darkly
-    css: styles.css
+    css: style/styles.css
     toc: false
     lang: fr
 
