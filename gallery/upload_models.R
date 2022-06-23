@@ -42,20 +42,24 @@ samplings$Site <- gsub("'", "", samplings$Site)
 samplings$Name <- gsub("Tag ","tag_", samplings$Name)
 samplings <- samplings[substr(samplings$Name,1,4) == "tag_",] #keep only colonies
 samplings$Name <- gsub("tag_","", samplings$Name)
-samplings$Espèce <- tolower(samplings$Espèce)
-sp_type$genus_sp <- tolower(sp_type$genus_sp)
+samplings$Espèce <- str_to_sentence(samplings$Espèce)
+sp_type$genus_sp <- str_to_sentence(sp_type$genus_sp)
 
 
 
 col_paths <- list.files("/data/colonies_stageMateo/cap_ecran_colonies", recursive = TRUE, full.names = TRUE)
+if (file.exists("data.csv")) {
+  data <- read.csv("data.csv")
+  dirs<- dirs[!is.element(dirs,data$id)]
+  
+}
 
-
-res <- lapply(dirs, function(d) {
+res <- do.call(rbind,lapply(dirs, function(d) {
   # Iteration sur les dirs de outputs (avec regle s de selection)
   #d = dirs[1:6]  
   # Find .obj and texture
-  obj_path <-   grep("model.obj",list.files( paste0(base_dir,"/",dirs[1]), full.names = TRUE), value= TRUE)
-  texture_path <-   grep("model.jpg",list.files( paste0(base_dir,"/",dirs[1]), full.names = TRUE), value= TRUE)
+  obj_path <-   grep("model.obj",list.files( paste0(base_dir,"/",d), full.names = TRUE), value= TRUE)
+  texture_path <-   grep("model.jpg",list.files( paste0(base_dir,"/",d), full.names = TRUE), value= TRUE)
   #Split elements
   strings <- strsplit(d, "_")[[1]] 
   #name columns
@@ -73,7 +77,7 @@ res <- lapply(dirs, function(d) {
   
   sp_name <- subset(samplings, Site == site_name & Name == strings['colony_number'])["Espèce"]
   sp_name <- sp_name$Espèce
-  sp_name_maj <- stringr::str_to_title(sp_name)
+ 
   #Find type with species name
   type <- subset(sp_type, genus_sp == sp_name)
   type <- type$LHT
@@ -101,10 +105,10 @@ res <- lapply(dirs, function(d) {
 #save url !!!!!!!
 
 
-  
+
  unlink(zip_char)
  #write.table(mod_url, file= "data.csv", append = TRUE, sep = "\t", col.names = FALSE)
- return(mod_url)
-})
-
-save(res, file = "gallery/mod_urls.RData")
+ return(list(mod_url,d))
+}))
+new_res<- rbind(res,data)
+save(new_res, file = "gallery/mod_urls.RData")
