@@ -72,7 +72,7 @@ def upload(mod_path, mod_name, api_token, mod_desc = '', mod_tags = '', mod_cat 
         'description': mod_desc,
         'tags': mod_tags,  # Array of tags,
         'categories': mod_cat,  # Array of categories slugs,
-        'license': mod_lic,  # License slug,
+        'license': mod_lic,  # License slug, allow actions to users see by- actions
         'private': 1,  # requires a pro account,
         'password': '',  # requires a pro account,
         'isPublished': mod_pub,  # Model will be on draft instead of published,
