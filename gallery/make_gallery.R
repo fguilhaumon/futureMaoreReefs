@@ -47,7 +47,7 @@ sp_type$genus_sp <- tolower(sp_type$genus_sp)
 
 
 col_paths <- list.files("/data/colonies_stageMateo/cap_ecran_colonies", recursive = TRUE, full.names = TRUE)
-
+write.table(samplings, file= "samplings.csv", append = TRUE, sep = "\t", col.names = TRUE)
 
 res <- lapply(dirs, function(d) {
   
@@ -68,7 +68,7 @@ res <- lapply(dirs, function(d) {
   
   sp_name <- subset(samplings, Site == site_name & Name == strings['colony_number'])["Espèce"]
   sp_name <- sp_name$Espèce
-  sp_name_maj <- stringr::str_to_title(sp_name)
+  sp_name_maj <- stringr::str_to_sentence(sp_name)
   #Find type with species name
   type <- subset(sp_type, genus_sp == sp_name)
   type <- type$LHT
