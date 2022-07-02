@@ -14,6 +14,8 @@ Bonne Écoute !
 
 ::: card-text
 Dans ces podcasts, les élèves vont vous transmettre ce qu'ils ont appris sur le corail, le réchauffement climatique et d'autres sujets !
+
+Pour plus de détials consulter la news sur le site de l'IRD --> [https://www.ird.fr/les-recifs-de-demain-une-serie-de-podcasts-realisee-par-les-eleves-du-projet-future-maore-reefs](https://www.ird.fr/les-recifs-de-demain-une-serie-de-podcasts-realisee-par-les-eleves-du-projet-future-maore-reefs)
 :::
 :::
 :::
@@ -69,7 +71,3 @@ Découvrez tous les épisodes !
 </iframe>
 
 </h3>
-
-::: callout-tip
-Consulter la news sur le site de l'IRD --> [https://www.ird.fr/les-recifs-de-demain-une-serie-de-podcasts-realisee-par-les-eleves-du-projet-future-maore-reefs](https://www.ird.fr/les-recifs-de-demain-une-serie-de-podcasts-realisee-par-les-eleves-du-projet-future-maore-reefs)
-:::
