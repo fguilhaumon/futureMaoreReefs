@@ -11,9 +11,9 @@ Vous pouvez accéder aux modèles de colonies en choisissant un type fonctionnel
 
 ::: {.g-col-3}
 ::: {.text-center} 
-Généralistes
+
 :::
-[![](/assets/images/generalist_w100.png)](/gallery/listing_type.html#coraux-généralistes)
+[[![](/assets/images/generalist_w100.png)](/gallery/listing_type.html#coraux-généralistes)]{.data-bs-toggle="tooltip" .data-bs-placement="bottom" .title="Généralistes"}
 :::
 
 ::: {.g-col-3}
@@ -46,7 +46,7 @@ ou en choisissant un des sites d'échantillonnage du projet ([Aéroport](listing
 library(leaflet)
 library(htmltools)
 #library(readr)
- metadonnees <- read.csv("/home/mateo/futureMaoreReefs/data/metadonnees.csv")
+ metadonnees <- read.csv("data/metadonnees.csv")
  #metadonnees$longitude<-as.numeric(metadonnees$longitude)
 m <-leaflet(metadonnees)%>% 
   addTiles() %>%

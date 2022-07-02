@@ -39,7 +39,7 @@ MAX_ERRORS = 10
 RETRY_TIMEOUT = 5  # seconds
 
 
-def _get_request_payload(*, data=None, files=None, json_payload=False, api_token):
+def get_request_payload(*, data=None, files=None, json_payload=False, api_token):
     """Helper method that returns the authentication token and proper content type depending on
     whether or not we use JSON payload."""
     data = data or {}
@@ -78,12 +78,14 @@ def upload(mod_path, mod_name, api_token, mod_desc = '', mod_tags = '', mod_cat 
         'isPublished': mod_pub,  # Model will be on draft instead of published,
         'isInspectable': mod_ins,  # Allow 2D view in model inspector
     }
+    
+    #type(data) <class 'dict'>
 
     print('Uploading...')
 
     with open(model_file, 'rb') as file_:
         files = {'modelFile': file_}
-        payload = _get_request_payload(data=data, files=files, api_token = api_token)
+        payload = get_request_payload(data=data, files=files, api_token = api_token)
 
         try:
             response = requests.post(model_endpoint, **payload)
@@ -113,7 +115,7 @@ def poll_processing_status(model_url):
     while (retry < MAX_RETRIES) and (errors < MAX_ERRORS):
         print(f'Try polling processing status (attempt #{retry})...')
 
-        payload = _get_request_payload()
+        payload = get_request_payload()
 
         try:
             response = requests.get(model_url, **payload)
@@ -162,7 +164,7 @@ def patch_model(model_url):
     Important: The call uses a JSON payload.
     """
 
-    payload = _get_request_payload(data={'name': data['name']}, json_payload=True)
+    payload = get_request_payload(data={'name': data['name']}, json_payload=True)
 
     try:
         response = requests.patch(model_url, **payload)
@@ -185,7 +187,7 @@ def patch_model_options(model_url):
         # Or for 4x4 matrix rotation:
         # 'orientation': '{"matrix": [1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1]}'
     }
-    payload = _get_request_payload(data=data, json_payload=True)
+    payload = get_request_payload(data=data, json_payload=True)
     try:
         response = requests.patch(f'{model_url}/options', **payload)
     except RequestException as exc:
