@@ -7,39 +7,92 @@ L'équipe scientifique de __Future Maore Reefs__ utilise la photogrammétrie pou
 
 Vous pouvez accéder aux modèles de colonies en choisissant un type fonctionnel de corail :
 
-::: {.grid}
+```{r echo = FALSE}
 
-::: {.g-col-3}
-::: {.text-center} 
+images <- c("/assets/images/generalist_w100.png",
+          "/assets/images/compet_w100.png",
+          "/assets/images/stresstol_w100.png",
+          "/assets/images/weedy_w100.png")
+
+urls <- c("/gallery/listing_type.html#coraux-généralistes",
+          "/gallery/listing_type.html#coraux-compétitifs",
+          "/gallery/listing_type.html#coraux-robustes",
+          "/gallery/listing_type.html#coraux-opportunistes")
+
+titles <- c("Généralistes", "Compétitifs", "Robustes", "Opportunistes")
+
+types_data <- data.frame(
+  title = titles,
+  image = images,
+  url = urls
+)
+
+#types_data |> bs4cards::cards(title = title, image = image, link = url, width = "row-cols-4")
+
+
+```
+
+
+
+:::{layout-ncol=4 layout-valign="bottom"}
+
+
+:::{.card .text-center .border-secondary .mb-3}
+
+<a href="../gallery/listing_type.html#coraux-généralistes">
+<img src="../assets/images/generalist_w100.png" class="card-img-top" style="padding: 1em;">
+</a>
+
+:::{.card-footer .bg-secondary}
+Coraux Généralistes
+:::
 
 :::
-[[![](/assets/images/generalist_w100.png)](/gallery/listing_type.html#coraux-généralistes)]{.data-bs-toggle="tooltip" .data-bs-placement="bottom" .title="Généralistes"}
-:::
 
-::: {.g-col-3}
-::: {.text-center} 
-Compétitifs
-:::
-[![](/assets/images/compet_w100.png)](/gallery/listing_type.html#coraux-compétitifs)
-:::
 
-::: {.g-col-3}
-::: {.text-center} 
-Robustes
-:::
-[![](/assets/images/stresstol_w100.png)](/gallery/listing_type.html#coraux-robustes)
-:::
+:::{.card .text-center .border-warning .mb-3}
 
-::: {.g-col-3}
-::: {.text-center} 
-Opportunistes
-:::
-[![](/assets/images/weedy_w100.png)](/gallery/listing_type.html#coraux-opportunistes)
+<a href="../gallery/listing_type.html#coraux-compétitifs">
+<img src="../assets/images/compet_w100.png" class="card-img-top" style="padding: 1em;">
+</a>
+
+:::{.card-footer .bg-warning}
+Coraux Compétitifs
 :::
 
 :::
 
-ou en choisissant un des sites d'échantillonnage du projet ([Aéroport](listing_site.html#aeroport), [Île Blanche](listing_site.html#ile-blanche), [Surprise](listing_site.html#surprise), [Ngouja](listing_site.html#ngouja), [Joly Roger](listing_site.html#joly-roger), [Sakouli](listing_site.html#sakouli), [Bandrele](listing_site.html#bandrele) et [Musical Plage](listing_site.html#musical-plage)), par exemple en vous servant de la carte ci-dessous :
+
+:::{.card .text-center .border-success .mb-3}
+
+<a href="../gallery/listing_type.html#coraux-robustes">
+<img src="../assets/images/stresstol_w100.png" class="card-img-top" style="padding: 1em;">
+</a>
+
+:::{.card-footer .bg-success}
+Coraux Robustes
+:::
+
+:::
+
+
+:::{.card .text-center .border-info .mb-3}
+
+<a href="../gallery/listing_type.html#coraux-opportunistes">
+<img src="../assets/images/weedy_w100.png" class="card-img-top" style="padding: 1em;">
+</a>
+
+:::{.card-footer .bg-info}
+Coraux Opportunistes
+:::
+
+:::
+
+:::
+
+
+
+ou en choisissant un des sites d'échantillonnage du projet ([Aéroport](listing_site.html#aeroport), [Île Blanche](listing_site.html#ile-blanche), [Surprise](listing_site.html#surprise), [Ngouja](listing_site.html#ngouja) ou [Joly Roger](listing_site.html#joly-roger), par exemple en vous servant de la carte ci-dessous :
 
 ```{r}
 #| echo: false
