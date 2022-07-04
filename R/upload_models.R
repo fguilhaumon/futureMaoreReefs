@@ -1,13 +1,13 @@
-# Increase capacity
-options(max.print = 2000)
 
 
-
-upload_models <- function() {
+upload_models <- function(sites = c("ae", "ib", "su", "ng", "jr")) {
+  
+  #sites = c("ae", "ib", "su", "ng", "jr")
   
   #load site infos
   site_info <- read.csv("data/metadonnees.csv", header = TRUE)
   #root dir
+  sp_type <- read.csv("/data/colonies_stageMateo/overall_sp_sites_mayotte.csv")
   base_dir <- "/data/outputs"
   
   #list dirs in root_dir
@@ -16,15 +16,16 @@ upload_models <- function() {
   #select only sites in site_info
   #site_info$code
   #Add | in site_info$code "or term"
-  patt <- paste(site_info$code, collapse = "|") 
-  patt <- "ae|ib|su|ng|jr"
+  
+  patt <- paste(sites, collapse = "|") 
+  #patt <- "ae|ib|su|ng|jr"
   # Choose file wich contains patt
   dirs <- grep(pattern = patt, dirs, value = TRUE) 
   #Load samplings info
   samplingsfile <- read.csv("samplings.csv", header = TRUE)
   
   #Condition
-  dirs <- dirs[1:15] #TODO remove this line for production
+  dirs <- dirs[1:4] #TODO remove this line for production
   
   
   if (file.exists("gallery/mod_urls.RData")) {
@@ -40,7 +41,7 @@ upload_models <- function() {
   }
 
   res <- do.call(rbind, lapply(dirs, function(d) {
-        #d = "ae1_022022_9"
+        #d = "ae1_022022_1"
         # Iteration sur les dirs de outputs (avec regles de selection)
         
         # Find .obj and texture
@@ -56,8 +57,9 @@ upload_models <- function() {
         site_name <-  site_info$site[site_info$code == strings["site"]]
         sp_name <- subset(samplingsfile, Site == site_name & Name == strings['colony_number'])["Espèce"]
         sp_name <- sp_name$Espèce
-        
-        
+        type <- subset(sp_type, genus_sp == sp_name)
+        type <- type$LHT
+        mod_desc <- paste0('This ',type, ' coral colony is monitored at the "',site_name, '" site of Mayotte')
         # zip des model.obj et .jpeg
         #cherry-pick allows you to zip files with differents paths see relative path's doc
         zip_char <- paste0(d, ".zip")
@@ -75,7 +77,8 @@ upload_models <- function() {
         
         mod_url <- upload(mod_path = reticulate::r_to_py(zip_char),
                           mod_name = reticulate::r_to_py(sp_name), #TODO update mod_name with site name and colony number
-                          api_token = reticulate::r_to_py(sketch_tok) )
+                          api_token = reticulate::r_to_py(sketch_tok),
+                          mod_desc  = reticulate::r_to_py(mod_desc))
         
         #save url !!!!!!!
         

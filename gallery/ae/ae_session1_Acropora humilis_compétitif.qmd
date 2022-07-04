@@ -1,0 +1,27 @@
+---
+title: "Acropora humilis"
+subtitle: ""
+image: /data/colonies_stageMateo/cap_ecran_colonies/competitives/ae1_022022_1.jpg
+image: /data/colonies_stageMateo/cap_ecran_colonies/stress_tolerant/ae1_022022_11.jpg
+image: /data/colonies_stageMateo/cap_ecran_colonies/stress_tolerant/ae1_022022_12.jpg
+image: /data/colonies_stageMateo/cap_ecran_colonies/stress_tolerant/ae1_022022_13.jpg
+image: /data/colonies_stageMateo/cap_ecran_colonies/stress_tolerant/ae1_022022_14.jpg
+image: /data/colonies_stageMateo/cap_ecran_colonies/stress_tolerant/ae1_022022_15.jpg
+description: Cette colonie de corailcompétitifest suivi au site "Aeroport"
+categories: ["compétitif", "Aeroport", "session1"]
+---
+### Modèle 3D
+
+Voici le modèle issu de la deuxième campagne de terrain __Future Maore Reefs__ le 02 2022
+
+<div class="resp-container"> <iframe class="resp-content title="Acropora humilis frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="c("ae1_022022_1", "ae1_022022_10", "ae1_022022_11", "ae1_022022_12")embed?autostart=1&annotations_visible=0&preload=1&ui_infos=0&ui_inspector=0&ui_watermark_link=0&ui_watermark=0&ui_settings=0"> </iframe> </div>
+<div class="resp-container"> <iframe class="resp-content title="Acropora humilis frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="c("https://api.sketchfab.com/v3/models/537cdebbd69b4604adbd0954b823add4", "https://api.sketchfab.com/v3/models/7361813c263446698caf81f08dc598e5", "https://api.sketchfab.com/v3/models/cfb7372f76b241dc858b31de19334194", "https://api.sketchfab.com/v3/models/de02901c51bd422680391a72e5866c14")embed?autostart=1&annotations_visible=0&preload=1&ui_infos=0&ui_inspector=0&ui_watermark_link=0&ui_watermark=0&ui_settings=0"> </iframe> </div>
+### Carte du site
+```{r}
+#| echo: false
+library(leaflet)
+m <- leaflet() %>%
+addTiles() %>% 
+addMarkers(lng=45.27948, lat=-12.82449, popup="Aeroport")
+m  # Print the map
+```

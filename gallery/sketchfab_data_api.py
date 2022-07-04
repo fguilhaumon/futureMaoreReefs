@@ -53,7 +53,7 @@ def get_request_payload(*, data=None, files=None, json_payload=False, api_token)
     return {'data': data, 'files': files, 'headers': headers}
 
 
-def upload(mod_path, mod_name, api_token, mod_desc = '', mod_tags = '', mod_cat = '', mod_lic = 'by-nc-sa', mod_pub = False, mod_ins = True):
+def upload(mod_path, mod_name, api_token, mod_desc, mod_tag='corals', mod_cat='', mod_lic = 'by-nc-sa', mod_pub = False, mod_ins = True):
     """
     POST a model to sketchfab.
     This endpoint only accepts formData as we upload a file.
@@ -70,7 +70,7 @@ def upload(mod_path, mod_name, api_token, mod_desc = '', mod_tags = '', mod_cat 
     data = {
         'name': mod_name,
         'description': mod_desc,
-        'tags': mod_tags,  # Array of tags,
+        'tags': mod_tag,  # Array of tags,
         'categories': mod_cat,  # Array of categories slugs,
         'license': mod_lic,  # License slug, allow actions to users see by- actions
         'private': 1,  # requires a pro account,
@@ -178,7 +178,7 @@ def patch_model(model_url):
 
 
 def patch_model_options(model_url):
-    """PATCH the model options endpoint to update the model background, shading, orienration."""
+    """PATCH the model options endpoint to update the model background, shading, orientation."""
     data = {
         'shading': 'shadeless',
         'background': '{"color": "#FFFFFF"}',
