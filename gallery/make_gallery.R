@@ -9,7 +9,7 @@ base_dir <- "/data/outputs"
 
 #list dirs in root_dir
 dirs <- list.dirs(base_dir, full.names = FALSE, recursive = FALSE)
-
+sp_type <- read.csv("/data/colonies_stageMateo/overall_sp_sites_mayotte.csv")
 #select only sites in site_info
 
 #Add | in site_info$code "or term"
@@ -18,41 +18,19 @@ patt <- paste(site_info$code, collapse = "|")
 dirs <- grep(pattern = patt, dirs, value = TRUE) 
 
 #load sampling info
-# read.csv("/data/outputs/sp_type.csv") 
-sp_type <- read.csv(paste0(base_dir, "/", "sp_type.csv"), header= TRUE)
-#Select files wich contain fmr
-samp_files <- grep("fmr", list.files(base_dir, pattern = "csv", full.names = TRUE), value = TRUE) 
-#lapply function return list
-samps <- lapply(samp_files, read.csv) 
-#Put col on right place
-samps[[3]][3] <- samps[[3]][4] 
-samps[[2]][3] <- samps[[2]][4]
-
-#Rename site
-samps[[4]]$Site <- gsub("Aéroport_P1","Aeroport",samps[[4]]$Site)
-samps[[4]]$Site <- gsub("Surprise_P2","Surprise",samps[[4]]$Site)  
-samps[[2]]$Site <- gsub("sakouli","Sakouli",samps[[2]]$Site)
-#lapply(samps, ncol)
-
-samplings <- do.call(rbind, samps)
-
-#cleaning
-samplings$Site <- gsub("é", "e", samplings$Site)
-samplings$Site <- gsub("'", "", samplings$Site)
-samplings$Name <- gsub("Tag ","tag_", samplings$Name)
-samplings <- samplings[substr(samplings$Name,1,4) == "tag_",] #keep only colonies
-samplings$Name <- gsub("tag_","", samplings$Name)
-samplings$Espèce <- tolower(samplings$Espèce)
-sp_type$genus_sp <- tolower(sp_type$genus_sp)
-
+samplingsfile <- read.csv("samplings.csv", header = TRUE)
 
 col_paths <- list.files("/data/colonies_stageMateo/cap_ecran_colonies", recursive = TRUE, full.names = TRUE)
-write.table(samplings, file= "samplings.csv", append = TRUE, sep = "\t", col.names = TRUE)
+load("gallery/mod_urls.RData")
 
+iteration = dirs[1:5]
+d = dirs[1]
 res <- lapply(dirs, function(d) {
   
   #d = dirs[6]  
-  
+  # Load model url
+  mod_urls <- subset(data$mod_url, data$d == d)
+  mod_urls <- gsub("/v3","",mod_urls)
   #Split elements
   strings <- strsplit(d, "_")[[1]] 
   #name columns
@@ -66,9 +44,8 @@ res <- lapply(dirs, function(d) {
   session <- "session1"
   #Find species Name with tag
   
-  sp_name <- subset(samplings, Site == site_name & Name == strings['colony_number'])["Espèce"]
+  sp_name <- subset(samplingsfile, Site == site_name & Name == strings['colony_number'])["Espèce"]
   sp_name <- sp_name$Espèce
-  sp_name_maj <- stringr::str_to_sentence(sp_name)
   #Find type with species name
   type <- subset(sp_type, genus_sp == sp_name)
   type <- type$LHT
@@ -83,10 +60,10 @@ res <- lapply(dirs, function(d) {
   #Editing file
   write("---", file = qmd_file_path, append = TRUE)
   #Init variables
-  title_char <- paste0('title: "', sp_name_maj, '"')
-  subtitle_char <- paste0('subtitle: "', "sous titre", '"')
-  image_char <- paste0("image: ", grep(d, col_paths, value = TRUE))
-  description_char <- "description: Lorem Ipsum"
+  title_char <- paste0('title: "', sp_name, '"')
+  subtitle_char <- paste0('subtitle: "', "", '"')
+  description_char <- paste0("description: ", "Cette colonie de corail",type,"est suivi au site ",'"',site_name,'"')
+  image_char <- paste0("image: ", grep(pattern = d, col_paths, value = TRUE))
   categories_char <- paste0("categories: ", "[", '"',type, '"', ", ", '"',site_name, '"',", " , '"',session,'"', "]" )
   write(title_char, file = qmd_file_path, append = TRUE)
   
@@ -99,10 +76,13 @@ res <- lapply(dirs, function(d) {
   write(categories_char, file = qmd_file_path, append = TRUE)
   
   write("---", file = qmd_file_path, append = TRUE)
-  write("<", file = qmd_file_path, append = TRUE)
-  iframe_char <- paste("allowfullscreen"," width=","640","height=","480","loading=",'"',"lazy",'"',"frameborder=","0","src=","https://p3d.in/e/G0Eog","alt=","Image 3D corail","file = ",qmd_file_path,"append = TRUE")
+  write("### Modèle 3D", file = qmd_file_path, append = TRUE)
+  write("", file = qmd_file_path, append = TRUE)
+  write("Voici le modèle issu de la deuxième campagne de terrain __Future Maore Reefs__, en février 2022." , file = qmd_file_path, append = TRUE)
+  write("",file = qmd_file_path, append = TRUE)
+  iframe_char <- paste0("<div class=",'"',"resp-container",'"',"> <iframe class=","'","resp-content",'"',"title=","'",sp_name,"'","frameborder='0' allowfullscreen mozallowfullscreen='true' webkitallowfullscreen='true' allow='autoplay; fullscreen; xr-spatial-tracking' xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share","src=","'",mod_urls,"embed?autostart=1&annotations_visible=0&preload=1&ui_infos=0&ui_inspector=0&ui_watermark_link=0&ui_watermark=0&ui_settings=0","'","> </iframe> </div>")
   write(iframe_char,file = qmd_file_path, append = TRUE)
-  write(">",file = qmd_file_path, append = TRUE)
+  write("### Carte du site", file = qmd_file_path, append = TRUE)
 
   write("```{r}", file = qmd_file_path, append = TRUE)
   
