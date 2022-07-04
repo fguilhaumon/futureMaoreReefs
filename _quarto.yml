@@ -61,4 +61,4 @@ format:
     toc: false
     lang: fr
 
-freeze: auto
+freeze: false

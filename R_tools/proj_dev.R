@@ -8,3 +8,7 @@ usethis::use_description()
 
 #Installation des dépendances
 devtools::install_deps()
+
+
+reticulate::py_install("requests", envname = "r-reticulate")
+reticulate::import("requests")

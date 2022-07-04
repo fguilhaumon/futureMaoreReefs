@@ -78,6 +78,8 @@ def upload(mod_path, mod_name, api_token, mod_desc = '', mod_tags = '', mod_cat 
         'isPublished': mod_pub,  # Model will be on draft instead of published,
         'isInspectable': mod_ins,  # Allow 2D view in model inspector
     }
+    
+    #type(data) <class 'dict'>
 
     print('Uploading...')
 

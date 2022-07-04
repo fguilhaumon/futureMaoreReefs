@@ -19,4 +19,4 @@ src="https://www.dailymotion.com/embed/video/k1bSlUz5Bsl7bYxTG4V">
 
 <br/> <br/> <br/>
 
-![](assets/images/artificial_reef_w600.png){.center width="25%"}
+![](/assets/images/artificial_reef_w600.png){.center width="25%"}
