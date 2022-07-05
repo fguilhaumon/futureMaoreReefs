@@ -34,10 +34,9 @@ types_data <- data.frame(
 
 
 
-:::{layout-ncol=4 layout-valign="bottom"}
+:::{.d-flex .justify-content-evenly .align-items-center}
 
-
-:::{.card .text-center .border-secondary .mb-3}
+:::{.card .text-center .border-0 .mb-3 .shadow}
 
 <a href="../gallery/listing_type.html#coraux-généralistes">
 <img src="../assets/images/generalist_w100.png" class="card-img-top" style="padding: 1em;">
@@ -50,7 +49,7 @@ Coraux Généralistes
 :::
 
 
-:::{.card .text-center .border-warning .mb-3}
+:::{.card .text-center .border-0 .mb-3 .shadow}
 
 <a href="../gallery/listing_type.html#coraux-compétitifs">
 <img src="../assets/images/compet_w100.png" class="card-img-top" style="padding: 1em;">
@@ -63,7 +62,7 @@ Coraux Compétitifs
 :::
 
 
-:::{.card .text-center .border-success .mb-3}
+:::{.card .text-center .border-0 .mb-3 .shadow}
 
 <a href="../gallery/listing_type.html#coraux-robustes">
 <img src="../assets/images/stresstol_w100.png" class="card-img-top" style="padding: 1em;">
@@ -76,7 +75,7 @@ Coraux Robustes
 :::
 
 
-:::{.card .text-center .border-info .mb-3}
+:::{.card .text-center .border-0 .mb-3 .shadow}
 
 <a href="../gallery/listing_type.html#coraux-opportunistes">
 <img src="../assets/images/weedy_w100.png" class="card-img-top" style="padding: 1em;">

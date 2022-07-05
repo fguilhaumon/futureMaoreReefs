@@ -29,8 +29,9 @@ upload_models <- function(sites = c("ae", "ib", "su", "ng", "jr")) {
   
   
   if (file.exists("gallery/mod_urls.RData")) {
+    message("Je passe")
     #Load data in mod_urls.RData
-    load("gallery/mod_urls.RData") #TODO change obj name to mod_urls
+    load("gallery/mod_urls.RData", envir = globalenv()) #TODO change obj name to mod_urls
     #Select files wich are not in mod_urls.RData
     dirs <- dirs[!is.element(dirs, mod_urls$d)] #TODO replace "data" with "mod_urls"
   }#eo if file.exists
@@ -103,8 +104,8 @@ upload_models <- function(sites = c("ae", "ib", "su", "ng", "jr")) {
     }
   
     save(mod_urls, file = "gallery/mod_urls.RData")
-
-    return(mod_urls)
+    message("fin de la fonction")
+    return()
 }#eo upload_models
 
 clean_models <- function() {

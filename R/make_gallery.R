@@ -30,26 +30,32 @@ samplingsfile <- read.csv("samplings.csv", header = TRUE)
 
 col_paths <- list.files("/data/colonies_stageMateo/cap_ecran_colonies", recursive = TRUE, full.names = TRUE)
 load("gallery/mod_urls.RData")
+dirs <- dirs[is.element(dirs, mod_urls$d)]
 #d= "ae1_022022_1"
 
-res <- lapply(mod_urls[1], function(d) {
+res <- lapply(dirs, function(d) {
   
-  #d = dirs[6]  
+  #d = "ae1_022022_10"
   # Load model url
-  mod_url <- subset(mod_urls[2], mod_urls[1] == d)
-  mod_url <- gsub("/v3","",mod_urls)
+  mod_url <- mod_urls$mod_url[mod_urls$d == d]
+  mod_url <- gsub("/v3", "", mod_url)
   #Split elements
   strings <- strsplit(d, "_")[[1]] 
   #name columns
   names(strings) <- c("site", "sampling", "colony_number") 
   #Take only code part like "ae"
-  date <- paste(substr(strings["sampling"],1,2),substr(strings["sampling"],3,6))
-  strings["site"] <- substr(strings["site"], 1, 2) 
+  
+  mois <- c("janvier",	"février",	"mars",	"avril",	"mai", 	"juin",	"juillet",	"août",	"septembre",	"octobre",	"novembre",	"décembre")
+  
+  month <- as.numeric(substr(strings["sampling"],1,2))
+  month_char <- mois[month]
+  year <- substr(strings["sampling"],3,6)
+  strings["site"] <- substr(strings["site"], 1, 2)
   
   site_name <-  site_info$site[site_info$code == strings["site"]]
  
   #init variables
-  session <- "session1"
+  #session <- "session1"
   #Find species Name with tag
   
   sp_name <- subset(samplingsfile, Site == site_name & Name == strings['colony_number'])["Espèce"]
