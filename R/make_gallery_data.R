@@ -11,12 +11,14 @@ make_gallery_data <- function() {
   data$name <- gsub("Tag ","tag_", data$name)
   #Select row with tag
   data      <- data[grep("tag_",data$name),]
+  data$name <- gsub("tag_","",data$name)
   data$date <- substr(data$date, 1, 10)
   #Change date format
   data$date <- strftime(strptime(data$date, "%m/%d/%Y", tz = "UTC"),"%d/%m/%Y")
-  dates <- sapply(strsplit(gg$date, " "), "[[", 1)
-  as.Date(dates)
-  
+  #Put species name in right format
+  data$species <- stringr::str_to_sentence(data$species)
+  write.csv(data, file = "data/data.csv", row.names = FALSE)
+  return(data)
   
   
   

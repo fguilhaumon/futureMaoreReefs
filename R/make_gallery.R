@@ -1,7 +1,4 @@
 
-
-
-
 make_gallery <- function() {
 
 #load site infos
@@ -9,36 +6,36 @@ site_info <- read.csv("data/metadonnees.csv", header= TRUE)
 #library
 #library(stringr)
 #root dir
-base_dir <- "/data/outputs"
+#base_dir <- "/data/outputs"
 
 
 french_type_dic <- data.frame(type_en = c("competitive", "stress_tolerant", "generalist", "weedy"),
                               type_fr = c("compétitif", "robuste", "généraliste", "opportuniste"))
 
 #list dirs in root_dir
-dirs <- list.dirs(base_dir, full.names = FALSE, recursive = FALSE)
-sp_type <- read.csv("/data/colonies_stageMateo/overall_sp_sites_mayotte.csv")
+#dirs <- list.dirs(base_dir, full.names = FALSE, recursive = FALSE)
+sp_type <- read.csv("data/speciestype.csv")
 #select only sites in site_info
 
 #Add | in site_info$code "or term"
-patt <- paste(site_info$code, collapse = "|") 
+#patt <- paste(site_info$code, collapse = "|") 
 # Choose file wich contains patt
-dirs <- grep(pattern = patt, dirs, value = TRUE) 
+#dirs <- grep(pattern = patt, dirs, value = TRUE) 
 
 #load sampling info
-samplingsfile <- read.csv("samplings.csv", header = TRUE)
+#samplingsfile <- read.csv("samplings.csv", header = TRUE)
 
 col_paths <- list.files("/data/colonies_stageMateo/cap_ecran_colonies", recursive = TRUE, full.names = TRUE)
-load("gallery/mod_urls.RData")
-dirs <- dirs[is.element(dirs, mod_urls$d)]
+load("gallery/model.RData")
+#dirs <- dirs[is.element(dirs, mod_urls$d)]
 #d= "ae1_022022_1"
 
-res <- lapply(dirs, function(d) {
+res <- lapply(model, function(d) {
   
   #d = "ae1_022022_10"
   # Load model url
-  mod_url <- mod_urls$mod_url[mod_urls$d == d]
-  mod_url <- gsub("/v3", "", mod_url)
+  model <- model$uri[model$d == d]
+  model <- gsub("/v3", "", model)
   #Split elements
   strings <- strsplit(d, "_")[[1]] 
   #name columns
@@ -58,15 +55,17 @@ res <- lapply(dirs, function(d) {
   #session <- "session1"
   #Find species Name with tag
   
-  sp_name <- subset(samplingsfile, Site == site_name & Name == strings['colony_number'])["Espèce"]
-  sp_name <- sp_name$Espèce
+  #sp_name <- subset(data, site == site_name & Name == strings['colony_number'])["species"]
+  #sp_name <- sp_name$Espèce
+  sp_name <- model$name
   #Find type with species name
-  type <- subset(sp_type, genus_sp == sp_name)
-  type <- type$LHT
+  #type <- subset(sp_type, genus_sp == sp_name)
+  #type <- type$LHT
+  type <- model$type
   type <- french_type_dic$type_fr[french_type_dic$type_en == type]
-  longitude <- subset(site_info, site == site_name)$longitude
+  longitude <- subset(site_info, site == model$site_name)$longitude
   #longitude <- longitude$longitude
-  latitude <- subset(site_info, site == site_name)$latitude
+  latitude <- subset(site_info, site == model$site_name)$latitude
   #latitude <- latitude$latitude
   #Creating name file and path's file
   qmd_file_name <- paste0(strings["site"], "_", session, "_", sp_name, "_", type, ".qmd")

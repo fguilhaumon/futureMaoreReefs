@@ -5,10 +5,11 @@
 devtools::load_all()
 
 # make gallery data
-make_gallery_data()
+data <- make_gallery_data()
 
 # upload models
-mod_upload_infos <- upload_models()
+
+mod_upload_infos <- upload_models(sites = c("ae", "ib", "su", "ng", "jr"), data)
 
 # make the gallery qmd files
 make_gallery(mod_upload_infos)
