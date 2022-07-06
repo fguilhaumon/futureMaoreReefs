@@ -46,8 +46,8 @@ make_gallery_data <- function() {
   ####
   if (file.exists("data/data_uploaded.csv")){
     data_uploaded <- read.csv("data/data_uploaded.csv")
-    dirs <- dirs[!is.element(dirs, data_uploaded$d)] 
-    
+    dirs <- dirs[!is.element(dirs, data_uploaded$file)] 
+    message("oui ce if marche")
   }
   #list meta_data files
   res <- do.call(rbind, lapply(dirs, function(d) {
@@ -55,7 +55,7 @@ make_gallery_data <- function() {
 
     
     # Find .obj and texture
-    model_path <- paste0("data/outputs/",d)
+    model_path <- paste0("/data/outputs/",d)
     
     obj_path <- grep("model.obj", list.files( paste0("/data/outputs/",d), full.names = TRUE), value = TRUE) # TODO Put in upload models find the path with the model_path above
     texture_path <- grep("model.jpg",list.files( paste0("/data/outputs/",d), full.names = TRUE), value = TRUE)
@@ -94,10 +94,11 @@ make_gallery_data <- function() {
     message(length(site_name_en))
     message(type)
     message(length(mod_desc_char))
-    test <- data.frame(d, model_path, sp_name, site_name_en, type, mod_desc_char)
-  }))
     
-  write.csv(res, file = "data/model_upload_data.csv")
+    return(data.frame(d, model_path, sp_name, site_name_en, type, mod_desc_char))
+  }))
+  return(res)
+  write.csv(res, file = "data/model_upload_data.csv", row.names = FALSE)
   }
   
   

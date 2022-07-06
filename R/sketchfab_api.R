@@ -16,10 +16,10 @@
 #' @export
 #'
 
-upload_model <- function(mod_path  = "/home/franz/Dropbox/Me/github/coral3d/outputs/porites_sp_reunion_hermitage_20201208/porites_sp_reunion_hermitage_20201208_model.obj",
-                         mod_name  = "Porites Reunion",
+upload_model <- function(mod_path  = "",
+                         mod_name  = "",
                          api_token = readLines("gallery/sketchfab_api_token.txt"),
-                         mod_desc  = "This coral from the genus Porites was captured at Reunion island.",
+                         mod_desc  = "",
                          mod_tags  = "",
                          mod_cat   = "",
                          mod_lic   = "by-nc-sa",
@@ -57,6 +57,6 @@ upload_model <- function(mod_path  = "/home/franz/Dropbox/Me/github/coral3d/outp
   
   cli::cli_alert_success(paste0("Upload successful for ", mod_name, " at ", mod_url$uri))
   
-  data.frame(model_path = mod_path, name = mod_name, description = mod_desc, licence = mod_lic, mod_url)
+  data.frame(model_path = mod_path, name = mod_name, description = mod_desc, licence = mod_lic, mod_url, check.names = TRUE )
   
 }#eo upload_model

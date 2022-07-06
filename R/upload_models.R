@@ -1,73 +1,58 @@
 
 
-upload_models <- function(sites = c("ae", "ib", "su", "ng", "jr"), data) {
+upload_models <- function(data) {
   
   #sites = c("ae", "ib", "su", "ng", "jr")
   print(data)
   #load site infos
-  site_info <- read.csv("data/metadonnees.csv", header = TRUE)
-  #root dir
-  #sp_type <- read.csv("/data/colonies_stageMateo/overall_sp_sites_mayotte.csv")
-  sp_type <- read.csv("data/speciestype.csv")
-  base_dir <- "/data/outputs"
-  french_site <- read.csv("data/french_site.csv")
-  #list dirs in root_dir
-  dirs <- list.dirs(base_dir, full.names = FALSE, recursive = FALSE)
   
-  #select only sites in site_info
-  #site_info$code
-  #Add | in site_info$code "or term"
-  
-  patt <- paste(sites, collapse = "|") 
-  #patt <- "ae|ib|su|ng|jr"
-  # Choose file wich contains patt
-  dirs <- grep(pattern = patt, dirs, value = TRUE) 
   #Load samplings info
   #samplingsfile <- read.csv("samplings.csv", header = TRUE)
   
   #Condition
-  dirs <- dirs[1:4] #TODO remove this line for production
+  #dirs <- dirs[1:4] #TODO remove this line for production
   
   
-  if (file.exists("gallery/model.RData")) {
-    message("Je passe")
-    #Load data in mod_urls.RData
-    load("gallery/model.RData", envir = globalenv()) 
-    #Select files wich are not in mod_urls.RData
-    dirs <- dirs[!is.element(dirs, model$d)] 
-  }#eo if file.exists
-  
-  if (length(dirs) == 0){
-      message("no new model to upload !")
-      return()
-  }
+  # if (file.exists("gallery/model.RData")) {
+  #   message("Je passe")
+  #   #Load data in mod_urls.RData
+  #   load("gallery/model.RData", envir = globalenv()) 
+  #   #Select files wich are not in mod_urls.RData
+  #   
+  # }#eo if file.exists
+  # 
+  # if (length(dirs) == 0){
+  #     message("no new model to upload !")
+  #     return()
+  # }
 
-  res <- do.call(rbind, lapply(dirs, function(d) {
+  res <- do.call(rbind, apply(data[4:5,],1, function(dir) {
         #d = "ae1_022022_1"
         # Iteration sur les dirs de outputs (avec regles de selection)
-        
+        message(dir)
         # Find .obj and texture
-        obj_path <- grep("model.obj", list.files( paste0(base_dir,"/",d), full.names = TRUE), value = TRUE)
-        texture_path <- grep("model.jpg",list.files( paste0(base_dir,"/",d), full.names = TRUE), value = TRUE)
+        obj_path <- grep("model.obj", list.files( dir[2], full.names = TRUE), value = TRUE) # TODO Put in upload models find the path with the model_path above
+        texture_path <- grep("model.jpg",list.files( dir[2], full.names = TRUE), value = TRUE)
+        message(obj_path)
         #add .mtl
         #Split elements
-        strings <- strsplit(d, "_")[[1]] 
-        #name columns
-        names(strings) <- c("site", "sampling", "colony_number") 
-        #take only code part like "ae"
-        strings["site"] <- substr(strings["site"], 1, 2) 
-        #site name to have the specie name
-        site_name <-  site_info$site[site_info$code == strings["site"]]
-        #site name in english data is in english
-        site_name_en <- french_site$type_en[french_site$type_fr == site_name]
-        sp_name <- subset(data, site == site_name_en & name == strings['colony_number'])["species"]
-        sp_name <- sp_name$species
-        type <- subset(sp_type, genus_sp == sp_name)
-        type <- type$LHT
-        mod_desc_char <- paste0('This ',type, ' coral colony is monitored at the "',site_name_en, '" site of Mayotte')
-        # zip des model.obj et .jpeg
+        # strings <- strsplit(data$d, "_")[[1]] 
+        # #name columns
+        # names(strings) <- c("site", "sampling", "colony_number") 
+        # #take only code part like "ae"
+        # strings["site"] <- substr(strings["site"], 1, 2) 
+        # #site name to have the specie name
+        # site_name <-  site_info$site[site_info$code == strings["site"]]
+        # #site name in english data is in english
+        # site_name_en <- french_site$type_en[french_site$type_fr == site_name]
+        # sp_name <- subset(data, site == site_name_en & name == strings['colony_number'])["species"]
+        # sp_name <- sp_name$species
+        # type <- subset(sp_type, genus_sp == sp_name)
+        # type <- type$LHT
+        # mod_desc_char <- paste0('This ',type, ' coral colony is monitored at the "',site_name_en, '" site of Mayotte')
+        # # zip des model.obj et .jpeg
         #cherry-pick allows you to zip files with differents paths see relative path's doc
-        zip_char <- paste0(d, ".zip")
+        zip_char <- paste0(dir[1], ".zip")
         zip::zip(zipfile = zip_char, c(obj_path,texture_path), mode = "cherry-pick")
         
         
@@ -86,32 +71,34 @@ upload_models <- function(sites = c("ae", "ib", "su", "ng", "jr"), data) {
                           # mod_desc  = reticulate::r_to_py(mod_desc))
         
         #save url !!!!!!!
-        print(zip_char)
-        source("gallery/sketchfab_api.R")
-        model <- upload_model(mod_path = zip_char, mod_name = sp_name, mod_desc = mod_desc_char, mod_tags = array("corals"))
+        message(zip_char)
+        message(dir[3])
+        message(dir[6])
+        model_uploaded <- upload_model(mod_path = zip_char, mod_name = dir[3], mod_desc = dir[6], mod_tags = array("corals"))
         unlink(zip_char)
         #write.table(mod_url, file= "data.csv", append = TRUE, sep = "\t", col.names = FALSE)
         
-        model <- data.frame(d, model, site_name)
+        model_uploaded <- data.frame(model_uploaded, type = dir[5], site = dir[4], file = dir[1])
         
         # names(resultat) <- names(data)
         
-        print(sp_name)
-        print(resultat)
-        return(resultat)
+        print(model_uploaded[2])
+        
+        return(model_uploaded)
       
     }))
       
      
-    if (file.exists("gallery/model.RData")) {
-      model <- rbind(model, res)
+    if (file.exists("data/data_uploaded.csv")) {
+      data_uploaded <- read.csv("data/data_uploaded.csv")
+      data_uploaded <- rbind(data_uploaded, res)
+      write.csv(data_uploaded, "data/data_uploaded.csv", row.names = FALSE)
     } else {
-      model <- res
+      write.csv(res, "data/data_uploaded.csv", row.names = FALSE)
     }
-  
-    save(model, file = "gallery/model.RData")
-    message("fin de la fonction")
     return()
+  
+    
 }#eo upload_models
 
 clean_models <- function() {
