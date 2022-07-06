@@ -92,7 +92,7 @@ upload_models <- function(sites = c("ae", "ib", "su", "ng", "jr"), data) {
         unlink(zip_char)
         #write.table(mod_url, file= "data.csv", append = TRUE, sep = "\t", col.names = FALSE)
         
-        model <- data.frame(d, model)
+        model <- data.frame(d, model, site_name)
         
         # names(resultat) <- names(data)
         
