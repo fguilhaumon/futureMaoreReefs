@@ -5,15 +5,13 @@
 devtools::load_all()
 
 # make gallery data
-data <- make_gallery_data()
+make_gallery_data()
 
 # upload models
-
-mod_upload_infos <- upload_models(data)
+upload_models(data = read.csv("outputs/make_gallery_data/model_upload_data.csv")[1:2,])
 
 # make the gallery qmd files
-make_gallery(mod_upload_infos)
-
+make_gallery(data_uploaded = read.csv("outputs/upload_models/data_uploaded.csv")[1,])
 
 # render the website
 quarto::quarto_render()

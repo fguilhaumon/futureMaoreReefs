@@ -1,105 +1,121 @@
 
 
-make_gallery_data <- function() {
+make_gallery_data <- function(sites = c("ae", "ib", "su", "ng", "jr")) {
   ####
-  #making data contains species name, site name, tag
-  # base_dir = "/data/fmr_data/meta_data"
-  # data      <- lapply(list.files(base_dir, full.names = TRUE, recursive = FALSE),read.csv)
-  # colnames(data[[2]]) <- c( "date" ,    "site",     "name",     "x",        "y",        "z",        "species",  "observer", "note")
-  # data      <- do.call(rbind, data)
-  # # Find and replace
-  # data$name <- gsub("Tag ","tag_", data$name)
-  # #Select row with tag
-  # data      <- data[grep("tag_",data$name),]
-  # data$name <- gsub("tag_","",data$name)
-  # data$date <- substr(data$date, 1, 10)
-  # #Change date format
-  # data$date <- strftime(strptime(data$date, "%m/%d/%Y", tz = "UTC"),"%d/%m/%Y")
-  # #Put species name in right format
-  # data$species <- stringr::str_to_sentence(data$species)
-  # 
-  # write.csv(data, file = "data/data.csv", row.names = FALSE)
-  ####
-  #read data with species site, name
-  data <- read.csv("data/data.csv")
+  
+  #making filed meta data contains species name, site name, tag ...
+  base_dir <- "/data/fmr_data/meta_data"
+  data      <- lapply(list.files(base_dir, full.names = TRUE, recursive = FALSE), read.csv)
+  data      <- do.call(rbind, data)
+  #Select row with tag
+  data      <- data[grep("tag_",data$name),]
+  data$id <- gsub("tag_","",data$name)
+  data$date <- substr(data$date, 1, 10)
+  #Change date format
+  data$date <- strftime(strptime(data$date, "%m/%d/%Y", tz = "UTC"),"%d/%m/%Y")
+  #Put species name in right format
+  data$species <- stringr::str_to_sentence(data$species)
+  data$site_id <- substr(data$site, 1, 2)
+  data$site_id[data$site_id == "il"] <- "ib"
+  data$site_id[data$site_id == "jo"] <- "jr"
+  data$site_id[data$site_id == "ai"] <- "ae"
+  
+  data$species[data$species == "Ac. Sp"] <- "Acropora sp."
+  data$species[data$species == "Pori. cylind."] <- "Porites cylindrica"
+  data$species[grepl("/", data$species)] <- sapply(data$species[grepl("/", data$species)], function(x) strsplit(x, split = "/")[[1]][1])
+  
+  dir.create("outputs", showWarnings = FALSE)
+  out_dir <- "outputs/make_gallery_data"
+  dir.create(out_dir, showWarnings = FALSE)
+  
+  write.csv(data, file = file.path(out_dir, "field_data.csv"), row.names = FALSE)
+
   # read data site with code of model files, species type and dictionary
-  site_info <- read.csv("data/metadonnees.csv", header = TRUE)
-  #root dir
-  #sp_type <- read.csv("/data/colonies_stageMateo/overall_sp_sites_mayotte.csv")
-  sp_type <- read.csv("data/speciestype.csv")
-  base_dir <- "/data/outputs"
-  #
-  french_site <- read.csv("data/french_site.csv")
+  site_info <- read.csv("data/site_metadata.csv", header = TRUE)
+  species_type <- read.csv("data/species_type.csv", header = TRUE)
+  
   #list dirs in root_dir
-  dirs <- list.dirs(base_dir, full.names = FALSE, recursive = FALSE)
+  dirs <- list.dirs("/data/outputs", full.names = FALSE, recursive = FALSE)
   
   #select only sites to upload
-  
-  #Add | in sites "or term"
-  sites = c("ae", "ib", "su", "ng", "jr")
   patt <- paste(sites, collapse = "|") 
   #patt <- "ae|ib|su|ng|jr"
   # Choose file wich contains patt
-  dirs <- grep(pattern = patt, dirs, value = TRUE) 
+  dirs <- grep(pattern = patt, dirs, value = TRUE)
+  
   #there is not ng_022022_2 in data/data.csv
-  dirs <- dirs[dirs!= "ng_022022_2"]
+  dirs <- dirs[dirs != "ng_022022_2"]
+  
   ####
-  if (file.exists("data/data_uploaded.csv")){
-    data_uploaded <- read.csv("data/data_uploaded.csv")
-    dirs <- dirs[!is.element(dirs, data_uploaded$file)] 
-    message("oui ce if marche")
+  if (file.exists("outputs/upload_models/data_uploaded.csv")){
+    data_uploaded <- read.csv("outputs/upload_models/data_uploaded.csv")
+    dirs <- dirs[!is.element(dirs, data_uploaded$d)] 
+    
+    model_upload_data <- read.csv(file.path(out_dir, "model_upload_data.csv"))
+    
   }
+  
   #list meta_data files
   res <- do.call(rbind, lapply(dirs, function(d) {
     #d = "ae1_022022_1"
 
-    
     # Find .obj and texture
-    model_path <- paste0("/data/outputs/",d)
+    model_path <- paste0("/data/outputs/", d)
     
-    obj_path <- grep("model.obj", list.files( paste0("/data/outputs/",d), full.names = TRUE), value = TRUE) # TODO Put in upload models find the path with the model_path above
-    texture_path <- grep("model.jpg",list.files( paste0("/data/outputs/",d), full.names = TRUE), value = TRUE)
-    # TODO add .mtl
+    # obj_path <- grep("model.obj", list.files(model_path, full.names = TRUE), value = TRUE) # TODO Put in upload models find the path with the model_path above
+    # texture_path <- grep("model.jpg", list.files(model_path, full.names = TRUE), value = TRUE)
+    # mtl_path <- grep("model.mtl", list.files(model_path, full.names = TRUE), value = TRUE)
+    
     #Split elements
-    strings <- strsplit(d, "_")[[1]] 
+    strings <- strsplit(d, "_")[[1]]
     #name columns
     names(strings) <- c("site", "sampling", "colony_number") 
     #take only code part like "ae"
     strings["site"] <- substr(strings["site"], 1, 2) 
+
     #site name to have the specie name
-    site_name <-  site_info$site[site_info$code == strings["site"]]
+    site_name_fr <- site_info$site_fr[site_info$site_id == strings["site"]]
     #site name in english data is in english
-    site_name_en <- french_site$type_en[french_site$type_fr == site_name]
-    sp_name <- subset(data, site == site_name_en & name == strings['colony_number'])["species"]
-    sp_name <- sp_name$species
-    if (sp_name == "Acropora.Sp"){
-      message("acropora")
+    site_name_en <- site_info$site_en[site_info$site_id == strings["site"]]
+    
+    sp_name <- subset(data, site_id == strings["site"] & id == strings["colony_number"])[, "species"]
+    
+    if (sp_name == "Acropora sp."){
+      message("Acropora sp. gets the competitive type")
       type <- "competitive"
     }
-    if (sp_name == "Favia.Sp"){
-      message("favia")
+    
+    if (sp_name == "Favia sp."){
+      message("Favia sp. gets the stress-tolerant type")
       type <- "stress-tolerant"
     }
-    if((sp_name != "Acropora.Sp")&(sp_name != "Favia.Sp")){
-      type <- subset(sp_type, genus_sp == sp_name)
-      type <- type$LHT
+    
+    if(!(sp_name %in% c("Acropora sp.", "Favia sp."))){
+      type <- subset(species_type, genus_sp == sp_name)$LHT
     }
     
     
-    mod_desc_char <- paste0('This ',type, ' coral colony is monitored at the "',site_name_en, '" site of Mayotte')
-    message(d)
-    message(length(d))
-    message(length(model_path))
-    message(sp_name)
-    message(length(site_name_en))
-    message(type)
-    message(length(mod_desc_char))
+    type_dic <- data.frame(type_en = c("competitive", "stress-tolerant", "generalist", "weedy"),
+                                  type_fr = c("compétitif", "robuste", "généraliste", "opportuniste"))
     
-    return(data.frame(d, model_path, sp_name, site_name_en, type, mod_desc_char))
+    mod_desc_char_en <- paste0('This ',type, ' coral colony is monitored at the "', site_name_en, '" site of Mayotte')
+    mod_desc_char_fr <- paste0('Cette colonie corallienne de type ', type_dic$type_fr[type_dic$type_en == type], ' est suivie au site "', site_name_fr, '"')
+    
+    return(data.frame(d, model_path, sp_name, site_id =  strings["site"], type, mod_desc_char_en, mod_desc_char_fr))
   }))
-  return(res)
-  write.csv(res, file = "data/model_upload_data.csv", row.names = FALSE)
+  
+  if (file.exists("outputs/make_gallery_data/model_upload_data.csv")){
+    #res <- rbind(model_upload_data, res)
+    message(rbind(model_upload_data, res[!is.element(res, model_upload_data)]))
+    res <- rbind(model_upload_data,res[!is.element(res, model_upload_data)])
+    
   }
+  
+  write.csv(res, file = file.path(out_dir, "model_upload_data.csv"), row.names = FALSE)
+  
+  invisible(res)
+  
+}
   
   
   

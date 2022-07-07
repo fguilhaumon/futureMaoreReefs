@@ -1,8 +1,0 @@
-::: {#1}
-https://www.imageclef.org/2022/coral
-:::
-
-categories : Ne semble pas s'afficher pour chaque id indépendant et prend 
-tous les éléments de la page. Ainsi voir ce qu'on met sur les catégories.
-Ducoup mieux de mettre site dans catégories
-Et mettre les types dans les subtitles

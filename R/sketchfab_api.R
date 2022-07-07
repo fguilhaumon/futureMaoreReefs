@@ -57,6 +57,6 @@ upload_model <- function(mod_path  = "",
   
   cli::cli_alert_success(paste0("Upload successful for ", mod_name, " at ", mod_url$uri))
   
-  data.frame(model_path = mod_path, name = mod_name, description = mod_desc, licence = mod_lic, mod_url, check.names = TRUE )
+  data.frame(model_path = mod_path, name = mod_name, description = mod_desc, licence = mod_lic, mod_url)
   
 }#eo upload_model
