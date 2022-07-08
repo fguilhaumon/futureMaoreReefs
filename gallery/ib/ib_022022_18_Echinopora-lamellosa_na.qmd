@@ -1,0 +1,22 @@
+---
+title: "Echinopora lamellosa"
+subtitle: ""
+image: /assets/images/cap_ecran_colonies/generalistes/ib_022022_18.jpg
+description: Cette colonie de corail  est suivi au site "Île Blanche"
+categories: [ "", "Île Blanche"]
+---
+### Modèle 3D
+
+Voici le modèle issu de la deuxième campagne de terrain __Future Maore Reefs__ en février 2022
+
+<div class="resp-container"> <iframe class="resp-content" title="Echinopora lamellosa" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://api.sketchfab.com/models/d077f6e030304a9cb83c13267d8ed1ab/embed?autostart=1&annotations_visible=0&preload=1&ui_infos=0&ui_inspector=0&ui_watermark_link=0&ui_watermark=0&ui_settings=0"> </iframe> </div>
+### Carte du site
+```{r}
+#| echo: false
+library(leaflet)
+m <- leaflet() %>%
+addTiles() %>% 
+addMarkers(lng=45.17146, lat=-12.7157, popup="Île Blanche")
+m  # Print the map
+```
+

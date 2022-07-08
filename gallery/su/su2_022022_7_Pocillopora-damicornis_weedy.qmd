@@ -1,0 +1,22 @@
+---
+title: "Pocillopora damicornis"
+subtitle: ""
+image: Not have image
+description: Cette colonie de corail opportuniste est suivi au site "Surprise"
+categories: [ "opportuniste", "Surprise"]
+---
+### Modèle 3D
+
+Voici le modèle issu de la deuxième campagne de terrain __Future Maore Reefs__ en février 2022
+
+<div class="resp-container"> <iframe class="resp-content" title="Pocillopora damicornis" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://api.sketchfab.com/models/fbc30d1f162d43459407ef7192e9930a/embed?autostart=1&annotations_visible=0&preload=1&ui_infos=0&ui_inspector=0&ui_watermark_link=0&ui_watermark=0&ui_settings=0"> </iframe> </div>
+### Carte du site
+```{r}
+#| echo: false
+library(leaflet)
+m <- leaflet() %>%
+addTiles() %>% 
+addMarkers(lng=45.15103, lat=-12.63017, popup="Surprise")
+m  # Print the map
+```
+

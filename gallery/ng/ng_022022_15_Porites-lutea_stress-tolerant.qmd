@@ -1,0 +1,22 @@
+---
+title: "Porites lutea"
+subtitle: ""
+image: /assets/images/cap_ecran_colonies/stress_tolerant/ng_022022_15.jpg
+description: Cette colonie de corail robuste est suivi au site "N'gouja"
+categories: [ "robuste", "N'gouja"]
+---
+### Modèle 3D
+
+Voici le modèle issu de la deuxième campagne de terrain __Future Maore Reefs__ en février 2022
+
+<div class="resp-container"> <iframe class="resp-content" title="Porites lutea" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://api.sketchfab.com/models/6b98de97caa64ca2aefe7584f91aa0d8/embed?autostart=1&annotations_visible=0&preload=1&ui_infos=0&ui_inspector=0&ui_watermark_link=0&ui_watermark=0&ui_settings=0"> </iframe> </div>
+### Carte du site
+```{r}
+#| echo: false
+library(leaflet)
+m <- leaflet() %>%
+addTiles() %>% 
+addMarkers(lng=45.085251, lat=-12.965066, popup="N'gouja")
+m  # Print the map
+```
+

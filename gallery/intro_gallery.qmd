@@ -91,7 +91,7 @@ Coraux Opportunistes
 
 
 
-ou en choisissant un des sites d'échantillonnage du projet ([Aéroport](listing_site.html#aeroport), [Île Blanche](listing_site.html#ile-blanche), [Surprise](listing_site.html#surprise), [Ngouja](listing_site.html#ngouja) ou [Jolly Roger](listing_site.html#joly-roger), par exemple en vous servant de la carte ci-dessous :
+ou en choisissant un des sites d'échantillonnage du projet ([Aéroport](listing_site.html#aeroport), [Île Blanche](listing_site.html#ile-blanche), [Surprise](listing_site.html#surprise), [N'gouja](listing_site.html#ngouja) ou [Jolly Roger](listing_site.html#joly-roger), par exemple en vous servant de la carte ci-dessous :
 
 ```{r}
 #| echo: false
