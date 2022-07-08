@@ -7,10 +7,11 @@ listing:
       - "ae/ae*"
     type: grid
     fields:  [image, title, subtitle, description, categories]
-    categories: cloud
+    #categories: cloud
     grid-item-border: true
-    sort-ui: [title, subtitle]
+    #sort-ui: [title, subtitle]
     filter-ui: true
+    sort: [title, subtitle]
     
   - id: Ngouja
     contents: 
@@ -19,8 +20,9 @@ listing:
     fields:  [image, title, subtitle, description, categories]
     #categories: true
     grid-item-border: true
-    sort-ui: [title, subtitle]
+    #sort-ui: [title, subtitle]
     filter-ui: true
+    sort: [title, subtitle]
   
   - id: Ile-Blanche
     contents: 
@@ -29,8 +31,9 @@ listing:
     fields:  [image, title, subtitle, description, categories]
     #categories: true
     grid-item-border: true
-    sort-ui: [title, subtitle]
+    #sort-ui: [title, subtitle]
     filter-ui: true
+    sort: [title, subtitle]
     
   - id: Surprise
     contents: 
@@ -39,8 +42,9 @@ listing:
     fields:  [image, title, subtitle, description, categories]
     #categories: true
     grid-item-border: true
-    sort-ui: [title, subtitle]
+    #sort-ui: [title, subtitle]
     filter-ui: true
+    sort: [title, subtitle]
   - id: Joly-Roger
     contents: 
       - "jr/jr*"
@@ -48,38 +52,39 @@ listing:
     fields:  [image, title, subtitle, description, categories]
     categories: true
     grid-item-border: true
-    sort-ui: [title, subtitle]
+    #sort-ui: [title, subtitle]
     filter-ui: true
+    sort: [title, subtitle]
     
-  - id: Musical-Plage
-    contents: 
-      - "mp/mp*"
-    type: grid
-    fields:  [image, title, subtitle, description, categories]
-    #categories: true
-    grid-item-border: true
-    sort-ui: [title, subtitle]
-    filter-ui: true
-  
-  - id: Sakouli
-    contents: 
-      - "sa/sa*"
-    type: grid
-    fields:  [image, title, subtitle, description, categories]
-    #categories: true
-    grid-item-border: true
-    sort-ui: [title, subtitle]
-    filter-ui: true
-    
-  - id: Bandrele
-    contents: 
-      - "ba/ba*"
-    type: grid
-    fields:  [image, title, subtitle, description, categories]
-    #categories: true
-    grid-item-border: true
-    sort-ui: [title, subtitle]
-    filter-ui: true
+  # - id: Musical-Plage
+  #   contents: 
+  #     - "mp/mp*"
+  #   type: grid
+  #   fields:  [image, title, subtitle, description, categories]
+  #   #categories: true
+  #   grid-item-border: true
+  #   sort-ui: [title, subtitle]
+  #   filter-ui: true
+  # 
+  # - id: Sakouli
+  #   contents: 
+  #     - "sa/sa*"
+  #   type: grid
+  #   fields:  [image, title, subtitle, description, categories]
+  #   #categories: true
+  #   grid-item-border: true
+  #   sort-ui: [title, subtitle]
+  #   filter-ui: true
+  #   
+  # - id: Bandrele
+  #   contents: 
+  #     - "ba/ba*"
+  #   type: grid
+  #   fields:  [image, title, subtitle, description, categories]
+  #   #categories: true
+  #   grid-item-border: true
+  #   sort-ui: [title, subtitle]
+  #   filter-ui: true
 ---
 
 ## Aéroport
@@ -102,25 +107,25 @@ listing:
 ::: {#Surprise}
 :::
 
-## Joly-Roger
+## Jolly-Roger
 
 ::: {#Joly-Roger}
 :::
 
-## Musicale-Plage
+<!-- ## Musicale-Plage -->
 
-::: {#Musical-Plage}
-:::
+<!-- ::: {#Musical-Plage} -->
+<!-- ::: -->
 
-## Sakouli
+<!-- ## Sakouli -->
 
-::: {#Sakouli}
-:::
+<!-- ::: {#Sakouli} -->
+<!-- ::: -->
 
-## Bandrele
+<!-- ## Bandrele -->
 
-::: {#Bandrele}
-:::
+<!-- ::: {#Bandrele} -->
+<!-- ::: -->
 
 ::: callout-tip
 <a href="listing_type.html"> Sélectionnez plutôt les coraux par type fonctionnel </a>

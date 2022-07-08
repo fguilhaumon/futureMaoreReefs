@@ -26,9 +26,9 @@ paths <- c("https://www.ofb.gouv.fr/sites/default/files/Images/Sch%C3%A9mas%20-%
         )
 
 pixgallery(paths)
-
+# TODO Put alternative text to all images
 ```
 
 <br /> <br />
 
-![](assets/images/logos_partenaires.jpeg){.center}
+![](assets/images/logos_partenaires.jpeg){.center} 

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Future Maore reefs - Sites d’échantillonnage à Mayotte</title>
+<title>Future Maore reefs - Types fonctionnels</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -24,8 +24,7 @@ ul.task-list{list-style: none;}
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../gallery/listing_type.html" rel="next">
-<link href="../gallery/intro_gallery.html" rel="prev">
+<link href="../gallery/listing_site.html" rel="prev">
 <link href="../assets/images/favicon.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-listing/list.min.js"></script>
 <script src="../site_libs/quarto-listing/quarto-listing.js"></script>
@@ -62,7 +61,7 @@ ul.task-list{list-style: none;}
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-Aeroport .list');
+    const listingTargetEl = window.document.querySelector('#listing-Competitifs .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
       return; 
@@ -75,7 +74,7 @@ ul.task-list{list-style: none;}
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-Aeroport'] = new List('listing-Aeroport', options);
+    window['quarto-listings']['listing-Competitifs'] = new List('listing-Competitifs', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -84,7 +83,7 @@ ul.task-list{list-style: none;}
   
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-Ngouja .list');
+    const listingTargetEl = window.document.querySelector('#listing-Generalistes .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
       return; 
@@ -97,7 +96,7 @@ ul.task-list{list-style: none;}
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-Ngouja'] = new List('listing-Ngouja', options);
+    window['quarto-listings']['listing-Generalistes'] = new List('listing-Generalistes', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -106,7 +105,7 @@ ul.task-list{list-style: none;}
   
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-Ile-Blanche .list');
+    const listingTargetEl = window.document.querySelector('#listing-Pionniers .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
       return; 
@@ -115,11 +114,11 @@ ul.task-list{list-style: none;}
     const options = {
       valueNames: ['listing-image','listing-title','listing-subtitle','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-categories"],
+      searchColumns: ["listing-title","listing-author","listing-image","listing-description","listing-categories"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-Ile-Blanche'] = new List('listing-Ile-Blanche', options);
+    window['quarto-listings']['listing-Pionniers'] = new List('listing-Pionniers', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -128,7 +127,7 @@ ul.task-list{list-style: none;}
   
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-Surprise .list');
+    const listingTargetEl = window.document.querySelector('#listing-Robustes .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
       return; 
@@ -137,33 +136,11 @@ ul.task-list{list-style: none;}
     const options = {
       valueNames: ['listing-image','listing-title','listing-subtitle','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-categories"],
+      searchColumns: ["listing-title","listing-author","listing-image","listing-description","listing-categories"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-Surprise'] = new List('listing-Surprise', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-  
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-Joly-Roger .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-image','listing-title','listing-subtitle','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-Joly-Roger'] = new List('listing-Joly-Roger', options);
+    window['quarto-listings']['listing-Robustes'] = new List('listing-Robustes', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -231,7 +208,7 @@ gtag('config', 'G-ZQBVFXWT0Q', { 'anonymize_ip': true});
     </nav>
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title">Sites d’échantillonnage à Mayotte</h1>
+      <h1 class="quarto-secondary-nav-title">Types fonctionnels</h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -239,7 +216,7 @@ gtag('config', 'G-ZQBVFXWT0Q', { 'anonymize_ip': true});
   </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation docked overflow-auto">
     <div class="sidebar-menu-container"> 
@@ -251,12 +228,12 @@ gtag('config', 'G-ZQBVFXWT0Q', { 'anonymize_ip': true});
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../gallery/listing_site.html" class="sidebar-item-text sidebar-link active">Sites à Mayotte</a>
+  <a href="../gallery/listing_site.html" class="sidebar-item-text sidebar-link">Sites à Mayotte</a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../gallery/listing_type.html" class="sidebar-item-text sidebar-link">Types de coraux</a>
+  <a href="../gallery/listing_type.html" class="sidebar-item-text sidebar-link active">Types de coraux</a>
   </div>
 </li>
     </ul>
@@ -264,13 +241,13 @@ gtag('config', 'G-ZQBVFXWT0Q', { 'anonymize_ip': true});
 </nav>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-    <h5 class="quarto-listing-category-title">Catégories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">Tous <span class="quarto-category-count">(6)</span></div><div class="category" data-category="Aéroport">Aéroport <span class="quarto-category-count">(3)</span></div><div class="category" data-category="compétitif">compétitif <span class="quarto-category-count">(1)</span></div><div class="category" data-category="opportuniste">opportuniste <span class="quarto-category-count">(1)</span></div><div class="category" data-category="robuste">robuste <span class="quarto-category-count">(1)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Catégories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">Tous <span class="quarto-category-count">(3)</span></div><div class="category" data-category="Aéroport">Aéroport <span class="quarto-category-count">(3)</span></div><div class="category" data-category="compétitif">compétitif <span class="quarto-category-count">(1)</span></div><div class="category" data-category="opportuniste">opportuniste <span class="quarto-category-count">(1)</span></div><div class="category" data-category="robuste">robuste <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
-<main class="content column-body" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block">Sites d’échantillonnage à Mayotte</h1>
+<h1 class="title d-none d-lg-block">Types fonctionnels</h1>
 </div>
 
 
@@ -284,9 +261,27 @@ gtag('config', 'G-ZQBVFXWT0Q', { 'anonymize_ip': true});
 
 </header>
 
-<section id="aéroport" class="level2">
-<h2 class="anchored" data-anchor-id="aéroport">Aéroport</h2>
-<div id="listing-Aeroport" class="quarto-listing quarto-listing-container-grid">
+<p>Ici les modèles 3D de colonies coralliennes sont classés par type fonctionnel de corail.</p>
+<div class="alert alert-info">
+<p>Les coraux de différents types fonctionnels ne jouent pas les mêmes rôles dans le récif et ne subissent pas les différentes pressions de la même manière.</p>
+<div class="grid">
+<div class="g-col-4">
+<p><img src="../assets/images/compet_w100.png" class="img-center img-fluid"></p>
+</div>
+<div class="g-col-8">
+<p>Par exemple, les coraux <span class="badge rounded-pill bg-warning">compétitifs</span> poussent vite, ils créent beaucoup d’habitat pour les poissons et les invertébrés qui s’abritent entre leurs branches. En revanche, ils sont fragiles et ils se brisent facilement lors des tempêtes ou lorsqu’un humain les heurte avec ses palmes.</p>
+</div>
+<div class="g-col-8">
+<p>Les coraux <span class="badge rounded-pill bg-success">Robustes</span> quant à eux poussent beaucoup moins vite et ne génèrent pas beaucoup de complexité dans le récif, mais ils sont très solide et souffrent moins de l’envasement.</p>
+</div>
+<div class="g-col-4">
+<p><img src="../assets/images/stresstol_w100.png" class="img-center img-fluid"></p>
+</div>
+</div>
+</div>
+<section id="coraux-compétitifs" class="level2">
+<h2 class="anchored" data-anchor-id="coraux-compétitifs">Coraux compétitifs</h2>
+<div id="listing-Competitifs" class="quarto-listing quarto-listing-container-grid">
 <div class="listing-actions-group">
     <div class="input-group input-group-sm quarto-listing-filter">
       <span class="input-group-text"><i class="bi bi-search"></i></span>
@@ -322,7 +317,40 @@ Cette colonie de corail compétitif est suivi au site “Aéroport”
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="opportuniste,Aéroport" data-listing-file-modified-sort="1657272533431" data-listing-reading-time-sort="0.98">
+</div>
+<div class="listing-no-matching d-none">
+Aucun article correspondant
+</div>
+</div>
+</section>
+<section id="coraux-généralistes" class="level2">
+<h2 class="anchored" data-anchor-id="coraux-généralistes">Coraux généralistes</h2>
+<div id="listing-Generalistes" class="quarto-listing quarto-listing-container-grid">
+<div class="listing-actions-group">
+    <div class="input-group input-group-sm quarto-listing-filter">
+      <span class="input-group-text"><i class="bi bi-search"></i></span>
+      <input type="text" class="search form-control" placeholder="Filter">
+    </div>
+</div>
+<div class="list grid quarto-listing-cols-3">
+
+</div>
+<div class="listing-no-matching d-none">
+Aucun article correspondant
+</div>
+</div>
+</section>
+<section id="coraux-opportunistes" class="level2">
+<h2 class="anchored" data-anchor-id="coraux-opportunistes">Coraux Opportunistes</h2>
+<div id="listing-Pionniers" class="quarto-listing quarto-listing-container-grid">
+<div class="listing-actions-group">
+    <div class="input-group input-group-sm quarto-listing-filter">
+      <span class="input-group-text"><i class="bi bi-search"></i></span>
+      <input type="text" class="search form-control" placeholder="Filter">
+    </div>
+</div>
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-categories="opportuniste,Aéroport" data-listing-file-modified-sort="1657272533431" data-listing-reading-time-sort="0.98">
 <a href="../gallery/ae/ae_Porites-cylindrica_weedy.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -350,7 +378,23 @@ Cette colonie de corail opportuniste est suivi au site “Aéroport”
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="2" data-categories="robuste,Aéroport" data-listing-file-modified-sort="1657272533435" data-listing-reading-time-sort="0.26">
+</div>
+<div class="listing-no-matching d-none">
+Aucun article correspondant
+</div>
+</div>
+</section>
+<section id="coraux-robustes" class="level2">
+<h2 class="anchored" data-anchor-id="coraux-robustes">Coraux Robustes</h2>
+<div id="listing-Robustes" class="quarto-listing quarto-listing-container-grid">
+<div class="listing-actions-group">
+    <div class="input-group input-group-sm quarto-listing-filter">
+      <span class="input-group-text"><i class="bi bi-search"></i></span>
+      <input type="text" class="search form-control" placeholder="Filter">
+    </div>
+</div>
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-categories="robuste,Aéroport" data-listing-file-modified-sort="1657272533435" data-listing-reading-time-sort="0.26">
 <a href="../gallery/ae/ae_Porites-lutea_stress-tolerant.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -378,130 +422,11 @@ Cette colonie de corail robuste est suivi au site “Aéroport”
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="3" data-listing-file-modified-sort="1657272542375">
-<a href="../gallery/ae/ae_Acropora-humilis_competitive.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-img-bg" style="height: 150px;">
-&nbsp;
-</div>
-<div class="card-body post-contents">
-<div class="card-text listing-description">
-
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="4" data-listing-file-modified-sort="1657272544275">
-<a href="../gallery/ae/ae_Porites-cylindrica_weedy.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-img-bg" style="height: 150px;">
-&nbsp;
-</div>
-<div class="card-body post-contents">
-<div class="card-text listing-description">
-
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="5" data-listing-file-modified-sort="1657272545759">
-<a href="../gallery/ae/ae_Porites-lutea_stress-tolerant.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-img-bg" style="height: 150px;">
-&nbsp;
-</div>
-<div class="card-body post-contents">
-<div class="card-text listing-description">
-
-</div>
-</div>
-</div>
-</a>
-</div>
 </div>
 <div class="listing-no-matching d-none">
 Aucun article correspondant
 </div>
 </div>
-</section>
-<section id="ngouja" class="level2">
-<h2 class="anchored" data-anchor-id="ngouja">N’gouja</h2>
-<div id="listing-Ngouja" class="quarto-listing quarto-listing-container-grid">
-<div class="listing-actions-group">
-    <div class="input-group input-group-sm quarto-listing-filter">
-      <span class="input-group-text"><i class="bi bi-search"></i></span>
-      <input type="text" class="search form-control" placeholder="Filter">
-    </div>
-</div>
-<div class="list grid quarto-listing-cols-3">
-
-</div>
-<div class="listing-no-matching d-none">
-Aucun article correspondant
-</div>
-</div>
-</section>
-<section id="île-blanche" class="level2">
-<h2 class="anchored" data-anchor-id="île-blanche">Île-Blanche</h2>
-<div id="listing-Ile-Blanche" class="quarto-listing quarto-listing-container-grid">
-<div class="listing-actions-group">
-    <div class="input-group input-group-sm quarto-listing-filter">
-      <span class="input-group-text"><i class="bi bi-search"></i></span>
-      <input type="text" class="search form-control" placeholder="Filter">
-    </div>
-</div>
-<div class="list grid quarto-listing-cols-3">
-
-</div>
-<div class="listing-no-matching d-none">
-Aucun article correspondant
-</div>
-</div>
-</section>
-<section id="surprise" class="level2">
-<h2 class="anchored" data-anchor-id="surprise">Surprise</h2>
-<div id="listing-Surprise" class="quarto-listing quarto-listing-container-grid">
-<div class="listing-actions-group">
-    <div class="input-group input-group-sm quarto-listing-filter">
-      <span class="input-group-text"><i class="bi bi-search"></i></span>
-      <input type="text" class="search form-control" placeholder="Filter">
-    </div>
-</div>
-<div class="list grid quarto-listing-cols-3">
-
-</div>
-<div class="listing-no-matching d-none">
-Aucun article correspondant
-</div>
-</div>
-</section>
-<section id="jolly-roger" class="level2">
-<h2 class="anchored" data-anchor-id="jolly-roger">Jolly-Roger</h2>
-<div id="listing-Joly-Roger" class="quarto-listing quarto-listing-container-grid">
-<div class="listing-actions-group">
-    <div class="input-group input-group-sm quarto-listing-filter">
-      <span class="input-group-text"><i class="bi bi-search"></i></span>
-      <input type="text" class="search form-control" placeholder="Filter">
-    </div>
-</div>
-<div class="list grid quarto-listing-cols-3">
-
-</div>
-<div class="listing-no-matching d-none">
-Aucun article correspondant
-</div>
-</div>
-<!-- ## Musicale-Plage -->
-<!-- ::: {#Musical-Plage} -->
-<!-- ::: -->
-<!-- ## Sakouli -->
-<!-- ::: {#Sakouli} -->
-<!-- ::: -->
-<!-- ## Bandrele -->
-<!-- ::: {#Bandrele} -->
-<!-- ::: -->
 <div class="callout-tip callout callout-style-default callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -512,7 +437,7 @@ Astuce
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p><a href="listing_type.html"> Sélectionnez plutôt les coraux par type fonctionnel </a></p>
+<p><a href="listing_site.html">Sélectionnez plutôt les coraux par site d’échantillonnage</a></p>
 </div>
 </div>
 
@@ -697,16 +622,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
-<nav class="page-navigation column-body">
+<nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../gallery/intro_gallery.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Modèles 3D de coraux</span>
+      <a href="../gallery/listing_site.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Sites à Mayotte</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../gallery/listing_type.html" class="pagination-link">
-        <span class="nav-page-text">Types de coraux</span> <i class="bi bi-arrow-right-short"></i>
-      </a>
   </div>
 </nav>
 </div> <!-- /content -->

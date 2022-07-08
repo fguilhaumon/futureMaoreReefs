@@ -2,34 +2,37 @@
 
 make_gallery_data <- function(sites = c("ae", "ib", "su", "ng", "jr")) {
   ####
-  
-  #making filed meta data contains species name, site name, tag ...
-  base_dir <- "/data/fmr_data/meta_data"
-  data      <- lapply(list.files(base_dir, full.names = TRUE, recursive = FALSE), read.csv)
-  data      <- do.call(rbind, data)
-  #Select row with tag
-  data      <- data[grep("tag_",data$name),]
-  data$id <- gsub("tag_","",data$name)
-  data$date <- substr(data$date, 1, 10)
-  #Change date format
-  data$date <- strftime(strptime(data$date, "%m/%d/%Y", tz = "UTC"),"%d/%m/%Y")
-  #Put species name in right format
-  data$species <- stringr::str_to_sentence(data$species)
-  data$site_id <- substr(data$site, 1, 2)
-  data$site_id[data$site_id == "il"] <- "ib"
-  data$site_id[data$site_id == "jo"] <- "jr"
-  data$site_id[data$site_id == "ai"] <- "ae"
-  
-  data$species[data$species == "Ac. Sp"] <- "Acropora sp."
-  data$species[data$species == "Pori. cylind."] <- "Porites cylindrica"
-  data$species[grepl("/", data$species)] <- sapply(data$species[grepl("/", data$species)], function(x) strsplit(x, split = "/")[[1]][1])
-  
-  dir.create("outputs", showWarnings = FALSE)
   out_dir <- "outputs/make_gallery_data"
-  dir.create(out_dir, showWarnings = FALSE)
+  if (!dir.exists("outputs/make_gallery_data")){
+    base_dir <- "/data/fmr_data/meta_data"
+    data      <- lapply(list.files(base_dir, full.names = TRUE, recursive = FALSE), read.csv)
+    data      <- do.call(rbind, data)
+    #Select row with tag
+    data      <- data[grep("tag_",data$name),]
+    data$id <- gsub("tag_","",data$name)
+    data$date <- substr(data$date, 1, 10)
+    #Change date format
+    data$date <- strftime(strptime(data$date, "%m/%d/%Y", tz = "UTC"),"%d/%m/%Y")
+    #Put species name in right format
+    data$species <- stringr::str_to_sentence(data$species)
+    data$site_id <- substr(data$site, 1, 2)
+    data$site_id[data$site_id == "il"] <- "ib"
+    data$site_id[data$site_id == "jo"] <- "jr"
+    data$site_id[data$site_id == "ai"] <- "ae"
+    
+    data$species[data$species == "Ac. Sp"] <- "Acropora sp."
+    data$species[data$species == "Pori. cylind."] <- "Porites cylindrica"
+    data$species[grepl("/", data$species)] <- sapply(data$species[grepl("/", data$species)], function(x) strsplit(x, split = "/")[[1]][1])
+    
+    dir.create("outputs", showWarnings = FALSE)
+    
+    dir.create(out_dir, showWarnings = FALSE)
+    
+    write.csv(data, file = file.path(out_dir, "field_data.csv"), row.names = FALSE)
+    
+  }
+  #making filed meta data contains species name, site name, tag ...
   
-  write.csv(data, file = file.path(out_dir, "field_data.csv"), row.names = FALSE)
-
   # read data site with code of model files, species type and dictionary
   site_info <- read.csv("data/site_metadata.csv", header = TRUE)
   species_type <- read.csv("data/species_type.csv", header = TRUE)
@@ -52,7 +55,7 @@ make_gallery_data <- function(sites = c("ae", "ib", "su", "ng", "jr")) {
     dirs <- dirs[!is.element(dirs, data_uploaded$d)] 
     
     model_upload_data <- read.csv(file.path(out_dir, "model_upload_data.csv"))
-    
+    data <- read.csv("outputs/make_gallery_data/field_data.csv")
   }
   
   #list meta_data files
@@ -106,8 +109,14 @@ make_gallery_data <- function(sites = c("ae", "ib", "su", "ng", "jr")) {
   
   if (file.exists("outputs/make_gallery_data/model_upload_data.csv")){
     #res <- rbind(model_upload_data, res)
-    message(rbind(model_upload_data, res[!is.element(res, model_upload_data)]))
-    res <- rbind(model_upload_data,res[!is.element(res, model_upload_data)])
+    message(length(res$d))
+    
+    res <- rbind(model_upload_data,res[!(res$d %in% model_upload_data$d)])
+    message(!(res$d %in% model_upload_data$d))
+    message((res$d %in% model_upload_data$d))
+    message(res[!(res$d %in% model_upload_data$d)])
+    message(res[!(res$d %in% model_upload_data$d),])
+    message(length(res$d))
     
   }
   

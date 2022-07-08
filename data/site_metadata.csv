@@ -1,6 +1,6 @@
-site_id,profondeur,latitude,longitude,site_en,site_fr
-ae,-4.4,-12.82449,45.27948,"Airport","Aéroport"
-ib,-2.4,-12.7157,45.17146,"Île Blanche","Île Blanche"
-su,-2.1,-12.63017,45.15103,"Surprise","Surprise"
-ng,-3.112,-12.965066,45.085251,"N'gouja","N'gouja"
-jr,-2,-12.890095,45.215116,"Jolly Roger","Jolly Roger"
+site_id,profondeur,latitude,longitude,site_en,site_fr,url
+ae,-4.4,-12.82449,45.27948,"Airport","Aéroport",<a href= "listing_site.html#aeroport">Aéroport </a>
+ib,-2.4,-12.7157,45.17146,"Île Blanche","Île Blanche",<a href= "listing_site.html#ile-blanche">Ile Blanche </a>
+su,-2.1,-12.63017,45.15103,"Surprise","Surprise",<a href= "listing_site.html#surprise">Surprise </a>
+ng,-3.112,-12.965066,45.085251,"N'gouja","N'gouja",<a href= "listing_site.html#ngouja">N'Gouja </a>
+jr,-2,-12.890095,45.215116,"Jolly Roger","Jolly Roger",<a href= "listing_site.html#jolly-roger">Jolly Roger </a>

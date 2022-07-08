@@ -2,7 +2,17 @@
   {
     "listing": "/gallery/listing_site.html",
     "items": [
-      "/gallery/ae/ae_Acropora-humilis.html"
+      "/gallery/ae/ae_Acropora-humilis_competitive.html",
+      "/gallery/ae/ae_Porites-cylindrica_weedy.html",
+      "/gallery/ae/ae_Porites-lutea_stress-tolerant.html"
+    ]
+  },
+  {
+    "listing": "/gallery/listing_type.html",
+    "items": [
+      "/gallery/ae/ae_Acropora-humilis_competitive.html",
+      "/gallery/ae/ae_Porites-cylindrica_weedy.html",
+      "/gallery/ae/ae_Porites-lutea_stress-tolerant.html"
     ]
   }
 ]

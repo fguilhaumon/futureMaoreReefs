@@ -23,7 +23,7 @@ upload_model <- function(mod_path  = "",
                          mod_tags  = "",
                          mod_cat   = "",
                          mod_lic   = "by-nc-sa",
-                         mod_pub   = FALSE,
+                         mod_pub   = TRUE,
                          mod_ins   = TRUE) {
   
   sketchfab_api_url <- "https://api.sketchfab.com/v3"

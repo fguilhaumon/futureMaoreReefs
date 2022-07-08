@@ -4,58 +4,66 @@ listing:
   - id: Competitifs
   
     contents: 
-      - "jr/*comp.qmd"
-      - "ba/*comp.qmd"
-      - "mp/*comp.qmd"
-      - "ng/*comp.qmd"
+      - "jr/*competitive.qmd"
+      - "ib/*competitive.qmd"
+      - "ae/*competitive.qmd"
+      - "ng/*competitive.qmd"
+      - "su/*competitive.qmd"
     type: grid
     fields:  [image, title, subtitle, description, categories]
     categories: true
     grid-item-border: true
-    sort-ui: [title, subtitle]
+    #sort-ui: [title, subtitle]
     filter-ui: true
+    sort: [title, subtitle]
     
   - id: Generalistes
     contents: 
       - "jr/*generalist.qmd"
-      - "ba/*generalist.qmd"
-      - "mp/*generalist.qmd"
+      - "ae/*generalist.qmd"
+      - "su/*generalist.qmd"
       - "ng/*generalist.qmd"
+      - "ib/*generalist.qmd"
     type: grid
     fields:  [image, title, subtitle, description, categories]
     #categories: true
     grid-item-border: true
-    sort-ui: [title, subtitle]
+    #sort-ui: [title, subtitle]
     filter-ui: true
+    sort: [title, subtitle]
   
   - id: Pionniers
     contents: 
       - "jr/*weedy.qmd"
-      - "ba/*weedy.qmd"
-      - "mp/*weedy.qmd"
+      - "ae/*weedy.qmd"
+      - "su/*weedy.qmd"
       - "ng/*weedy.qmd"
+      - "ib/*weedy.qmd"
     type: grid
     fields:  [image, title, subtitle, description, categories]
     #categories: true
     grid-item-border: true
-    sort-ui: [title, subtitle]
+    #sort-ui: [title, subtitle]
     filter-ui: true
+    sort: [title, subtitle]
     
   - id: Robustes
     contents: 
-      - "jr/*stresst.qmd"
-      - "ba/*stresst.qmd"
-      - "mp/*stresst.qmd"
-      - "ng/*stresst.qmd"
+      - "jr/*stress-tolerant.qmd"
+      - "ib/*stress-tolerant.qmd"
+      - "su/*stress-tolerant.qmd"
+      - "ng/*stress-tolerant.qmd"
+      - "ae/*stress-tolerant.qmd"
     type: grid
     fields:  [image, title, subtitle, description, categories]
     #categories: true
     grid-item-border: true
-    sort-ui: [title, subtitle]
+    #sort-ui: [title, subtitle]
     filter-ui: true
+    sort: [title, subtitle]
 ---
 
-Ici les modèles 3D de colonnies coralliennes sont classés par type fonctionnel de corail.
+Ici les modèles 3D de colonies coralliennes sont classés par type fonctionnel de corail.
 
 ::: {.alert .alert-info}
 Les coraux de différents types fonctionnels ne jouent pas les mêmes rôles dans le récif et ne subissent pas les différentes pressions de la même manière.

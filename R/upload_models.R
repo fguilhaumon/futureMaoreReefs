@@ -5,12 +5,14 @@ upload_models <- function(data) {
   #data = read.csv("outputs/make_gallery_data/model_upload_data.csv")[1:5,]
   
   out_dir <- "outputs/upload_models"
-  dir.create(out_dir, showWarnings = FALSE)
+  
   
 
   if (file.exists(file.path(out_dir, "data_uploaded.csv"))){
     data_uploaded <- read.csv(file.path(out_dir, "data_uploaded.csv"))
     data <- data[!(data$d %in% data_uploaded$d),]
+  }else{
+    dir.create(out_dir, showWarnings = FALSE)
   }
   
   
