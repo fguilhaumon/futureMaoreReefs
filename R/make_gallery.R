@@ -2,7 +2,7 @@
 make_gallery <- function(data_uploaded) {
 
   #data_uploaded = read.csv("outputs/upload_models/data_uploaded.csv")
-  col_paths <- list.files("/data/colonies_stageMateo/cap_ecran_colonies", recursive = TRUE, full.names = TRUE)
+  col_paths <- list.files("assets/images/cap_ecran_colonies", recursive = TRUE, full.names = TRUE)
   site_info <- read.csv("data/site_metadata.csv", header = TRUE)
   
   type_dic <- data.frame(type_en = c("competitive", "stress-tolerant", "generalist", "weedy"),
@@ -65,12 +65,12 @@ make_gallery <- function(data_uploaded) {
     title_char <- paste0('title: "', name,'"')
     subtitle_char <- paste0('subtitle: ""')
     description_char <- paste0('description: Cette colonie de corail ',type_fr,' est suivi au site "',site_fr,'"')
-    image_char <- paste0("image: ", grep(pattern = paste0(as.character(d["d"]), ".jpg"), col_paths, value = TRUE))
+    image_char <- paste0("image: /", grep(pattern = paste0(as.character(d["d"]), ".jpg"), col_paths, value = TRUE))
     if(length(grep(pattern = paste0(as.character(d["d"]), ".jpg"), col_paths, value = TRUE)) == 0){
       image_char <- "image: Not have image"
     }
     categories_char <- paste0('categories: [ "',type_fr,'", ','"',site_fr, '"]' )
-    iframe_char <- paste0('<div class="resp-container"> <iframe class="resp-content title="',name,' frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="', model_url, 'embed?autostart=1&annotations_visible=0&preload=1&ui_infos=0&ui_inspector=0&ui_watermark_link=0&ui_watermark=0&ui_settings=0"> </iframe> </div>')
+    iframe_char <- paste0('<div class="resp-container"> <iframe class="resp-content" title="',name,'"',' frameborder="0"',' allowfullscreen ', 'mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking"', 'xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share ', 'src="', model_url, 'embed?autostart=1&annotations_visible=0&preload=1&ui_infos=0&ui_inspector=0&ui_watermark_link=0&ui_watermark=0&ui_settings=0"> </iframe> </div>')
     sentence <- paste0("Voici le modèle issu de la deuxième campagne de terrain __Future Maore Reefs__ en ",date)
     map_char <-  paste0("addMarkers","(","lng=",longitude, ", ", "lat=", latitude,", ","popup=", '"',site_fr,'"', ")")
     #Writing file
