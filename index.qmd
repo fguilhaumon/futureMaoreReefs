@@ -9,7 +9,7 @@ sidebar: false
 page-layout: full
 ---
 
-![](assets/images/logo_squared_complete_w600.png){.img-center} <br/> Grâce au plan de relance du gouvernement, l'Institut de recherche pour le développement et le Parc naturel marin de Mayotte, avec l'appui du Centre universitaire de formation et de recherche de Mayotte et l'Université de la Réunion conduisent le programme **Future Maore Reefs**.
+![](assets/images/logo_squared_complete_w600.png){.img-center} <br/> Grâce au plan de relance du gouvernement, l'Institut de Recherche pour le Développement et le Parc naturel marin de Mayotte, avec l'appui du Centre universitaire de formation et de recherche de Mayotte et l'Université de la Réunion conduisent le programme **Future Maore Reefs**.
 
 ```{r echo = FALSE}
 library(pixture)

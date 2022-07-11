@@ -79,7 +79,7 @@ Par exemple, les coraux [compétitifs]{.badge .rounded-pill .bg-warning} poussen
 :::
 
 ::: {.g-col-8}
-Les coraux [Robustes]{.badge .rounded-pill .bg-success} quant à eux poussent beaucoup moins vite et ne génèrent pas beaucoup de complexité dans le récif, mais ils sont très solide et souffrent moins de l'envasement.
+Les coraux [Robustes]{.badge .rounded-pill .bg-success} quant à eux poussent beaucoup moins vite et ne génèrent pas beaucoup de complexité dans le récif, mais ils sont très solides et souffrent moins de l'envasement.
 :::
 
 ::: {.g-col-4}
