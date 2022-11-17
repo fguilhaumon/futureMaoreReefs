@@ -1,7 +1,6 @@
 
 
-
-#load project functions
+# load project functions
 devtools::load_all()
 
 # make gallery data

@@ -5,6 +5,10 @@ resources:
   - "assets/images/colonie_3d.png"
   - "assets/images/tablettes_especes_lio_small.png"
   - "assets/images/logo_round_complete_w600.png"
+  - "assets/images/nubbins_collection.jpg"
+  - "assets/images/pamanzi2_aline.jpg"
+  - "assets/images/photogram_ar_close.jpg"
+  - "assets/images/photogram_ra_far.jpg"
 sidebar: false
 page-layout: full
 ---
@@ -15,10 +19,10 @@ page-layout: full
 library(pixture)
 paths <- c("https://www.ofb.gouv.fr/sites/default/files/Images/Sch%C3%A9mas%20-%20Dessins%20-%20Tableaux/reconstitution-recif-corallien-francois-guilhaumon-isabel-urbina-barreto.jpg",
            "assets/images/corals_joly_roger.jpg",
-           "https://lejournaldemayotte.yt/wp-content/uploads/2022/05/20220519_100927-1320x743.jpg",
-           "https://lejournaldemayotte.yt/wp-content/uploads/2022/05/20220519_102326-1320x743.jpg",
-           "https://lejournaldemayotte.yt/wp-content/uploads/2022/05/20220519_111445-1320x743.jpg",
-           "https://lejournaldemayotte.yt/wp-content/uploads/2022/05/20220519_111212-1320x743.jpg",
+           "assets/images/nubbins_collection.jpg",
+           "assets/images/pamanzi2_aline.jpg",
+           "assets/images/photogram_ar_close.jpg",
+           "assets/images/photogram_ra_far.jpg",
            "assets/images/tablettes_especes_lio_small.png",
            "assets/images/colonie_3d.png",
            "assets/images/logo_round_complete_w600.png",

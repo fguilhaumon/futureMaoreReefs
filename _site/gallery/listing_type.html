@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-0.9.533">
+<meta name="generator" content="quarto-1.2.269">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -11,10 +11,15 @@
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-span.underline{text-decoration: underline;}
-div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
 </style>
 
 
@@ -37,8 +42,8 @@ ul.task-list{list-style: none;}
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme">
-<link href="../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -80,6 +85,12 @@ ul.task-list{list-style: none;}
       window['quarto-listing-loaded']();
     }
   });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
   
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
@@ -102,6 +113,12 @@ ul.task-list{list-style: none;}
       window['quarto-listing-loaded']();
     }
   });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
   
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
@@ -124,6 +141,12 @@ ul.task-list{list-style: none;}
       window['quarto-listing-loaded']();
     }
   });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
   
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
@@ -147,6 +170,12 @@ ul.task-list{list-style: none;}
       window['quarto-listing-loaded']();
     }
   });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
   </script>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-ZQBVFXWT0Q"></script>
 
@@ -169,25 +198,32 @@ gtag('config', 'G-ZQBVFXWT0Q', { 'anonymize_ip': true});
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
-      <a class="navbar-brand" href="../index.html">
-    <img src="../assets/images/logo_text.png" alt="">
-  </a>
+      <div class="navbar-brand-container">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../assets/images/logo_text.png" alt="" class="navbar-logo">
+    </a>
+  </div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html">Accueil</a>
+    <a class="nav-link" href="../index.html">
+ <span class="menu-text">Accueil</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../main/vision.html">Notre vision</a>
+    <a class="nav-link" href="../main/vision.html">
+ <span class="menu-text">Notre vision</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="../gallery/intro_gallery.html" aria-current="page">Coraux en 3D</a>
+    <a class="nav-link active" href="../gallery/intro_gallery.html" aria-current="page">
+ <span class="menu-text">Coraux en 3D</span></a>
   </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-medias" role="button" data-bs-toggle="dropdown" aria-expanded="false">Medias</a>
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-medias" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Medias</span>
+    </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-medias">    
         <li>
     <a class="dropdown-item" href="../main/podcasts.html">
@@ -256,6 +292,7 @@ gtag('config', 'G-ZQBVFXWT0Q', { 'anonymize_ip': true});
 <div class="quarto-title-meta">
 
     
+  
     
   </div>
   
@@ -290,7 +327,7 @@ gtag('config', 'G-ZQBVFXWT0Q', { 'anonymize_ip': true});
     </div>
 </div>
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="compétitif,Jolly Roger" data-listing-file-modified-sort="1657288509998" data-listing-reading-time-sort="0.265">
+<div class="g-col-1" data-index="0" data-categories="compétitif,Jolly Roger" data-listing-file-modified-sort="1657300178000" data-listing-reading-time-sort="0.265">
 <a href="../gallery/jr/jr_022022_1_Acropora-humilis_competitive.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -318,7 +355,7 @@ Cette colonie de corail compétitif est suivi au site “Jolly Roger”
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="compétitif,Jolly Roger" data-listing-file-modified-sort="1657288510010" data-listing-reading-time-sort="0.265">
+<div class="g-col-1" data-index="1" data-categories="compétitif,Jolly Roger" data-listing-file-modified-sort="1657300178000" data-listing-reading-time-sort="0.265">
 <a href="../gallery/jr/jr_022022_2_Acropora-humilis_competitive.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -346,7 +383,7 @@ Cette colonie de corail compétitif est suivi au site “Jolly Roger”
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="2" data-categories="compétitif,Jolly Roger" data-listing-file-modified-sort="1657288510014" data-listing-reading-time-sort="0.265">
+<div class="g-col-1" data-index="2" data-categories="compétitif,Jolly Roger" data-listing-file-modified-sort="1657300178000" data-listing-reading-time-sort="0.265">
 <a href="../gallery/jr/jr_022022_3_Acropora-humilis_competitive.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -374,7 +411,7 @@ Cette colonie de corail compétitif est suivi au site “Jolly Roger”
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="3" data-categories="compétitif,Jolly Roger" data-listing-file-modified-sort="1657288510014" data-listing-reading-time-sort="0.265">
+<div class="g-col-1" data-index="3" data-categories="compétitif,Jolly Roger" data-listing-file-modified-sort="1657300178000" data-listing-reading-time-sort="0.265">
 <a href="../gallery/jr/jr_022022_4_Acropora-humilis_competitive.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -402,7 +439,7 @@ Cette colonie de corail compétitif est suivi au site “Jolly Roger”
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="4" data-categories="compétitif,Jolly Roger" data-listing-file-modified-sort="1657288510018" data-listing-reading-time-sort="0.265">
+<div class="g-col-1" data-index="4" data-categories="compétitif,Jolly Roger" data-listing-file-modified-sort="1657300178000" data-listing-reading-time-sort="0.265">
 <a href="../gallery/jr/jr_022022_5_Acropora-humilis_competitive.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -430,7 +467,7 @@ Cette colonie de corail compétitif est suivi au site “Jolly Roger”
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="5" data-categories="compétitif,Aéroport" data-listing-file-modified-sort="1657288509758" data-listing-reading-time-sort="0.26">
+<div class="g-col-1" data-index="5" data-categories="compétitif,Aéroport" data-listing-file-modified-sort="1657300178000" data-listing-reading-time-sort="0.26">
 <a href="../gallery/ae/ae1_022022_1_Acropora-humilis_competitive.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -458,7 +495,7 @@ Cette colonie de corail compétitif est suivi au site “Aéroport”
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="6" data-categories="compétitif,Aéroport" data-listing-file-modified-sort="1657288509858" data-listing-reading-time-sort="0.26">
+<div class="g-col-1" data-index="6" data-categories="compétitif,Aéroport" data-listing-file-modified-sort="1657300178000" data-listing-reading-time-sort="0.26">
 <a href="../gallery/ae/ae1_022022_2_Acropora-humilis_competitive.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -486,7 +523,7 @@ Cette colonie de corail compétitif est suivi au site “Aéroport”
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="7" data-categories="compétitif,Aéroport" data-listing-file-modified-sort="1657288509858" data-listing-reading-time-sort="0.26">
+<div class="g-col-1" data-index="7" data-categories="compétitif,Aéroport" data-listing-file-modified-sort="1657300178000" data-listing-reading-time-sort="0.26">
 <a href="../gallery/ae/ae1_022022_4_Acropora-humilis_competitive.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -514,7 +551,7 @@ Cette colonie de corail compétitif est suivi au site “Aéroport”
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="8" data-categories="compétitif,Aéroport" data-listing-file-modified-sort="1657288509882" data-listing-reading-time-sort="0.26">
+<div class="g-col-1" data-index="8" data-categories="compétitif,Aéroport" data-listing-file-modified-sort="1657300178000" data-listing-reading-time-sort="0.26">
 <a href="../gallery/ae/ae1_022022_5_Acropora-humilis_competitive.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -542,7 +579,7 @@ Cette colonie de corail compétitif est suivi au site “Aéroport”
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="9" data-categories="compétitif,Île Blanche" data-listing-file-modified-sort="1657288509950" data-listing-reading-time-sort="0.265">
+<div class="g-col-1" data-index="9" data-categories="compétitif,Île Blanche" data-listing-file-modified-sort="1657300178000" data-listing-reading-time-sort="0.265">
 <a href="../gallery/ib/ib_022022_1_Acropora-sp._competitive.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -570,7 +607,7 @@ Cette colonie de corail compétitif est suivi au site “Île Blanche”
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="10" data-categories="compétitif,Île Blanche" data-listing-file-modified-sort="1657288509978" data-listing-reading-time-sort="0.265">
+<div class="g-col-1" data-index="10" data-categories="compétitif,Île Blanche" data-listing-file-modified-sort="1657300178000" data-listing-reading-time-sort="0.265">
 <a href="../gallery/ib/ib_022022_2_Acropora-sp._competitive.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -598,7 +635,7 @@ Cette colonie de corail compétitif est suivi au site “Île Blanche”
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="11" data-categories="compétitif,Île Blanche" data-listing-file-modified-sort="1657288509982" data-listing-reading-time-sort="0.265">
+<div class="g-col-1" data-index="11" data-categories="compétitif,Île Blanche" data-listing-file-modified-sort="1657300178000" data-listing-reading-time-sort="0.265">
 <a href="../gallery/ib/ib_022022_3_Acropora-sp._competitive.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -626,7 +663,7 @@ Cette colonie de corail compétitif est suivi au site “Île Blanche”
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="12" data-categories="compétitif,Île Blanche" data-listing-file-modified-sort="1657288509982" data-listing-reading-time-sort="0.265">
+<div class="g-col-1" data-index="12" data-categories="compétitif,Île Blanche" data-listing-file-modified-sort="1657300178000" data-listing-reading-time-sort="0.265">
 <a href="../gallery/ib/ib_022022_4_Acropora-sp._competitive.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -654,7 +691,7 @@ Cette colonie de corail compétitif est suivi au site “Île Blanche”
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="13" data-categories="compétitif,Île Blanche" data-listing-file-modified-sort="1657288509986" data-listing-reading-time-sort="0.265">
+<div class="g-col-1" data-index="13" data-categories="compétitif,Île Blanche" data-listing-file-modified-sort="1657300178000" data-listing-reading-time-sort="0.265">
 <a href="../gallery/ib/ib_022022_5_Acropora-sp._competitive.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -698,7 +735,7 @@ Aucun article correspondant
     </div>
 </div>
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="généraliste,Jolly Roger" data-listing-file-modified-sort="1657288510002" data-listing-reading-time-sort="0.265">
+<div class="g-col-1" data-index="0" data-categories="généraliste,Jolly Roger" data-listing-file-modified-sort="1657300178000" data-listing-reading-time-sort="0.265">
 <a href="../gallery/jr/jr_022022_10_Echinopora-gemmacea_generalist.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -726,7 +763,7 @@ Cette colonie de corail généraliste est suivi au site “Jolly Roger”
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="généraliste,Jolly Roger" data-listing-file-modified-sort="1657288510018" data-listing-reading-time-sort="0.265">
+<div class="g-col-1" data-index="1" data-categories="généraliste,Jolly Roger" data-listing-file-modified-sort="1657300178000" data-listing-reading-time-sort="0.265">
 <a href="../gallery/jr/jr_022022_6_Echinopora-gemmacea_generalist.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -754,7 +791,7 @@ Cette colonie de corail généraliste est suivi au site “Jolly Roger”
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="2" data-categories="généraliste,Jolly Roger" data-listing-file-modified-sort="1657288510022" data-listing-reading-time-sort="0.265">
+<div class="g-col-1" data-index="2" data-categories="généraliste,Jolly Roger" data-listing-file-modified-sort="1657300178000" data-listing-reading-time-sort="0.265">
 <a href="../gallery/jr/jr_022022_7_Echinopora-gemmacea_generalist.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -782,7 +819,7 @@ Cette colonie de corail généraliste est suivi au site “Jolly Roger”
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="3" data-categories="généraliste,Jolly Roger" data-listing-file-modified-sort="1657288510022" data-listing-reading-time-sort="0.265">
+<div class="g-col-1" data-index="3" data-categories="généraliste,Jolly Roger" data-listing-file-modified-sort="1657300178000" data-listing-reading-time-sort="0.265">
 <a href="../gallery/jr/jr_022022_8_Echinopora-gemmacea_generalist.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -810,7 +847,7 @@ Cette colonie de corail généraliste est suivi au site “Jolly Roger”
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="4" data-categories="généraliste,Jolly Roger" data-listing-file-modified-sort="1657288510026" data-listing-reading-time-sort="0.265">
+<div class="g-col-1" data-index="4" data-categories="généraliste,Jolly Roger" data-listing-file-modified-sort="1657300178000" data-listing-reading-time-sort="0.265">
 <a href="../gallery/jr/jr_022022_9_Echinopora-gemmacea_generalist.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -838,7 +875,7 @@ Cette colonie de corail généraliste est suivi au site “Jolly Roger”
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="5" data-categories="généraliste,Surprise" data-listing-file-modified-sort="1657288510066" data-listing-reading-time-sort="0.26">
+<div class="g-col-1" data-index="5" data-categories="généraliste,Surprise" data-listing-file-modified-sort="1657300178000" data-listing-reading-time-sort="0.26">
 <a href="../gallery/su/su2_022022_17_Hydnophora-exaesa_generalist.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -866,7 +903,7 @@ Cette colonie de corail généraliste est suivi au site “Surprise”
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="6" data-categories="généraliste,Surprise" data-listing-file-modified-sort="1657288510066" data-listing-reading-time-sort="0.26">
+<div class="g-col-1" data-index="6" data-categories="généraliste,Surprise" data-listing-file-modified-sort="1657300178000" data-listing-reading-time-sort="0.26">
 <a href="../gallery/su/su2_022022_18_Hydnophora-exaesa_generalist.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -910,7 +947,7 @@ Aucun article correspondant
     </div>
 </div>
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="opportuniste,Surprise" data-listing-file-modified-sort="1657288510054" data-listing-reading-time-sort="0.26">
+<div class="g-col-1" data-index="0" data-categories="opportuniste,Surprise" data-listing-file-modified-sort="1657300178000" data-listing-reading-time-sort="0.26">
 <a href="../gallery/su/su2_022022_10_Pocillopora-damicornis_weedy.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -938,7 +975,7 @@ Cette colonie de corail opportuniste est suivi au site “Surprise”
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="opportuniste,Surprise" data-listing-file-modified-sort="1657288510078" data-listing-reading-time-sort="0.26">
+<div class="g-col-1" data-index="1" data-categories="opportuniste,Surprise" data-listing-file-modified-sort="1657300178000" data-listing-reading-time-sort="0.26">
 <a href="../gallery/su/su2_022022_7_Pocillopora-damicornis_weedy.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -966,7 +1003,7 @@ Cette colonie de corail opportuniste est suivi au site “Surprise”
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="2" data-categories="opportuniste,Surprise" data-listing-file-modified-sort="1657288510078" data-listing-reading-time-sort="0.26">
+<div class="g-col-1" data-index="2" data-categories="opportuniste,Surprise" data-listing-file-modified-sort="1657300178000" data-listing-reading-time-sort="0.26">
 <a href="../gallery/su/su2_022022_8_Pocillopora-damicornis_weedy.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -994,7 +1031,7 @@ Cette colonie de corail opportuniste est suivi au site “Surprise”
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="3" data-categories="opportuniste,Surprise" data-listing-file-modified-sort="1657288510082" data-listing-reading-time-sort="0.26">
+<div class="g-col-1" data-index="3" data-categories="opportuniste,Surprise" data-listing-file-modified-sort="1657300178000" data-listing-reading-time-sort="0.26">
 <a href="../gallery/su/su2_022022_9_Pocillopora-damicornis_weedy.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1022,7 +1059,7 @@ Cette colonie de corail opportuniste est suivi au site “Surprise”
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="4" data-categories="opportuniste,Aéroport" data-listing-file-modified-sort="1657288509846" data-listing-reading-time-sort="0.26">
+<div class="g-col-1" data-index="4" data-categories="opportuniste,Aéroport" data-listing-file-modified-sort="1657300178000" data-listing-reading-time-sort="0.26">
 <a href="../gallery/ae/ae1_022022_10_Porites-cylindrica_weedy.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1050,7 +1087,7 @@ Cette colonie de corail opportuniste est suivi au site “Aéroport”
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="5" data-categories="opportuniste,Aéroport" data-listing-file-modified-sort="1657288509942" data-listing-reading-time-sort="0.26">
+<div class="g-col-1" data-index="5" data-categories="opportuniste,Aéroport" data-listing-file-modified-sort="1657300178000" data-listing-reading-time-sort="0.26">
 <a href="../gallery/ae/ae1_022022_6_Porites-cylindrica_weedy.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1078,7 +1115,7 @@ Cette colonie de corail opportuniste est suivi au site “Aéroport”
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="6" data-categories="opportuniste,Aéroport" data-listing-file-modified-sort="1657288509946" data-listing-reading-time-sort="0.26">
+<div class="g-col-1" data-index="6" data-categories="opportuniste,Aéroport" data-listing-file-modified-sort="1657300178000" data-listing-reading-time-sort="0.26">
 <a href="../gallery/ae/ae1_022022_8_Porites-cylindrica_weedy.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1106,7 +1143,7 @@ Cette colonie de corail opportuniste est suivi au site “Aéroport”
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="7" data-categories="opportuniste,Aéroport" data-listing-file-modified-sort="1657288509950" data-listing-reading-time-sort="0.26">
+<div class="g-col-1" data-index="7" data-categories="opportuniste,Aéroport" data-listing-file-modified-sort="1657300178000" data-listing-reading-time-sort="0.26">
 <a href="../gallery/ae/ae1_022022_9_Porites-cylindrica_weedy.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1134,7 +1171,7 @@ Cette colonie de corail opportuniste est suivi au site “Aéroport”
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="8" data-categories="opportuniste,Île Blanche" data-listing-file-modified-sort="1657288509954" data-listing-reading-time-sort="0.265">
+<div class="g-col-1" data-index="8" data-categories="opportuniste,Île Blanche" data-listing-file-modified-sort="1657300178000" data-listing-reading-time-sort="0.265">
 <a href="../gallery/ib/ib_022022_10_Porites-cylindrica_weedy.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1162,7 +1199,7 @@ Cette colonie de corail opportuniste est suivi au site “Île Blanche”
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="9" data-categories="opportuniste,Île Blanche" data-listing-file-modified-sort="1657288509990" data-listing-reading-time-sort="0.265">
+<div class="g-col-1" data-index="9" data-categories="opportuniste,Île Blanche" data-listing-file-modified-sort="1657300178000" data-listing-reading-time-sort="0.265">
 <a href="../gallery/ib/ib_022022_6_Porites-cylindrica_weedy.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1190,7 +1227,7 @@ Cette colonie de corail opportuniste est suivi au site “Île Blanche”
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="10" data-categories="opportuniste,Île Blanche" data-listing-file-modified-sort="1657288509990" data-listing-reading-time-sort="0.265">
+<div class="g-col-1" data-index="10" data-categories="opportuniste,Île Blanche" data-listing-file-modified-sort="1657300178000" data-listing-reading-time-sort="0.265">
 <a href="../gallery/ib/ib_022022_7_Porites-cylindrica_weedy.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1218,7 +1255,7 @@ Cette colonie de corail opportuniste est suivi au site “Île Blanche”
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="11" data-categories="opportuniste,Île Blanche" data-listing-file-modified-sort="1657288509994" data-listing-reading-time-sort="0.265">
+<div class="g-col-1" data-index="11" data-categories="opportuniste,Île Blanche" data-listing-file-modified-sort="1657300178000" data-listing-reading-time-sort="0.265">
 <a href="../gallery/ib/ib_022022_8_Porites-cylindrica_weedy.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1246,7 +1283,7 @@ Cette colonie de corail opportuniste est suivi au site “Île Blanche”
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="12" data-categories="opportuniste,Île Blanche" data-listing-file-modified-sort="1657288509994" data-listing-reading-time-sort="0.265">
+<div class="g-col-1" data-index="12" data-categories="opportuniste,Île Blanche" data-listing-file-modified-sort="1657300178000" data-listing-reading-time-sort="0.265">
 <a href="../gallery/ib/ib_022022_9_Porites-cylindrica_weedy.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1290,7 +1327,7 @@ Aucun article correspondant
     </div>
 </div>
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="robuste,Jolly Roger" data-listing-file-modified-sort="1657288510006" data-listing-reading-time-sort="0.265">
+<div class="g-col-1" data-index="0" data-categories="robuste,Jolly Roger" data-listing-file-modified-sort="1657300178000" data-listing-reading-time-sort="0.265">
 <a href="../gallery/jr/jr_022022_14_Favia-sp._stress-tolerant.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1318,7 +1355,7 @@ Cette colonie de corail robuste est suivi au site “Jolly Roger”
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="robuste,Jolly Roger" data-listing-file-modified-sort="1657288510010" data-listing-reading-time-sort="0.265">
+<div class="g-col-1" data-index="1" data-categories="robuste,Jolly Roger" data-listing-file-modified-sort="1657300178000" data-listing-reading-time-sort="0.265">
 <a href="../gallery/jr/jr_022022_15_Favia-sp._stress-tolerant.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1346,7 +1383,7 @@ Cette colonie de corail robuste est suivi au site “Jolly Roger”
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="2" data-categories="robuste,Surprise" data-listing-file-modified-sort="1657288510058" data-listing-reading-time-sort="0.26">
+<div class="g-col-1" data-index="2" data-categories="robuste,Surprise" data-listing-file-modified-sort="1657300178000" data-listing-reading-time-sort="0.26">
 <a href="../gallery/su/su2_022022_11_Goniastrea-retiformis_stress-tolerant.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1374,7 +1411,7 @@ Cette colonie de corail robuste est suivi au site “Surprise”
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="3" data-categories="robuste,Surprise" data-listing-file-modified-sort="1657288510058" data-listing-reading-time-sort="0.26">
+<div class="g-col-1" data-index="3" data-categories="robuste,Surprise" data-listing-file-modified-sort="1657300178000" data-listing-reading-time-sort="0.26">
 <a href="../gallery/su/su2_022022_12_Goniastrea-retiformis_stress-tolerant.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1402,7 +1439,7 @@ Cette colonie de corail robuste est suivi au site “Surprise”
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="4" data-categories="robuste,Surprise" data-listing-file-modified-sort="1657288510062" data-listing-reading-time-sort="0.26">
+<div class="g-col-1" data-index="4" data-categories="robuste,Surprise" data-listing-file-modified-sort="1657300178000" data-listing-reading-time-sort="0.26">
 <a href="../gallery/su/su2_022022_13_Goniastrea-retiformis_stress-tolerant.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1430,7 +1467,7 @@ Cette colonie de corail robuste est suivi au site “Surprise”
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="5" data-categories="robuste,Surprise" data-listing-file-modified-sort="1657288510062" data-listing-reading-time-sort="0.26">
+<div class="g-col-1" data-index="5" data-categories="robuste,Surprise" data-listing-file-modified-sort="1657300178000" data-listing-reading-time-sort="0.26">
 <a href="../gallery/su/su2_022022_14_Goniastrea-retiformis_stress-tolerant.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1458,7 +1495,7 @@ Cette colonie de corail robuste est suivi au site “Surprise”
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="6" data-categories="robuste,Surprise" data-listing-file-modified-sort="1657288510062" data-listing-reading-time-sort="0.26">
+<div class="g-col-1" data-index="6" data-categories="robuste,Surprise" data-listing-file-modified-sort="1657300178000" data-listing-reading-time-sort="0.26">
 <a href="../gallery/su/su2_022022_15_Goniastrea-retiformis_stress-tolerant.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1486,7 +1523,7 @@ Cette colonie de corail robuste est suivi au site “Surprise”
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="7" data-categories="robuste,Jolly Roger" data-listing-file-modified-sort="1657288510002" data-listing-reading-time-sort="0.265">
+<div class="g-col-1" data-index="7" data-categories="robuste,Jolly Roger" data-listing-file-modified-sort="1657300178000" data-listing-reading-time-sort="0.265">
 <a href="../gallery/jr/jr_022022_11_Platygyra-daedalea_stress-tolerant.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1514,7 +1551,7 @@ Cette colonie de corail robuste est suivi au site “Jolly Roger”
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="8" data-categories="robuste,Jolly Roger" data-listing-file-modified-sort="1657288510002" data-listing-reading-time-sort="0.265">
+<div class="g-col-1" data-index="8" data-categories="robuste,Jolly Roger" data-listing-file-modified-sort="1657300178000" data-listing-reading-time-sort="0.265">
 <a href="../gallery/jr/jr_022022_12_Platygyra-daedalea_stress-tolerant.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1542,7 +1579,7 @@ Cette colonie de corail robuste est suivi au site “Jolly Roger”
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="9" data-categories="robuste,Jolly Roger" data-listing-file-modified-sort="1657288510006" data-listing-reading-time-sort="0.265">
+<div class="g-col-1" data-index="9" data-categories="robuste,Jolly Roger" data-listing-file-modified-sort="1657300178000" data-listing-reading-time-sort="0.265">
 <a href="../gallery/jr/jr_022022_13_Platygyra-daedalea_stress-tolerant.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1570,7 +1607,7 @@ Cette colonie de corail robuste est suivi au site “Jolly Roger”
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="10" data-categories="robuste,Île Blanche" data-listing-file-modified-sort="1657288509958" data-listing-reading-time-sort="0.265">
+<div class="g-col-1" data-index="10" data-categories="robuste,Île Blanche" data-listing-file-modified-sort="1657300178000" data-listing-reading-time-sort="0.265">
 <a href="../gallery/ib/ib_022022_11_Platygyra-daedalea_stress-tolerant.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1598,7 +1635,7 @@ Cette colonie de corail robuste est suivi au site “Île Blanche”
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="11" data-categories="robuste,Île Blanche" data-listing-file-modified-sort="1657288509962" data-listing-reading-time-sort="0.265">
+<div class="g-col-1" data-index="11" data-categories="robuste,Île Blanche" data-listing-file-modified-sort="1657300178000" data-listing-reading-time-sort="0.265">
 <a href="../gallery/ib/ib_022022_12_Platygyra-daedalea_stress-tolerant.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1626,7 +1663,7 @@ Cette colonie de corail robuste est suivi au site “Île Blanche”
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="12" data-categories="robuste,Île Blanche" data-listing-file-modified-sort="1657288509966" data-listing-reading-time-sort="0.265">
+<div class="g-col-1" data-index="12" data-categories="robuste,Île Blanche" data-listing-file-modified-sort="1657300178000" data-listing-reading-time-sort="0.265">
 <a href="../gallery/ib/ib_022022_13_Platygyra-daedalea_stress-tolerant.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1654,7 +1691,7 @@ Cette colonie de corail robuste est suivi au site “Île Blanche”
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="13" data-categories="robuste,Île Blanche" data-listing-file-modified-sort="1657288509966" data-listing-reading-time-sort="0.265">
+<div class="g-col-1" data-index="13" data-categories="robuste,Île Blanche" data-listing-file-modified-sort="1657300178000" data-listing-reading-time-sort="0.265">
 <a href="../gallery/ib/ib_022022_14_Platygyra-daedalea_stress-tolerant.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1682,7 +1719,7 @@ Cette colonie de corail robuste est suivi au site “Île Blanche”
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="14" data-categories="robuste,Île Blanche" data-listing-file-modified-sort="1657288509970" data-listing-reading-time-sort="0.265">
+<div class="g-col-1" data-index="14" data-categories="robuste,Île Blanche" data-listing-file-modified-sort="1657300178000" data-listing-reading-time-sort="0.265">
 <a href="../gallery/ib/ib_022022_15_Platygyra-daedalea_stress-tolerant.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1710,7 +1747,7 @@ Cette colonie de corail robuste est suivi au site “Île Blanche”
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="15" data-categories="robuste,N" gouja'="" data-listing-file-modified-sort="1657288510030" data-listing-reading-time-sort="0.26">
+<div class="g-col-1" data-index="15" data-categories="robuste,N" gouja'="" data-listing-file-modified-sort="1657300178000" data-listing-reading-time-sort="0.26">
 <a href="../gallery/ng/ng_022022_11_Porites-lutea_stress-tolerant.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1726,7 +1763,7 @@ Cette colonie de corail robuste est suivi au site “Île Blanche”
 <div class="card-text listing-description delink">Cette colonie de corail robuste est suivi au site "N'gouja"</div>
 </div>
 </div></a></div>
-<div class="g-col-1" data-index="16" data-categories="robuste,N" gouja'="" data-listing-file-modified-sort="1657288510034" data-listing-reading-time-sort="0.26">
+<div class="g-col-1" data-index="16" data-categories="robuste,N" gouja'="" data-listing-file-modified-sort="1657300178000" data-listing-reading-time-sort="0.26">
 <a href="../gallery/ng/ng_022022_12_Porites-lutea_stress-tolerant.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1742,7 +1779,7 @@ Cette colonie de corail robuste est suivi au site “Île Blanche”
 <div class="card-text listing-description delink">Cette colonie de corail robuste est suivi au site "N'gouja"</div>
 </div>
 </div></a></div>
-<div class="g-col-1" data-index="17" data-categories="robuste,N" gouja'="" data-listing-file-modified-sort="1657288510034" data-listing-reading-time-sort="0.26">
+<div class="g-col-1" data-index="17" data-categories="robuste,N" gouja'="" data-listing-file-modified-sort="1657300178000" data-listing-reading-time-sort="0.26">
 <a href="../gallery/ng/ng_022022_13_Porites-lutea_stress-tolerant.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1758,7 +1795,7 @@ Cette colonie de corail robuste est suivi au site “Île Blanche”
 <div class="card-text listing-description delink">Cette colonie de corail robuste est suivi au site "N'gouja"</div>
 </div>
 </div></a></div>
-<div class="g-col-1" data-index="18" data-categories="robuste,N" gouja'="" data-listing-file-modified-sort="1657288510034" data-listing-reading-time-sort="0.26">
+<div class="g-col-1" data-index="18" data-categories="robuste,N" gouja'="" data-listing-file-modified-sort="1657300178000" data-listing-reading-time-sort="0.26">
 <a href="../gallery/ng/ng_022022_14_Porites-lutea_stress-tolerant.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1774,7 +1811,7 @@ Cette colonie de corail robuste est suivi au site “Île Blanche”
 <div class="card-text listing-description delink">Cette colonie de corail robuste est suivi au site "N'gouja"</div>
 </div>
 </div></a></div>
-<div class="g-col-1" data-index="19" data-categories="robuste,N" gouja'="" data-listing-file-modified-sort="1657288510038" data-listing-reading-time-sort="0.26">
+<div class="g-col-1" data-index="19" data-categories="robuste,N" gouja'="" data-listing-file-modified-sort="1657300178000" data-listing-reading-time-sort="0.26">
 <a href="../gallery/ng/ng_022022_15_Porites-lutea_stress-tolerant.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1790,7 +1827,7 @@ Cette colonie de corail robuste est suivi au site “Île Blanche”
 <div class="card-text listing-description delink">Cette colonie de corail robuste est suivi au site "N'gouja"</div>
 </div>
 </div></a></div>
-<div class="g-col-1" data-index="20" data-categories="robuste,Aéroport" data-listing-file-modified-sort="1657288509846" data-listing-reading-time-sort="0.26">
+<div class="g-col-1" data-index="20" data-categories="robuste,Aéroport" data-listing-file-modified-sort="1657300178000" data-listing-reading-time-sort="0.26">
 <a href="../gallery/ae/ae1_022022_11_Porites-lutea_stress-tolerant.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1818,7 +1855,7 @@ Cette colonie de corail robuste est suivi au site “Aéroport”
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="21" data-categories="robuste,Aéroport" data-listing-file-modified-sort="1657288509850" data-listing-reading-time-sort="0.26">
+<div class="g-col-1" data-index="21" data-categories="robuste,Aéroport" data-listing-file-modified-sort="1657300178000" data-listing-reading-time-sort="0.26">
 <a href="../gallery/ae/ae1_022022_12_Porites-lutea_stress-tolerant.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1846,7 +1883,7 @@ Cette colonie de corail robuste est suivi au site “Aéroport”
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="22" data-categories="robuste,Aéroport" data-listing-file-modified-sort="1657288509850" data-listing-reading-time-sort="0.26">
+<div class="g-col-1" data-index="22" data-categories="robuste,Aéroport" data-listing-file-modified-sort="1657300178000" data-listing-reading-time-sort="0.26">
 <a href="../gallery/ae/ae1_022022_13_Porites-lutea_stress-tolerant.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1874,7 +1911,7 @@ Cette colonie de corail robuste est suivi au site “Aéroport”
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="23" data-categories="robuste,Aéroport" data-listing-file-modified-sort="1657288509854" data-listing-reading-time-sort="0.26">
+<div class="g-col-1" data-index="23" data-categories="robuste,Aéroport" data-listing-file-modified-sort="1657300178000" data-listing-reading-time-sort="0.26">
 <a href="../gallery/ae/ae1_022022_14_Porites-lutea_stress-tolerant.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1902,7 +1939,7 @@ Cette colonie de corail robuste est suivi au site “Aéroport”
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="24" data-categories="robuste,Aéroport" data-listing-file-modified-sort="1657288509854" data-listing-reading-time-sort="0.26">
+<div class="g-col-1" data-index="24" data-categories="robuste,Aéroport" data-listing-file-modified-sort="1657300178000" data-listing-reading-time-sort="0.26">
 <a href="../gallery/ae/ae1_022022_15_Porites-lutea_stress-tolerant.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1959,6 +1996,24 @@ Astuce
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
   const disableStylesheet = (stylesheets) => {
     for (let i=0; i < stylesheets.length; i++) {
       const stylesheet = stylesheets[i];
@@ -1988,8 +2043,14 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     manageTransitions('#quarto-margin-sidebar .nav-link', false);
     if (alternate) {
       enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
     } else {
       disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
     }
     manageTransitions('#quarto-margin-sidebar .nav-link', true);
     // Switch the toggles
@@ -2003,6 +2064,16 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
           toggle.classList.remove("alternate");
         }
       }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
     }
   }
   const isFileUrl = () => { 
@@ -2055,7 +2126,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   // Switch to dark mode if need be
   if (hasAlternateSentinel()) {
     toggleColorMode(true);
-  } 
+  } else {
+    toggleColorMode(false);
+  }
   const icon = "";
   const anchorJS = new window.AnchorJS();
   anchorJS.options = {
@@ -2077,7 +2150,24 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     button.classList.add('code-copy-button-checked');
     var currentTitle = button.getAttribute("title");
     button.setAttribute("title", "Copié");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copié");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
     setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
       button.setAttribute("title", currentTitle);
       button.classList.remove('code-copy-button-checked');
     }, 1000);
@@ -2105,31 +2195,50 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   for (var i=0; i<noterefs.length; i++) {
     const ref = noterefs[i];
     tippyHover(ref, function() {
-      let href = ref.getAttribute('href');
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
       return note.innerHTML;
     });
   }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
   var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
   for (var i=0; i<bibliorefs.length; i++) {
     const ref = bibliorefs[i];
-    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
-    tippyHover(ref, function() {
-      var popup = window.document.createElement('div');
-      cites.forEach(function(cite) {
-        var citeDiv = window.document.createElement('div');
-        citeDiv.classList.add('hanging-indent');
-        citeDiv.classList.add('csl-entry');
-        var biblioDiv = window.document.getElementById('ref-' + cite);
-        if (biblioDiv) {
-          citeDiv.innerHTML = biblioDiv.innerHTML;
-        }
-        popup.appendChild(citeDiv);
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
       });
-      return popup.innerHTML;
-    });
+    }
   }
 });
 </script>

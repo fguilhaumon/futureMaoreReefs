@@ -2,7 +2,7 @@
 make_gallery <- function(data_uploaded) {
 
   #data_uploaded = read.csv("outputs/upload_models/data_uploaded.csv")
-  col_paths <- list.files("assets/images/cap_ecran_colonies", recursive = TRUE, full.names = TRUE)
+  #col_paths <- list.files("assets/images/cap_ecran_colonies", recursive = TRUE, full.names = TRUE)
   site_info <- read.csv("data/site_metadata.csv", header = TRUE)
   
   type_dic <- data.frame(type_en = c("competitive", "stress-tolerant", "generalist", "weedy"),
@@ -11,7 +11,7 @@ make_gallery <- function(data_uploaded) {
   
   res <- apply(data_uploaded, 1, function(d) {
     
-    #d = data_uploaded[1,]
+    #d = data_uploaded[61,]
     # Load model url
     #initiating variables
     name <- d["sp_name"]
@@ -55,12 +55,9 @@ make_gallery <- function(data_uploaded) {
     #Creating name file and path's file
     qmd_file_name <- paste0(d["d"],  "_", gsub(" ", "-", name),"_",type, ".qmd")
     qmd_file_path <- paste0("gallery/", site, "/", qmd_file_name)
+    if (file.exists(qmd_file_path)) unlink(qmd_file_path)
     message(qmd_file_path)
-    if(!dir.exists(paste0("gallery/",site))){
-      dir.create(file.path("gallery", site), showWarnings = FALSE)
-    }
-    
-    
+    dir.create(file.path("gallery", site), showWarnings = FALSE)
     
     #Editing file
     
@@ -68,10 +65,15 @@ make_gallery <- function(data_uploaded) {
     title_char <- paste0('title: "', name,'"')
     subtitle_char <- paste0('subtitle: ""')
     description_char <- paste0('description: Cette colonie de corail ',type_fr,' est suivi au site "',site_fr,'"')
-    image_char <- paste0("image: /", grep(pattern = paste0(as.character(d["d"]), ".jpg"), col_paths, value = TRUE))
-    if(length(grep(pattern = paste0(as.character(d["d"]), ".jpg"), col_paths, value = TRUE)) == 0){
-      image_char <- "image: Not have image"
-    }
+    sketchfab_api_url <- "https://api.sketchfab.com/v3"
+    model_endpoint <- paste0(sketchfab_api_url,"/models")
+    uploaded_model_infos <- httr::GET(paste(model_endpoint, d["uid"], sep = "/"))
+    cont <- httr::content(uploaded_model_infos)
+    image_url <- cont$thumbnails$images[sapply(cont$thumbnails$images, "[", "width") == 720][[1]]$url
+    image_char <- paste0("image: ", image_url) #grep(pattern = paste0(as.character(d["d"]), ".jpg"), col_paths, value = TRUE)
+    # if(length(grep(pattern = paste0(as.character(d["d"]), ".jpg"), col_paths, value = TRUE)) == 0){
+    #   image_char <- "image: Not have image"
+    # }
     categories_char <- paste0('categories: [ "',type_fr,'", ','"',site_fr, '"]' )
     iframe_char <- paste0('<div class="resp-container"> <iframe class="resp-content" title="',name,'"',' frameborder="0"',' allowfullscreen ', 'mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking"', ' xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share ', 'src="', model_url, '/embed?autostart=1&annotations_visible=0&preload=1&ui_infos=0&ui_inspector=0&ui_watermark_link=0&ui_watermark=0&ui_settings=0"> </iframe> </div>')
     sentence <- paste0("Voici le modèle issu de la deuxième campagne de terrain __Future Maore Reefs__ en ",date)

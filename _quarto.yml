@@ -12,7 +12,6 @@ website:
   favicon: "assets/images/favicon.png"
   google-analytics: "G-ZQBVFXWT0Q"
   page-navigation: true
-  execute-dir: project
   navbar:
     pinned: true
     background: info
