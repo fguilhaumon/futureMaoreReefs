@@ -30,6 +30,8 @@ website:
             text: "Podcasts"
           - href: main/videos.qmd
             text: "Vidéos"
+      - href: index.qmd
+        text: "École d'été"
   sidebar:
     - id: gallery
       title: "Coraux en 3D"
