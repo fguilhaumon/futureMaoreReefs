@@ -9,11 +9,21 @@ resources:
   - "assets/images/pamanzi2_aline.jpg"
   - "assets/images/photogram_ar_close.jpg"
   - "assets/images/photogram_ra_far.jpg"
+  - "assets/images/summer_school_banner.png"
 sidebar: false
 page-layout: full
 ---
 
-![](assets/images/logo_squared_complete_w600.png){.img-center} <br/> Grâce au plan de relance du gouvernement, l'Institut de Recherche pour le Développement et le Parc naturel marin de Mayotte, avec l'appui du Centre universitaire de formation et de recherche de Mayotte et l'Université de la Réunion conduisent le programme **Future Maore Reefs**.
+<!--![](assets/images/logo_squared_complete_w600.png){.img-center}-->
+
+<center>![](assets/images/summer_school_banner.png)</center>
+<br/>
+<br/>
+<center>[**Toutes les infos ici**](main/summer_school.qmd)</center>
+<br/>
+<br/>
+
+Grâce au plan de relance du gouvernement, l'Institut de Recherche pour le Développement et le Parc naturel marin de Mayotte, avec l'appui du Centre universitaire de formation et de recherche de Mayotte et l'Université de la Réunion conduisent le programme **Future Maore Reefs**.
 
 ```{r echo = FALSE}
 library(pixture)

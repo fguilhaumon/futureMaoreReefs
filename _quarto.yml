@@ -6,6 +6,9 @@ project:
     - "!idee.qmd"
     - "!main/about.qmd"
 
+execute: 
+  freeze: true
+
 website:
   title: "Future Maore reefs"
   image: "assets/images/logo_text.png"
@@ -30,7 +33,7 @@ website:
             text: "Podcasts"
           - href: main/videos.qmd
             text: "Vidéos"
-      - href: index.qmd
+      - href: main/summer_school.qmd
         text: "École d'été"
   sidebar:
     - id: gallery
