@@ -45,4 +45,4 @@ pixgallery(paths)
 
 <br /> <br />
 
-![](assets/images/logos_partenaires.jpeg){.center} 
+<center>![](assets/images/logos_partenaires.jpeg)</center>

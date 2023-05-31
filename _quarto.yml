@@ -59,11 +59,9 @@ website:
 
 format:
   html:
-    theme: 
-      light: [pulse,style/custom.scss]
-      dark: darkly
+    theme: [pulse, style/custom.scss]
     css: style/styles.css
     toc: false
     lang: fr
 
-freeze: false
+freeze: true
